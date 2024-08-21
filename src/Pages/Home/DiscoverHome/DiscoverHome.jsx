@@ -50,7 +50,7 @@ const DiscoverHome = () => {
                 <div className='mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-10'>
                     {
                         categories.map(category => (
-                            <div className="relative group">
+                            <div className="relative group text-[#014B88] hover:link">
                                 <Link
                                     to={category.link}
                                     className="block p-4 rounded-lg transition-colors duration-300"

@@ -14,12 +14,13 @@ const Navbar = () => {
     };
 
     const menuItems = [
-        { name: 'Products', subOptions: ['Product 1', 'Product 2'] },
-        { name: 'Contact Us', subOptions: [] }
+        { name: 'PRODUCTS', subOptions: ['Product 1', 'Product 2'] },
+        { name: 'CONTACT US', subOptions: [] }
     ];
 
     return (
-        <nav className='fixed w-full bg-[#FFFFFF] text-[#014B88] shadow-lg z-50'>
+        <nav className='w-full bg-[#FFFFFF] text-[#014B88] font-bold shadow-lg z-50'>
+            {/* <nav className='fixed w-full bg-[#FFFFFF] text-[#014B88] shadow-lg z-50'> */}
             <div className='w-[93%] lg:w-[85%] mx-auto flex justify-between items-center py-4'>
                 {/* Logo */}
                 <div className='text-2xl font-bold flex justify-center items-center'>
@@ -44,7 +45,7 @@ const Navbar = () => {
                                 {item.name}
                             </a>
                             {item.subOptions.length > 0 && (
-                                <ul className='absolute left-0 mt-2 bg-[#FFFFFF] text-left py-2 space-y-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-300'>
+                                <ul className='absolute left-0 mt-2 bg-[#FFFFFF] text-left py-2 space-y-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-50'>
                                     {item.subOptions.map((subOption, subIndex) => (
                                         <li key={subIndex}>
                                             <a
