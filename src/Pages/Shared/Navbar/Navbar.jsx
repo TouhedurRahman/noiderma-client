@@ -1,0 +1,130 @@
+import React, { useState } from 'react';
+import { FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
+
+const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [activeSubMenu, setActiveSubMenu] = useState(null);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const toggleSubMenu = (index) => {
+        setActiveSubMenu(activeSubMenu === index ? null : index);
+    };
+
+    const menuItems = [
+        { name: 'Products', subOptions: ['Product 1', 'Product 2'] },
+        { name: 'Contact Us', subOptions: [] }
+    ];
+
+    return (
+        <nav className='fixed w-full bg-[#FFFFFF] text-[#014B88] shadow-lg z-50'>
+            <div className='w-[93%] lg:w-[85%] mx-auto flex justify-between items-center py-4'>
+                {/* Logo */}
+                <div className='text-2xl font-bold flex justify-center items-center'>
+                    <img
+                        src="/images/company-logo.png"
+                        alt="Loading..."
+                        className='w-8 h-8 mr-2'
+                    />
+                    <a href="/" className='cursor-pointer'>
+                        Noiderma
+                    </a>
+                </div>
+
+                {/* Menu Items */}
+                <ul className='hidden md:flex space-x-8'>
+                    {menuItems.map((item, index) => (
+                        <li key={index} className='relative group'>
+                            <a
+                                href={`/${item.name.toLowerCase().replace(' ', '-')}`}
+                                className='cursor-pointer transition duration-300 hover:text-[#01305A]'
+                            >
+                                {item.name}
+                            </a>
+                            {item.subOptions.length > 0 && (
+                                <ul className='absolute left-0 mt-2 bg-[#FFFFFF] text-left py-2 space-y-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-300'>
+                                    {item.subOptions.map((subOption, subIndex) => (
+                                        <li key={subIndex}>
+                                            <a
+                                                href={`/${item.name.toLowerCase().replace(' ', '-')}/${subOption.toLowerCase().replace(' ', '-')}`}
+                                                className='block  px-4 py-2 hover:bg-[#014B88] hover:text-[#FFFFFF] transition duration-300'
+                                            >
+                                                {subOption}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </li>
+                    ))}
+                </ul>
+
+                {/* Search Bar */}
+                <div className='hidden md:flex items-center'>
+                    <input
+                        type="text"
+                        placeholder="Search..."
+                        className='bg-[#f0f0f0] text-[#014B88] px-4 py-2 rounded-full focus:outline-none'
+                    />
+                </div>
+
+                {/* Mobile Menu Toggle */}
+                <div className='md:hidden flex items-center'>
+                    <button onClick={toggleMenu} className='text-2xl'>
+                        {isOpen ? <FaTimes /> : <FaBars />}
+                    </button>
+                </div>
+            </div>
+
+            {/* Mobile Menu */}
+            <div
+                className={`md:hidden bg-[#FFFFFF] text-center overflow-hidden transition-all duration-500 ease-in-out transform ${isOpen ? 'max-h-[100vh] opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+            >
+                <ul className='space-y-4 py-4'>
+                    {menuItems.map((item, index) => (
+                        <li key={index} className='relative'>
+                            <div className='flex justify-between items-center px-4'>
+                                <a
+                                    href={`/${item.name.toLowerCase().replace(' ', '-')}`}
+                                    className='block cursor-pointer transition duration-300 hover:text-[#01305A]'
+                                >
+                                    {item.name}
+                                </a>
+                                {item.subOptions.length > 0 && (
+                                    <button
+                                        onClick={() => toggleSubMenu(index)}
+                                        className='text-lg'
+                                    >
+                                        <FaChevronDown
+                                            className={`transition-transform duration-300 ${activeSubMenu === index ? 'rotate-180' : ''
+                                                }`}
+                                        />
+                                    </button>
+                                )}
+                            </div>
+                            {item.subOptions.length > 0 && activeSubMenu === index && (
+                                <ul className='text-[#014B88] text-left space-y-1 py-2 transition duration-300 w-full'>
+                                    {item.subOptions.map((subOption, subIndex) => (
+                                        <li key={subIndex}>
+                                            <a
+                                                href={`/${item.name.toLowerCase().replace(' ', '-')}/${subOption.toLowerCase().replace(' ', '-')}`}
+                                                className='block px-4 py-2 hover:bg-[#01305A] hover:text-[#FFFFFF] transition duration-300 w-full'
+                                            >
+                                                {subOption}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </nav>
+    );
+};
+
+export default Navbar;
