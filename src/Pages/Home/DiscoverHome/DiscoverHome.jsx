@@ -37,8 +37,8 @@ const DiscoverHome = () => {
     ];
 
     return (
-        <div>
-            <div className='py-20 text-center'>
+        <div className='pt-20'>
+            <div className='text-center'>
                 <p className='text-4xl text-[#014B88] font-semibold' style={{ letterSpacing: '0.2em' }} >
                     DISCOVER MORE FROM NOIDERMA
                 </p>
@@ -46,7 +46,7 @@ const DiscoverHome = () => {
                     Get the best care for your sensitive skin across all our product ranges.
                 </p>
             </div>
-            <div className='mb-20 flex justify-center items-center'>
+            <div className='flex justify-center items-center mt-10'>
                 <div className='mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-10'>
                     {
                         categories.map(category => (

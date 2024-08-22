@@ -38,7 +38,7 @@ const CategorizedFeature = () => {
                 {
                     contents.map(content => (
                         <>
-                            <div className={`m-5 my-36 flex flex-col ${(content?.flexprop) === 'reverse' ? 'md:flex-row-reverse' : 'md:flex-row'} lg:justify-between items-center rounded-lg`}>
+                            <div className={`m-5 my-10 flex flex-col ${(content?.flexprop) === 'reverse' ? 'md:flex-row-reverse' : 'md:flex-row'} lg:justify-between items-center rounded-lg`}>
                                 <div className="w-full md:w-1/2 lg:rounded-lg">
                                     <img
                                         src={content.image}

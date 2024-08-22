@@ -1,5 +1,6 @@
 import Banner from "../Banner/Banner";
 import CategorizedFeature from "../CategorizedFeature/CategorizedFeature";
+import DermaRecommended from "../DermaRecommended/DermaRecommended";
 import DiscoverHome from "../DiscoverHome/DiscoverHome";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
             <Banner />
             < DiscoverHome />
             <CategorizedFeature />
+            <DermaRecommended />
             <p>Noiderma Loading...</p>
         </div>
     );
