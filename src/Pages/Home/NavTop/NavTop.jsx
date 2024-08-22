@@ -6,7 +6,7 @@ const NavTop = () => {
     return (
         <div className='bg-[#E0EFF9] h-8'>
             <div className="h-full flex justify-end items-center lg:mr-[8%] space-x-2">
-                <div className="flex justify-center items-center font-bold space-x-2">
+                <div className="flex justify-center items-center text-[#014B88] font-bold space-x-2">
                     <PiMapPinLineBold />
                     <p>
                         FIND A STORE

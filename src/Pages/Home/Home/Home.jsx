@@ -1,4 +1,5 @@
 import Banner from "../Banner/Banner";
+import CategorizedFeature from "../CategorizedFeature/CategorizedFeature";
 import DiscoverHome from "../DiscoverHome/DiscoverHome";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <Banner />
             < DiscoverHome />
+            <CategorizedFeature />
             <p>Noiderma Loading...</p>
         </div>
     );
