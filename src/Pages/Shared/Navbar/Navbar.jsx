@@ -25,12 +25,12 @@ const Navbar = () => {
                 {/* Logo */}
                 <div className='text-2xl font-bold flex justify-center items-center'>
                     <img
-                        src="/images/company-logo.png"
+                        src="https://via.placeholder.com/150?text=Logo"
                         alt="Loading..."
-                        className='w-8 h-8 mr-2'
+                        className='w-8 h-8 mr-2 rounded-full'
                     />
                     <a href="/" className='cursor-pointer'>
-                        Noiderma
+                        NOIDERMA
                     </a>
                 </div>
 

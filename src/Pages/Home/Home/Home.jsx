@@ -4,6 +4,7 @@ import DermaRecommended from "../DermaRecommended/DermaRecommended";
 import DiscoverHome from "../DiscoverHome/DiscoverHome";
 import DoctorsRecommended from "../DoctorsRecommended/DoctorsRecommended";
 import ProductFeatureHome from "../ProductFeatureHome/ProductFeatureHome";
+import ProductsHome from "../ProductsHome/ProductsHome";
 import SignFaq from "../SignFaq/SignFaq";
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
             <DoctorsRecommended />
             <SignFaq />
             <ProductFeatureHome />
-            <p>Noiderma Loading...</p>
+            <ProductsHome />
         </div>
     );
 };

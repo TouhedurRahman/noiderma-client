@@ -27,7 +27,7 @@ const ProductFeatureHome = () => {
                             Healing Ointment for dry, cracked skin
                         </p>
                         <p className='text-[#004987] pr-48'>
-                            Cetaphil Healing Ointment is specially formulated with a high concentration of the active ingredient, petrolatum, to quickly protect and heal dry, irritated, sensitive skin.
+                            Noiderma Healing Ointment is specially formulated with a high concentration of the active ingredient, petrolatum, to quickly protect and heal dry, irritated, sensitive skin.
                         </p>
                         <Link
                             className="btn py-3 px-10 bg-white hover:bg-[#38A6C4] border-2 border-[#004987] text-[#004987] hover:text-white rounded-full"
