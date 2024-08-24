@@ -50,6 +50,7 @@ const SignFaq = () => {
                             className="border-b"
                             data-aos="fade-up"
                             data-aos-delay={`${index * 100}`} // Staggered delay for each FAQ
+                            smooth={true}
                         >
                             <button
                                 onClick={() => toggleAccordion(index)}

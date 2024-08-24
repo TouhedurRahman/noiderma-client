@@ -17,6 +17,7 @@ const DermaRecommended = () => {
                     </p>
                     <Link
                         className="btn py-3 px-10 bg-white hover:bg-[#38A6C4] border-2 border-[#004987] text-[#004987] hover:text-white rounded-full"
+                        style={{ letterSpacing: "0.1em" }}
                     >
                         FIND OUT MORE
                     </Link>
