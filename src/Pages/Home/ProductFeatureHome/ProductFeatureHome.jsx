@@ -24,7 +24,7 @@ const ProductFeatureHome = () => {
                             className='text-[#004987] text-4xl font-bold pr-36'
                             style={{ letterSpacing: '0.2em' }}
                         >
-                            Healing Ointment for dry, cracked skin
+                            HEALING OINTMENT FOR DRY, CRACKED SKIN
                         </p>
                         <p className='text-[#004987] pr-48'>
                             Noiderma Healing Ointment is specially formulated with a high concentration of the active ingredient, petrolatum, to quickly protect and heal dry, irritated, sensitive skin.
