@@ -16,7 +16,7 @@ const ProductsHome = () => {
             _id: 1,
             name: "Healing Ointment",
             image: "https://via.placeholder.com/150?text=Product",
-            rating: 3.4,
+            rating: 4.3,
             rater: 55,
             link: ""
         },
@@ -24,7 +24,7 @@ const ProductsHome = () => {
             _id: 2,
             name: "Healing Ointment",
             image: "https://via.placeholder.com/150?text=Product",
-            rating: 4.8,
+            rating: 4.6,
             rater: 1000,
             link: ""
         },
@@ -32,7 +32,7 @@ const ProductsHome = () => {
             _id: 3,
             name: "Healing Ointment",
             image: "https://via.placeholder.com/150?text=Product",
-            rating: 4.2,
+            rating: 4.5,
             rater: 555,
             link: ""
         },
@@ -40,7 +40,7 @@ const ProductsHome = () => {
             _id: 4,
             name: "Healing Ointment",
             image: "https://via.placeholder.com/150?text=Product",
-            rating: 3.1,
+            rating: 4.6,
             rater: 205,
             link: ""
         },
@@ -48,7 +48,7 @@ const ProductsHome = () => {
             _id: 5,
             name: "Healing Ointment",
             image: "https://via.placeholder.com/150?text=Product",
-            rating: 3.8,
+            rating: 4.5,
             rater: 55,
             link: ""
         },
@@ -56,7 +56,7 @@ const ProductsHome = () => {
             _id: 6,
             name: "Healing Ointment",
             image: "https://via.placeholder.com/150?text=Product",
-            rating: 2.5,
+            rating: 4.3,
             rater: 305,
             link: ""
         },
@@ -64,7 +64,7 @@ const ProductsHome = () => {
             _id: 7,
             name: "Healing Ointment",
             image: "https://via.placeholder.com/150?text=Product",
-            rating: 5,
+            rating: 4.2,
             rater: 5005,
             link: ""
         },
@@ -79,74 +79,77 @@ const ProductsHome = () => {
     };
 
     return (
-        <div className='pt-10'>
-            <div className='w-[85%] mx-auto'>
-                <div className='flex justify-end items-center mb-5'>
-                    <button
-                        onClick={goPrev}
-                        className="mr-4 text-[#080567] border border-[#4077A5] p-5 rounded-full"
-                    >
-                        <FaChevronLeft />
-                    </button>
-                    <button
-                        onClick={goNext}
-                        className="ml-4 text-[#080567] border border-[#4077A5] p-5 rounded-full"
-                    >
-                        <FaChevronRight />
-                    </button>
-                </div>
-                <Swiper
-                    spaceBetween={30}
-                    pagination={{ clickable: true }}
-                    // modules={[Pagination]}
-                    className="mySwiper"
-                    onSwiper={setSwiper}
-                    breakpoints={{
-                        640: {
-                            slidesPerView: 1,
-                        },
-                        768: {
-                            slidesPerView: products.length > 1 ? 2 : 1,
-                        },
-                        1024: {
-                            slidesPerView: products.length > 2 ? 4 : products.length,
-                        },
-                    }}
-                >
-                    <div className='mx-2 mb-10'>
-                        {products.map(product => (
-                            <SwiperSlide key={product._id}>
-                                <div>
-                                    <img
-                                        src={product.image}
-                                        alt="Loading..."
-                                        className='w-[600px] h-[350px] rounded-[20px]'
-                                    />
-                                    <p className='text-sm text-[#0049A5] my-5'>
-                                        {product.name}
-                                    </p>
-                                    <div className="flex items-center space-x-3">
-                                        <Rating
-                                            style={{ maxWidth: 180 }}
-                                            value={product.rating}
-                                            readOnly
-                                            className="flex"
-                                        />
-                                        <p>
-                                            {product.rating} ({product.rater})
-                                        </p>
-                                    </div>
-                                    <Link to={product.link || '/'}
-                                        className="w-full btn my-2 px-10 bg-gradient-to-r from-[#004987] to-[#2F97BA] text-white rounded-full hover:from-[#38A6C4] hover:to-[#38A6C4]"
-                                        style={{ letterSpacing: "0.1em" }}
-                                    >
-                                        MORE ON DRY SCREEN
-                                    </Link>
-                                </div>
-                            </SwiperSlide>
-                        ))}
+        <div className='relative pt-10'>
+            <div className="relative">
+                {/* Half-circle shape at the bottom with curved side upwards */}
+                <div className="absolute w-full bottom-[-80px] left-0 h-[600px] bg-[#F1F9FC] rounded-t-[530px]"></div>
+
+                <div className='relative z-10  w-[85%] mx-auto'>
+                    <div className='flex justify-end items-center mb-5'>
+                        <button
+                            onClick={goPrev}
+                            className="mr-4 text-[#080567] border border-[#4077A5] p-5 rounded-full"
+                        >
+                            <FaChevronLeft />
+                        </button>
+                        <button
+                            onClick={goNext}
+                            className="ml-4 text-[#080567] border border-[#4077A5] p-5 rounded-full"
+                        >
+                            <FaChevronRight />
+                        </button>
                     </div>
-                </Swiper>
+                    <Swiper
+                        spaceBetween={30}
+                        pagination={{ clickable: true }}
+                        onSwiper={setSwiper}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 1,
+                            },
+                            768: {
+                                slidesPerView: products.length > 1 ? 2 : 1,
+                            },
+                            1024: {
+                                slidesPerView: products.length > 2 ? 4 : products.length,
+                            },
+                        }}
+                    >
+                        <div className='mx-2 mb-10'>
+                            {products.map(product => (
+                                <SwiperSlide key={product._id}>
+                                    <div>
+                                        <img
+                                            src={product.image}
+                                            alt="Loading..."
+                                            className='w-[600px] h-[350px] rounded-[20px]'
+                                        />
+                                        <p className='text-sm text-[#0049A5] my-5'>
+                                            {product.name}
+                                        </p>
+                                        <div className="flex items-center space-x-3">
+                                            <Rating
+                                                style={{ maxWidth: 180 }}
+                                                value={product.rating}
+                                                readOnly
+                                                className="flex"
+                                            />
+                                            <p>
+                                                {product.rating} ({product.rater})
+                                            </p>
+                                        </div>
+                                        <Link to={product.link || '/'}
+                                            className="w-full btn my-2 px-10 bg-gradient-to-r from-[#004987] to-[#2F97BA] text-white rounded-full hover:from-[#38A6C4] hover:to-[#38A6C4]"
+                                            style={{ letterSpacing: "0.1em" }}
+                                        >
+                                            BUY NOW
+                                        </Link>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </div>
+                    </Swiper>
+                </div>
             </div>
         </div>
     );

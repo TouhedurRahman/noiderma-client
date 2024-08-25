@@ -64,7 +64,7 @@ const ProductFeatureHome = () => {
                                             className="w-full btn my-2 px-10 bg-gradient-to-r from-[#004987] to-[#2F97BA] text-white rounded-full hover:from-[#38A6C4] hover:to-[#38A6C4]"
                                             style={{ letterSpacing: "0.1em" }}
                                         >
-                                            MORE ON DRY SCREEN
+                                            BUY NOW
                                         </Link>
                                     </div>
                                 ))
