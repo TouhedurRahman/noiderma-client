@@ -82,7 +82,8 @@ const ProductsHome = () => {
         <div className='relative pt-10'>
             <div className="relative">
                 {/* Half-circle shape at the bottom with curved side upwards */}
-                <div className="absolute w-full bottom-[-80px] left-0 h-[600px] bg-[#F1F9FC] rounded-t-[530px]"></div>
+                <div className="absolute w-full bottom-[-80px] left-0 h-[610px] bg-[#F1F9FC] rounded-t-[50%]"></div>
+                <div className="absolute w-full bottom-[-80px] left-0 h-[300px] bg-[#F1F9FC]"></div>
 
                 <div className='relative z-10  w-[85%] mx-auto'>
                     <div className='flex justify-end items-center mb-5'>
