@@ -68,7 +68,7 @@ const Navbar = () => {
                         <input
                             type="text"
                             placeholder="Search..."
-                            className=" border-2 border-gray-400 text-[#014B88] px-4 py-2 rounded-lg focus:outline-none"
+                            className=" border-2 border-gray-400 text-[#014B88] px-4 py-2 rounded-lg focus:outline-[#BDE14C]"
                         />
                         <FaSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#014B88]" />
                     </div>
