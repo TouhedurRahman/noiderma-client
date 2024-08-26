@@ -1,5 +1,6 @@
 import Banner from "../Banner/Banner";
 import CategorizedFeature from "../CategorizedFeature/CategorizedFeature";
+import CategorizedProductHome from "../CategorizedProductHome/CategorizedProductHome";
 import DermaRecommended from "../DermaRecommended/DermaRecommended";
 import DiscoverHome from "../DiscoverHome/DiscoverHome";
 import DoctorsRecommended from "../DoctorsRecommended/DoctorsRecommended";
@@ -12,6 +13,7 @@ const Home = () => {
         <div>
             <Banner />
             < DiscoverHome />
+            <CategorizedProductHome />
             <CategorizedFeature />
             <DermaRecommended />
             <DoctorsRecommended />

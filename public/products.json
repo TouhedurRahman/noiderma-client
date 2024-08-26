@@ -3,43 +3,61 @@
         "_id": 1,
         "name": "Healing Ointment",
         "image": "https://via.placeholder.com/150?text=Product",
-        "group": "moisturizer",
+        "category": "moisturizer",
         "rating": 4.3,
         "rater": 55,
         "link": ""
     },
     {
-        "_id": 1,
+        "_id": 2,
         "name": "Healing Ointment",
         "image": "https://via.placeholder.com/150?text=Product",
-        "group": "face",
+        "category": "face",
         "rating": 4.3,
         "rater": 55,
         "link": ""
     },
     {
-        "_id": 1,
+        "_id": 3,
         "name": "Healing Ointment",
         "image": "https://via.placeholder.com/150?text=Product",
-        "group": "body",
+        "category": "body",
         "rating": 4.3,
         "rater": 55,
         "link": ""
     },
     {
-        "_id": 1,
+        "_id": 4,
         "name": "Healing Ointment",
         "image": "https://via.placeholder.com/150?text=Product",
-        "group": "baby-skincare",
+        "category": "body",
         "rating": 4.3,
         "rater": 55,
         "link": ""
     },
     {
-        "_id": 1,
+        "_id": 5,
         "name": "Healing Ointment",
         "image": "https://via.placeholder.com/150?text=Product",
-        "group": "sunscreens",
+        "category": "baby-skincare",
+        "rating": 4.3,
+        "rater": 55,
+        "link": ""
+    },
+    {
+        "_id": 6,
+        "name": "Healing Ointment",
+        "image": "https://via.placeholder.com/150?text=Product",
+        "category": "sunscreens",
+        "rating": 4.3,
+        "rater": 55,
+        "link": ""
+    },
+    {
+        "_id": 7,
+        "name": "Healing Ointment",
+        "image": "https://via.placeholder.com/150?text=Product",
+        "category": "sunscreens",
         "rating": 4.3,
         "rater": 55,
         "link": ""
