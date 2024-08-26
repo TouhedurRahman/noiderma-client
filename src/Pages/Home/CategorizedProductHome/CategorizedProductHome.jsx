@@ -6,23 +6,22 @@ import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
 import { Link } from 'react-router-dom';
 import useProducts from '../../../Hooks/useProducts';
+import './CategorizedProductHome.css';
 
 const CategorizedProductHome = () => {
     const [swiper, setSwiper] = useState(null);
     const [selectedCategory, setSelectedCategory] = useState('all');
+    const [hoveredProduct, setHoveredProduct] = useState(null);
 
     const [products, loading] = useProducts();
 
-    // Ensure products is an array
-    const validProducts = Array.isArray(products) ? products : [];
-
     // Get unique categories from products
-    const categories = Array.from(new Set(validProducts.map(product => product.category))) || [];
+    const categories = Array.from(new Set(products.map(product => product.category)));
 
     // Filter products based on selected category
     const filteredProducts = selectedCategory === 'all'
-        ? validProducts
-        : validProducts.filter(product => product.category === selectedCategory);
+        ? products
+        : products.filter(product => product.category === selectedCategory);
 
     // Format category names for display
     const formatCategoryName = (category) => {
@@ -60,46 +59,56 @@ const CategorizedProductHome = () => {
                     loading
                         ? <p>Loading...</p>
                         : (
-                            <div className='relative z-10'>
+                            <div className='relative z-10 categorized-swiper'>
                                 <Swiper
-                                    spaceBetween={10}
+                                    spaceBetween={30}
                                     pagination={{ clickable: true }}
                                     onSwiper={setSwiper}
                                     breakpoints={{
-                                        640: { slidesPerView: 1 },
-                                        768: { slidesPerView: filteredProducts.length > 1 ? 2 : 1 },
-                                        1024: { slidesPerView: filteredProducts.length > 2 ? 4 : filteredProducts.length },
+                                        640: { slidesPerView: 1, spaceBetween: 20 },
+                                        768: { slidesPerView: filteredProducts.length > 1 ? 2 : 1, spaceBetween: 20 },
+                                        1024: { slidesPerView: filteredProducts.length > 2 ? 4 : filteredProducts.length, spaceBetween: 30 },
                                     }}
                                 >
                                     {filteredProducts.length > 0 ? (
                                         filteredProducts.map(product => (
-                                            <SwiperSlide key={product._id}>
-                                                <div>
+                                            <SwiperSlide
+                                                key={product._id}
+                                                className={`relative transition-transform duration-300 ease-in-out ${hoveredProduct && hoveredProduct !== product._id ? 'filter blur-sm' : ''}`}
+                                                onMouseEnter={() => setHoveredProduct(product._id)}
+                                                onMouseLeave={() => setHoveredProduct(null)}
+                                            >
+                                                <div className={`categorized-product-card ${hoveredProduct === product._id ? 'scale-105' : ''} shadow-lg rounded-lg overflow-hidden`}>
                                                     <img
                                                         src={product.image}
                                                         alt={product.name}
-                                                        className='w-[600px] h-[350px] rounded-[20px]'
+                                                        className='rounded-t-lg'
                                                     />
-                                                    <p className='text-sm text-[#0049A5] my-5'>
-                                                        {product.name}
-                                                    </p>
-                                                    <div className="flex items-center space-x-3">
-                                                        <Rating
-                                                            style={{ maxWidth: 180 }}
-                                                            value={product.rating}
-                                                            readOnly
-                                                            className="flex"
-                                                        />
-                                                        <p>
-                                                            {product.rating} ({product.rater})
+                                                    <div className='content'>
+                                                        <p className='text-sm text-[#0049A5] mb-2'>
+                                                            {product.name}
                                                         </p>
+                                                        <p className='text-xs text-gray-600 mb-4'>
+                                                            {product.description}
+                                                        </p>
+                                                        <div className="flex items-center space-x-3 mb-4">
+                                                            <Rating
+                                                                style={{ maxWidth: 180 }}
+                                                                value={product.rating}
+                                                                readOnly
+                                                                className="flex"
+                                                            />
+                                                            <p>
+                                                                {product.rating} ({product.rater})
+                                                            </p>
+                                                        </div>
+                                                        <Link to={product.link || '/'}
+                                                            className="w-full btn px-10 bg-gradient-to-r from-[#004987] to-[#2F97BA] text-white rounded-full hover:from-[#38A6C4] hover:to-[#38A6C4]"
+                                                            style={{ letterSpacing: "0.1em" }}
+                                                        >
+                                                            BUY NOW
+                                                        </Link>
                                                     </div>
-                                                    <Link to={product.link || '/'}
-                                                        className="w-full btn my-2 px-10 bg-gradient-to-r from-[#004987] to-[#2F97BA] text-white rounded-full hover:from-[#38A6C4] hover:to-[#38A6C4]"
-                                                        style={{ letterSpacing: "0.1em" }}
-                                                    >
-                                                        BUY NOW
-                                                    </Link>
                                                 </div>
                                             </SwiperSlide>
                                         ))

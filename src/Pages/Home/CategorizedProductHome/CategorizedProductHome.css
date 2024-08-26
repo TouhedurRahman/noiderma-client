@@ -1,0 +1,54 @@
+/* Add blur effect to non-hovered SwiperSlide */
+/* Add this to CategorizedProductHome.css */
+.categorized-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorized-product-card {
+    width: 100%;
+    max-width: 320px;
+    /* Adjust based on your design */
+    height: 100%;
+    /* Ensures full height usage */
+    transition: transform 0.3s ease-in-out;
+}
+
+.categorized-product-card img {
+    width: 100%;
+    height: 200px;
+    /* Consistent image height */
+    object-fit: cover;
+}
+
+.categorized-product-card .content {
+    padding: 1rem;
+}
+
+.filter {
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Blur effect */
+.blur-sm {
+    filter: blur(1px);
+}
+
+/* Transition for scaling and height change */
+.transition-transform {
+    transition: transform 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+/* Scaled and increased height on hover */
+.scale-105 {
+    transform: scale(1.05);
+}
+
+/* .h-[350px] {
+    height: 350px;
+}
+
+.h-[400px] {
+    height: 400px;
+} */
