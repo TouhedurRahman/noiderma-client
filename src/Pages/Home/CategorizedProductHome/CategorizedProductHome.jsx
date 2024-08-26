@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
 import { Link } from 'react-router-dom';
@@ -61,8 +62,9 @@ const CategorizedProductHome = () => {
                         : (
                             <div className='relative z-10 categorized-swiper'>
                                 <Swiper
-                                    spaceBetween={10}
+                                    spaceBetween={5}
                                     pagination={{ clickable: true }}
+                                    scrollbar={{ draggable: true, el: '.custom-scrollbar' }}
                                     onSwiper={setSwiper}
                                     breakpoints={{
                                         640: { slidesPerView: 1, spaceBetween: 20 },
@@ -74,7 +76,7 @@ const CategorizedProductHome = () => {
                                         filteredProducts.map(product => (
                                             <SwiperSlide
                                                 key={product._id}
-                                                className={`relative py-10 px-4 transition-transform duration-300 ease-in-out ${hoveredProduct && hoveredProduct !== product._id ? 'filter blur-sm' : ''}`}
+                                                className={`relative py-10 px-2 transition-transform duration-300 ease-in-out ${hoveredProduct && hoveredProduct !== product._id ? 'filter blur-sm' : ''}`}
                                                 onMouseEnter={() => setHoveredProduct(product._id)}
                                                 onMouseLeave={() => setHoveredProduct(null)}
                                             >
@@ -118,6 +120,8 @@ const CategorizedProductHome = () => {
                                         </SwiperSlide>
                                     )}
                                 </Swiper>
+                                {/* Custom Scrollbar */}
+                                <div className="custom-scrollbar swiper-scrollbar"></div>
                             </div>
                         )
                 }
