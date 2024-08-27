@@ -7,7 +7,7 @@ import BuyNow from '../../Pages/Home/BuyNow/BuyNow';
 const Main = () => {
     return (
         <div>
-            <NavTop />
+            {/* <NavTop /> */}
             <Navbar />
             <Outlet />
             <Footer />

@@ -4,6 +4,7 @@ import { FaBars, FaTimes, FaChevronDown, FaSearch } from 'react-icons/fa';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [activeSubMenu, setActiveSubMenu] = useState(null);
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -13,14 +14,18 @@ const Navbar = () => {
         setActiveSubMenu(activeSubMenu === index ? null : index);
     };
 
+    const toggleSearch = () => {
+        setIsSearchOpen(!isSearchOpen);
+    };
+
     const menuItems = [
         { name: 'PRODUCTS', subOptions: ['Product 1', 'Product 2'] },
-        { name: 'CONTACT US', subOptions: [] }
+        { name: 'CONTACT US', subOptions: [] },
+        { name: 'FIND A STORE', subOptions: [] }
     ];
 
     return (
-        <nav className='w-full bg-[#FFFFFF] text-[#014B88] font-bold shadow-lg z-50'>
-            {/* <nav className='fixed w-full bg-[#FFFFFF] text-[#014B88] shadow-lg z-50'> */}
+        <nav className='w-full bg-[#FFFFFF] text-black font-bold shadow-lg z-50'>
             <div className='w-[93%] lg:w-[85%] mx-auto flex justify-between items-center py-4'>
                 {/* Logo */}
                 <div className='text-2xl font-bold flex justify-center items-center'>
@@ -29,13 +34,10 @@ const Navbar = () => {
                         alt="Loading..."
                         className='w-[150px] lg:w-[180px] h-[40px]'
                     />
-                    {/* <a href="/" className='cursor-pointer'>
-                        NOIDERMA
-                    </a> */}
                 </div>
 
                 {/* Menu Items */}
-                <ul className='hidden md:flex space-x-8'>
+                <ul className='hidden md:flex space-x-4 ml-auto'>
                     {menuItems.map((item, index) => (
                         <li key={index} className='relative group'>
                             <a
@@ -50,7 +52,7 @@ const Navbar = () => {
                                         <li key={subIndex}>
                                             <a
                                                 href={`/${item.name.toLowerCase().replace(' ', '-')}/${subOption.toLowerCase().replace(' ', '-')}`}
-                                                className='block  px-4 py-2 hover:bg-[#014B88] hover:text-[#FFFFFF] transition duration-300'
+                                                className='block px-4 py-2 hover:bg-[#014B88] hover:text-[#FFFFFF] transition duration-300'
                                             >
                                                 {subOption}
                                             </a>
@@ -62,15 +64,27 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                {/* Search Bar */}
-                <div className='hidden md:flex items-center'>
-                    <div className="relative">
+                {/* Search Icon and Input */}
+                <div className='relative flex items-center ml-4'>
+                    <div className="flex items-center transition-all duration-500 ease-in-out">
+                        <button
+                            onClick={toggleSearch}
+                            className={`text-xl transition-opacity duration-300 ${isSearchOpen ? 'opacity-0' : 'opacity-100'}`}
+                            style={{ pointerEvents: isSearchOpen ? 'none' : 'auto' }}
+                        >
+                            <FaSearch />
+                        </button>
                         <input
                             type="text"
                             placeholder="Search..."
-                            className=" border-2 border-gray-400 text-[#014B88] px-4 py-2 rounded-lg focus:outline-[#BDE14C]"
+                            className={`border-2 border-gray-400 text-black px-4 py-2 rounded-lg focus:outline-none ml-2 transition-all duration-500 ease-in-out ${isSearchOpen ? 'w-[150px] opacity-100' : 'w-0 opacity-0'} focus:shadow-lg shadow-gray-900`}
+                            style={{ visibility: isSearchOpen ? 'visible' : 'hidden' }}
                         />
-                        <FaSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#014B88]" />
+                        {isSearchOpen && (
+                            <button onClick={toggleSearch} className='text-xl ml-2 transition-opacity duration-300'>
+                                <FaTimes />
+                            </button>
+                        )}
                     </div>
                 </div>
 
