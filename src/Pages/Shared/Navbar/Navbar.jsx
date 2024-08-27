@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes, FaChevronDown, FaSearch } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [activeSubMenu, setActiveSubMenu] = useState(null);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -25,13 +38,21 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className='w-full bg-[#FFFFFF] text-black font-bold shadow-lg z-50'>
+        <nav
+            className={`w-full fixed top-0 left-0 right-0 font-bold transition-colors duration-300 z-50 ${isScrolled || isHovered ? 'bg-white text-black shadow-lg' : 'bg-transparent text-white'}`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
             <div className='w-[93%] lg:w-[85%] mx-auto flex justify-between items-center py-4'>
                 {/* Logo */}
                 <div className='text-2xl font-bold flex justify-center items-center'>
                     <img
-                        src="https://i.ibb.co/Zm5bGzp/noiderma-black-logo.png"
-                        alt="Loading..."
+                        src={
+                            isScrolled || isHovered
+                                ? "https://i.ibb.co/Zm5bGzp/noiderma-black-logo.png"
+                                : "https://i.ibb.co/8Nmk5NC/noiderma-white-logo.png"
+                        }
+                        alt="Logo"
                         className='w-[150px] lg:w-[180px] h-[40px]'
                     />
                 </div>
