@@ -62,7 +62,7 @@ const CategorizedProductHome = () => {
                         : (
                             <div className='relative z-10 categorized-swiper'>
                                 <Swiper
-                                    spaceBetween={5}
+                                    spaceBetween={2}
                                     pagination={{ clickable: true }}
                                     scrollbar={{ draggable: true, el: '.custom-scrollbar' }}
                                     onSwiper={setSwiper}
