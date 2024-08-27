@@ -80,7 +80,7 @@ const CategorizedProductHome = () => {
                                                 onMouseEnter={() => setHoveredProduct(product._id)}
                                                 onMouseLeave={() => setHoveredProduct(null)}
                                             >
-                                                <div className={`categorized-product-card ${hoveredProduct === product._id ? 'scale-105' : ''} shadow-lg rounded-lg overflow-hidden`}>
+                                                <div className={`categorized-product-card ${hoveredProduct === product._id ? 'scale-110' : ''} shadow-lg rounded-lg overflow-hidden`}>
                                                     <img
                                                         src={product.image}
                                                         alt={product.name}
