@@ -13,9 +13,11 @@ const Footer = () => {
             <div className='bg-gradient-to-tr from-[#004987] via-[#2F97BA] to-[#004987] text-white pt-10 pb-3'>
                 <div className='w-[93%] lg:w-[85%] mx-auto flex flex-col lg:flex-row justify-between items-center space-y-8 md:space-y-0'>
                     <div className='w-full lg:w-[50%]'>
-                        <p className='text-3xl font-bold'>
-                            NOIDERMA
-                        </p>
+                        <img
+                            src="https://i.ibb.co/Zm5bGzp/noiderma-black-logo.png"
+                            alt="Loading..."
+                            className='w-[150px] lg:w-[180px] h-[40px]'
+                        />
                         <p className='lg:pr-36 text-justify'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minus non praesentium rerum soluta facilis tenetur labore perspiciatis, earum nostrum!
                         </p>
