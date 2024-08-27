@@ -81,11 +81,13 @@ const CategorizedProductHome = () => {
                                                 onMouseLeave={() => setHoveredProduct(null)}
                                             >
                                                 <div className={`categorized-product-card ${hoveredProduct === product._id ? 'scale-110' : ''} shadow-lg rounded-lg overflow-hidden`}>
-                                                    <img
-                                                        src={product.image}
-                                                        alt={product.name}
-                                                        className='rounded-t-lg'
-                                                    />
+                                                    <div className='h-64'>
+                                                        <img
+                                                            src={product.image}
+                                                            alt={product.name}
+                                                            className='h-full w-full rounded-t-lg'
+                                                        />
+                                                    </div>
                                                     <div className='content'>
                                                         <p className='text-sm text-[#0049A5] mb-2'>
                                                             {product.name}
