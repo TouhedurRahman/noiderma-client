@@ -1,20 +1,19 @@
 import React from 'react';
+import './WhyNoiderma.css';
 
 const WhyNoiderma = () => {
     return (
-        <div
-            className="hero mt-20"
-            style={{
-                backgroundImage: "url(https://i.ibb.co/dLWcjFG/why-Noi-Derma.jpg)",
-            }}>
+        <div className="parallax-hero mt-20">
             <div className="hero-overlay bg-opacity-70"></div>
             <div className="hero-content text-white text-center py-20">
                 <div className="max-w-md">
-                    <h1 className="mb-5 text-5xl">Why <span className='font-bold'>NoiDerma</span>?</h1>
+                    <h1 className="mb-5 text-5xl">
+                        Why <span className='font-bold'>NoiDerma</span>?
+                    </h1>
                     <p className="py-5">
                         With an aim in mind to improve skin whitening and hydration as naturally as possible, our range of customized skincare formulations contains only the most necessary ingredients, completely free of parabens, artificial fragrances and animal testing.
                     </p>
-                    <div className='flex justify-center items-center'>
+                    <div className='flex justify-center items-center space-x-4'>
                         <img
                             src="https://i.ibb.co/YQM3gvZ/Vegan-Friendly.png"
                             alt="Vegan Friendly"
@@ -44,7 +43,6 @@ const WhyNoiderma = () => {
                             alt="Artificial Colourant Free"
                             className='h-36 w-36'
                         />
-
                     </div>
                 </div>
             </div>

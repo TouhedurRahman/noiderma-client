@@ -1,0 +1,47 @@
+/* WhyNoiderma.css */
+
+.parallax-hero {
+    background-image: url('https://i.ibb.co/dLWcjFG/why-Noi-Derma.jpg');
+    background-attachment: fixed;
+    /* This creates the parallax effect */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 80vh;
+    /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Dark overlay to enhance text visibility */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.flex {
+    gap: 1rem;
+    /* Add spacing between images */
+}
+
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+    /* Slight zoom on hover for added effect */
+}
