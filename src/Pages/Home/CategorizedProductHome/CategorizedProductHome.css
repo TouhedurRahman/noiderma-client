@@ -1,3 +1,20 @@
+.category-button {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    /* color: #004987; */
+}
+
+.category-button.selected {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* color: #0049A5; */
+    transform: scale(1.1);
+}
+
 .categorized-swiper {
     width: 100%;
     overflow: hidden;

@@ -10,7 +10,6 @@ import useProducts from '../../../Hooks/useProducts';
 import './CategorizedProductHome.css';
 
 const CategorizedProductHome = () => {
-    const [swiper, setSwiper] = useState(null);
     const [selectedCategory, setSelectedCategory] = useState('all');
     const [hoveredProduct, setHoveredProduct] = useState(null);
 
@@ -38,7 +37,7 @@ const CategorizedProductHome = () => {
                     <li>
                         <button
                             onClick={() => setSelectedCategory('all')}
-                            className={`w-full p-2 text-left ${selectedCategory === 'all' && 'font-bold'}`}
+                            className={`category-button ${selectedCategory === 'all' ? 'selected' : ''}`}
                         >
                             {formatCategoryName('all')}
                         </button>
@@ -47,7 +46,7 @@ const CategorizedProductHome = () => {
                         <li key={category}>
                             <button
                                 onClick={() => setSelectedCategory(category)}
-                                className={`w-full p-2 text-left text-xl ${selectedCategory === category && 'font-bold text-2xl'}`}
+                                className={`category-button ${selectedCategory === category ? 'selected' : ''}`}
                             >
                                 {formatCategoryName(category)}
                             </button>
@@ -65,7 +64,6 @@ const CategorizedProductHome = () => {
                                     spaceBetween={2}
                                     pagination={{ clickable: true }}
                                     scrollbar={{ draggable: true, el: '.custom-scrollbar' }}
-                                    onSwiper={setSwiper}
                                     breakpoints={{
                                         640: { slidesPerView: 1, spaceBetween: 20 },
                                         768: { slidesPerView: filteredProducts.length > 1 ? 2 : 1, spaceBetween: 20 },
@@ -107,7 +105,7 @@ const CategorizedProductHome = () => {
                                                             </p>
                                                         </div>
                                                         <Link to={product.link || '/'}
-                                                            className="w-full btn px-10 bg-gradient-to-r from-[#004987] to-[#2F97BA] text-white rounded-full hover:from-[#38A6C4] hover:to-[#38A6C4]"
+                                                            className="w-full h-full"
                                                             style={{ letterSpacing: "0.1em" }}
                                                         >
                                                             BUY NOW
