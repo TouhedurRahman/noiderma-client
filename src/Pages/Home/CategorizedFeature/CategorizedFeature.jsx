@@ -33,7 +33,7 @@ const CategorizedFeature = () => {
     ]
 
     return (
-        <div className='w-[93%] md:w-[85%] mx-auto'>
+        <div className='w-[93%] md:w-[85%] mx-auto pt-20'>
             <div>
                 {
                     contents.map(content => (

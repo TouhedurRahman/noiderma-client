@@ -1,6 +1,7 @@
 import Banner from "../Banner/Banner";
 import CategorizedFeature from "../CategorizedFeature/CategorizedFeature";
 import CategorizedProductHome from "../CategorizedProductHome/CategorizedProductHome";
+import ContactHome from "../ContactHome/ContactHome";
 import DermaRecommended from "../DermaRecommended/DermaRecommended";
 import DiscoverHome from "../DiscoverHome/DiscoverHome";
 import DoctorsRecommended from "../DoctorsRecommended/DoctorsRecommended";
@@ -22,6 +23,7 @@ const Home = () => {
             <SignFaq />
             <ProductFeatureHome />
             <ProductsHome />
+            <ContactHome />
         </div>
     );
 };

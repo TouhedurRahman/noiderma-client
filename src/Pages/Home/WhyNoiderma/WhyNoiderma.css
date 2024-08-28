@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-.hero-overlay {
+.parallax-hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,21 +27,21 @@
     /* Dark overlay to enhance text visibility */
 }
 
-.hero-content {
+.hero-content-parallax {
     position: relative;
     z-index: 1;
 }
 
-.flex {
+.parallax-images {
     gap: 1rem;
     /* Add spacing between images */
 }
 
-img {
+.parallax-icon {
     transition: transform 0.3s ease-in-out;
 }
 
-img:hover {
+.parallax-icon:hover {
     transform: scale(1.1);
     /* Slight zoom on hover for added effect */
 }
