@@ -87,8 +87,11 @@ const CategorizedProductHome = () => {
                                                         />
                                                     </div>
                                                     <div className='content'>
-                                                        <p className='text-sm text-[#0049A5] mb-2'>
+                                                        <p className='text-xl text-[#0049A5] mb-2'>
                                                             {product.name}
+                                                        </p>
+                                                        <p className='text-sm text-[#0049A5] mb-2'>
+                                                            ৳ 200/-
                                                         </p>
                                                         <p className='text-xs text-gray-600 mb-4'>
                                                             {product.description}
@@ -104,6 +107,8 @@ const CategorizedProductHome = () => {
                                                                 {product.rating} ({product.rater})
                                                             </p>
                                                         </div>
+                                                    </div>
+                                                    <div className='bg-black text-white text-center py-2'>
                                                         <Link to={product.link || '/'}
                                                             className="w-full h-full"
                                                             style={{ letterSpacing: "0.1em" }}
