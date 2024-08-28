@@ -39,7 +39,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`w-full fixed top-0 left-0 right-0 font-bold transition-colors duration-300 z-50 ${isScrolled || isHovered ? 'bg-white text-black shadow-lg' : 'bg-transparent text-white'}`}
+            className={`w-full fixed top-0 left-0 right-0 font-bold transition-colors duration-300 z-50 ${isScrolled || isHovered ? 'bg-gradient-to-tr from-[#f5f5f5] to-[#e0e0e0] text-black shadow-lg' : 'bg-transparent text-white'}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
