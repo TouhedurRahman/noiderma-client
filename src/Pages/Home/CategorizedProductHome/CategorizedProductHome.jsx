@@ -32,7 +32,7 @@ const CategorizedProductHome = () => {
     return (
         <div className='relative pt-20 flex lg:w-[85%] mx-auto'>
             <div className='w-1/4'>
-                <h2 className='text-lg font-bold mb-4'>Categories</h2>
+                <h2 className='text-lg font-bold mt-10 mb-4'>Categories</h2>
                 <ul className='space-y-2'>
                     <li>
                         <button
