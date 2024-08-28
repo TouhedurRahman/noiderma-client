@@ -7,6 +7,7 @@ import DoctorsRecommended from "../DoctorsRecommended/DoctorsRecommended";
 import ProductFeatureHome from "../ProductFeatureHome/ProductFeatureHome";
 import ProductsHome from "../ProductsHome/ProductsHome";
 import SignFaq from "../SignFaq/SignFaq";
+import WhyNoiderma from "../WhyNoiderma/WhyNoiderma";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Banner />
             < DiscoverHome />
             <CategorizedProductHome />
+            <WhyNoiderma />
             <CategorizedFeature />
             <DermaRecommended />
             <DoctorsRecommended />
