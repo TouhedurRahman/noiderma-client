@@ -19,18 +19,18 @@ const ProductFeatureHome = () => {
         <div>
             <div className='mt-20'>
                 <div className='relative flex items-center'>
-                    <div className='bg-[#F1F9FC] w-[75%] rounded-r-[25px] p-40 ps-20 space-y-10 z-10'>
+                    <div className='bg-gradient-to-tr from-[#f5f5f5] to-[#e0e0e0] w-[75%] rounded-r-[25px] p-40 ps-20 space-y-10 z-10'>
                         <p
-                            className='text-[#004987] text-4xl font-bold pr-36'
+                            className='text-black text-4xl font-bold pr-36'
                             style={{ letterSpacing: '0.2em' }}
                         >
                             HEALING OINTMENT FOR DRY, CRACKED SKIN
                         </p>
-                        <p className='text-[#004987] pr-48'>
+                        <p className='text-black pr-48'>
                             Noiderma Healing Ointment is specially formulated with a high concentration of the active ingredient, petrolatum, to quickly protect and heal dry, irritated, sensitive skin.
                         </p>
                         <Link
-                            className="btn py-3 px-10 bg-white hover:bg-[#38A6C4] border-2 border-[#004987] text-[#004987] hover:text-white rounded-full"
+                            className="btn py-3 px-10 bg-white hover:bg-[#38A6C4] border-2 border-[#004987] text-black hover:text-white rounded-full"
                             style={{ letterSpacing: "0.1em" }}
                         >
                             MORE ON DRY SCREEN

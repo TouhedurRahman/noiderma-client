@@ -5,9 +5,9 @@ const DermaRecommended = () => {
     return (
         <div className='mt-20'>
             <div className='relative flex items-center'>
-                <div className='bg-[#F1F9FC] w-[75%] rounded-r-[25px] p-40 ps-20 space-y-10 z-10'>
+                <div className='bg-gradient-to-tr from-[#f5f5f5] to-[#e0e0e0] w-[75%] rounded-r-[25px] p-40 ps-20 space-y-10 z-10'>
                     <p
-                        className='text-[#004987] text-4xl font-bold'
+                        className='text-black text-4xl font-bold'
                         style={{ letterSpacing: '0.2em' }}
                     >
                         DERMATOLOGIST<br />RECOMMENDED
@@ -16,7 +16,7 @@ const DermaRecommended = () => {
                         Noiderma is a dermatologist recommended sensitive skincare brand. Choose the <br /> skin expert’s choice for your sensitive skin.
                     </p>
                     <Link
-                        className="btn py-3 px-10 bg-white hover:bg-[#38A6C4] border-2 border-[#004987] text-[#004987] hover:text-white rounded-full"
+                        className="btn py-3 px-10 bg-white hover:bg-[#38A6C4] border-2 border-[#004987] text-black hover:text-white rounded-full"
                         style={{ letterSpacing: "0.1em" }}
                     >
                         FIND OUT MORE

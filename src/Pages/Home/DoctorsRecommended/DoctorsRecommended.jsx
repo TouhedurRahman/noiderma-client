@@ -3,15 +3,12 @@ import React from 'react';
 const DoctorsRecommended = () => {
     return (
         <div className='pt-20'>
-            <p className='text-2xl text-center text-[#004987] font-semibold' style={{ letterSpacing: '0.2em' }} >
+            <p className='text-2xl text-center text-black font-semibold' style={{ letterSpacing: '0.2em' }} >
                 RECOMMENDED BY DOCTORS, LOVED BY SKIN
             </p>
             <div className='pt-64'>
                 <section
-                    className='lg:mt-32 h-48 rounded'
-                    style={{
-                        background: '#F1F9FC'
-                    }}
+                    className='lg:mt-32 h-48 bg-gradient-to-tr from-[#f5f5f5] to-[#e0e0e0] rounded'
                 >
                     <div className="hero">
                         <div className="hero-content flex-col lg:flex-row">
