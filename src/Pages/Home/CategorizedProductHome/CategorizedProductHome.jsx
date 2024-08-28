@@ -47,7 +47,7 @@ const CategorizedProductHome = () => {
                         <li key={category}>
                             <button
                                 onClick={() => setSelectedCategory(category)}
-                                className={`w-full p-2 text-left ${selectedCategory === category && 'font-bold'}`}
+                                className={`w-full p-2 text-left text-xl ${selectedCategory === category && 'font-bold text-2xl'}`}
                             >
                                 {formatCategoryName(category)}
                             </button>
