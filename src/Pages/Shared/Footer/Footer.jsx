@@ -9,7 +9,7 @@ const Footer = () => {
 
     return (
         <div>
-            <div className='bg-gradient-to-tr from-[#f5f5f5] to-[#e0e0e0] text-black pt-10 pb-3'>
+            <div className='bg-gradient-to-tr from-[#f5f5f5] to-[#e0e0e0] text-black pt-20 pb-3'>
                 <div className='w-[93%] lg:w-[85%] mx-auto flex flex-col lg:flex-row justify-between items-center space-y-8 md:space-y-0'>
                     <div className='w-full lg:w-[50%]'>
                         <img
@@ -53,7 +53,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <hr className='border-b border-gray-400 w-[85%] mx-auto mt-10' />
+                <hr className='border-b border-gray-400 w-[85%] mx-auto mt-20' />
                 <p className='text-sm text-center mt-3'><small>Copyright © {year} by Navantis Pharma Ltd.</small></p>
             </div>
         </div>

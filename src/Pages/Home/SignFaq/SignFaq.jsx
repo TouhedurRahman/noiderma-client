@@ -32,7 +32,15 @@ const SignFaq = () => {
     };
 
     return (
-        <div className='flex flex-col md:flex-row justify-center py-10 items-center bg-gradient-to-r from-[#004987] to-[#2F97BA] text-white'>
+        <div
+            className='flex flex-col md:flex-row justify-center py-10 items-center text-white'
+            style={{
+                backgroundImage: 'url(https://i.ibb.co/Q6wY0gC/sign-Faq-bg.jpg)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+            }}
+        >
             <div className='w-full md:w-1/2 flex flex-col justify-center items-center space-y-10'>
                 <img src="https://via.placeholder.com/150?text=Signs"
                     alt=""

@@ -30,7 +30,7 @@ const ProductFeatureHome = () => {
                             Noiderma Healing Ointment is specially formulated with a high concentration of the active ingredient, petrolatum, to quickly protect and heal dry, irritated, sensitive skin.
                         </p>
                         <Link
-                            className="btn py-3 px-10 bg-white hover:bg-[#38A6C4] border-2 border-[#004987] text-black hover:text-white rounded-full"
+                            className="btn py-3 px-10 bg-white hover:bg-black border-2 border-[black] text-black hover:text-white rounded-full"
                             style={{ letterSpacing: "0.1em" }}
                         >
                             MORE ON DRY SCREEN

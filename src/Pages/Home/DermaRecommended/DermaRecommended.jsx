@@ -16,7 +16,7 @@ const DermaRecommended = () => {
                         Noiderma is a dermatologist recommended sensitive skincare brand. Choose the <br /> skin expert’s choice for your sensitive skin.
                     </p>
                     <Link
-                        className="btn py-3 px-10 bg-white hover:bg-[#38A6C4] border-2 border-[#004987] text-black hover:text-white rounded-full"
+                        className="btn py-3 px-10 bg-white hover:bg-[black] border-2 border-[black] text-black hover:text-white rounded-full"
                         style={{ letterSpacing: "0.1em" }}
                     >
                         FIND OUT MORE

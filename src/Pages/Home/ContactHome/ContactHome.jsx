@@ -18,7 +18,7 @@ const ContactHome = () => {
                     <div className='pt-5'>
                         <Link
                             to=""
-                            className="bg-black text-white font-bold px-24 py-3 rounded-lg"
+                            className="btn border border-black bg-black hover:bg-white text-white hover:text-black  font-bold px-24 py-3 rounded-lg"
                         >
                             Contact Us
                         </Link>
