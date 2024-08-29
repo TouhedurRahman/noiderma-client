@@ -27,8 +27,8 @@ const BuyNow = () => {
             <Link
                 to={'/'}
                 ref={buttonRef}
-                className={`btn my-2 px-10 pt-5 pb-10 text-white rounded-t-lg rounded-b-none transition-all duration-50 ${isClicked ? 'border-4 border-[#BDE14C]' : 'border border-transparent'
-                    } bg-gradient-to-r from-[#2F97BA] to-[#004987] font-bold`}
+                className={`btn my-2 px-10 pt-5 pb-10 text-white rounded-t-lg rounded-b-none transition-all duration-50 ${isClicked ? 'border-2 border-gray-400' : 'border border-transparent'
+                    } bg-gradient-to-r from-black via-gray-500 to-black font-bold`}
                 onClick={handleClick}
                 style={{ letterSpacing: "0.1em" }}
             >
