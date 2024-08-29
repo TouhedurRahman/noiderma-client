@@ -87,10 +87,10 @@ const CategorizedProductHome = () => {
                                                         />
                                                     </div>
                                                     <div className='content flex flex-col justify-center items-center'>
-                                                        <p className='text-xl text-[#0049A5] mb-10'>
+                                                        <p className='font-bold mb-10'>
                                                             {product.name}
                                                         </p>
-                                                        <p className='text-sm text-[#0049A5]'>
+                                                        <p className='text-sm font-bold'>
                                                             ৳ 200/-
                                                         </p>
                                                         <div className="flex justify-center items-center space-x-3">

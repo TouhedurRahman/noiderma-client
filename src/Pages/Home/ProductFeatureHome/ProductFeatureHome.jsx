@@ -40,7 +40,7 @@ const ProductFeatureHome = () => {
                         <img
                             src="https://via.placeholder.com/150?text=Dermatologist+Recommended"
                             alt="Recommended"
-                            className='w-[600px] h-[350px] rounded-lg'
+                            className='w-[600px] h-[350px] rounded-[25px]'
                         />
                     </div>
                 </div>
