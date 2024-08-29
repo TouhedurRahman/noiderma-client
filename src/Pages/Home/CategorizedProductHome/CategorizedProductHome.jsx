@@ -86,19 +86,16 @@ const CategorizedProductHome = () => {
                                                             className='h-full w-full rounded-t-lg'
                                                         />
                                                     </div>
-                                                    <div className='content'>
-                                                        <p className='text-xl text-[#0049A5] mb-2'>
+                                                    <div className='content flex flex-col justify-center items-center'>
+                                                        <p className='text-xl text-[#0049A5] mb-10'>
                                                             {product.name}
                                                         </p>
-                                                        <p className='text-sm text-[#0049A5] mb-2'>
+                                                        <p className='text-sm text-[#0049A5]'>
                                                             ৳ 200/-
                                                         </p>
-                                                        <p className='text-xs text-gray-600 mb-4'>
-                                                            {product.description}
-                                                        </p>
-                                                        <div className="flex items-center space-x-3 mb-4">
+                                                        <div className="flex justify-center items-center space-x-3">
                                                             <Rating
-                                                                style={{ maxWidth: 180 }}
+                                                                style={{ maxWidth: 80 }} // Adjusts star size
                                                                 value={product.rating}
                                                                 readOnly
                                                                 className="flex"
