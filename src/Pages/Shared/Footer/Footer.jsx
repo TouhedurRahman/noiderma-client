@@ -22,7 +22,7 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className='flex justify-between items-center w-full lg:w-[30%]'>
-                        <div className='w-full lg:w-1/2'>
+                        {/* <div className='w-full lg:w-1/2'>
                             <p className='text-xl font-bold'>
                                 Office
                             </p>
@@ -31,7 +31,7 @@ const Footer = () => {
                                 Birulia Road, Savar, <br />
                                 Dhaka-1340, Bangladesh.
                             </p>
-                        </div>
+                        </div> */}
                         <div className='w-full lg:w-1/2 pl-10'>
                             <p className='text-xl font-bold'>
                                 Quick Links

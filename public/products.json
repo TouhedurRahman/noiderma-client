@@ -6,6 +6,19 @@
         "category": "moisturizer",
         "rating": 4.3,
         "rater": 55,
+        "pharmacy": [
+            {
+                "_id": 1,
+                "pharmacyName": "Lazz pharma",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s"
+            },
+            {
+                "_id": 2,
+                "pharmacyName": "Arogga",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s"
+            }
+
+        ],
         "link": ""
     },
     {
@@ -15,6 +28,13 @@
         "category": "face",
         "rating": 4.3,
         "rater": 55,
+        "pharmacy": [
+            {
+                "_id": 1,
+                "pharmacyName": "Lazz pharma",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s"
+            }
+        ],
         "link": ""
     },
     {
@@ -24,6 +44,19 @@
         "category": "body",
         "rating": 4.3,
         "rater": 55,
+        "pharmacy": [
+            {
+                "_id": 1,
+                "pharmacyName": "Lazz pharma",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s"
+            },
+            {
+                "_id": 2,
+                "pharmacyName": "Arogga",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s"
+            }
+
+        ],
         "link": ""
     },
     {
@@ -33,6 +66,13 @@
         "category": "body",
         "rating": 4.3,
         "rater": 55,
+        "pharmacy": [
+            {
+                "_id": 1,
+                "pharmacyName": "Lazz pharma",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s"
+            }
+        ],
         "link": ""
     },
     {
@@ -42,6 +82,19 @@
         "category": "baby-skincare",
         "rating": 4.3,
         "rater": 55,
+        "pharmacy": [
+            {
+                "_id": 1,
+                "pharmacyName": "Lazz pharma",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s"
+            },
+            {
+                "_id": 2,
+                "pharmacyName": "Arogga",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s"
+            }
+
+        ],
         "link": ""
     },
     {
@@ -51,6 +104,13 @@
         "category": "sunscreens",
         "rating": 4.3,
         "rater": 55,
+        "pharmacy": [
+            {
+                "_id": 1,
+                "pharmacyName": "Lazz pharma",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s"
+            }
+        ],
         "link": ""
     },
     {
@@ -60,6 +120,19 @@
         "category": "sunscreens",
         "rating": 4.3,
         "rater": 55,
+        "pharmacy": [
+            {
+                "_id": 1,
+                "pharmacyName": "Lazz pharma",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s"
+            },
+            {
+                "_id": 2,
+                "pharmacyName": "Arogga",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s"
+            }
+
+        ],
         "link": ""
     }
 ]
