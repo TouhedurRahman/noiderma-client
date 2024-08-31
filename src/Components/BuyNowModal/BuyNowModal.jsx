@@ -16,8 +16,8 @@ const BuyNowModal = ({ show, onClose, products }) => {
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-                <div className='flex justify-items-end items-center'>
-                    <h2 className="text-xl font-bold mb-4">Select Product</h2>
+                <div className='flex justify-end items-center space-x-4'>
+                    <h2 className="mb-4">SELECT PRODUCT</h2>
                     <select
                         className="mb-4 p-2 border rounded"
                         value={selectedProduct._id}
@@ -31,23 +31,24 @@ const BuyNowModal = ({ show, onClose, products }) => {
                     </select>
                 </div>
                 <div >
-                    <div className='flex justify-between items-start'>
+                    <div className='flex justify-between items-start space-x-4'>
                         <div>
                             <img src={selectedProduct.image} alt={selectedProduct.name} className="mb-4" />
-                            <p>Category: {selectedProduct.category}</p>
-                            <p>Rating: {selectedProduct.rating} ({selectedProduct.rater} ratings)</p>
-                            <p>Pharmacies:</p>
+                            <p>{selectedProduct.name}</p>
                         </div>
                         <div className="overflow-x-auto">
-                            <table className="min-w-full bg-white border border-gray-200">
-                                <thead>
+                            <table className="min-w-full bg-white border-b-2 border-gray-200">
+                                <p>
+                                    Available at
+                                </p>
+                                {/* <thead>
                                     <tr>
                                         <th className="px-4 py-2 border-b">Logo</th>
                                         <th className="px-4 py-2 border-b">Pharmacy Name</th>
                                         <th className="px-4 py-2 border-b">Stock Status</th>
                                         <th className="px-4 py-2 border-b">Action</th>
                                     </tr>
-                                </thead>
+                                </thead> */}
                                 <tbody>
                                     {selectedProduct.pharmacy.map(pharmacy => (
                                         <tr key={pharmacy._id}>
