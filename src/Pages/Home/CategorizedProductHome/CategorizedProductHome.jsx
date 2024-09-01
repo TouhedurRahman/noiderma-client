@@ -31,7 +31,7 @@ const CategorizedProductHome = () => {
 
     return (
         <div className='relative pt-20 flex lg:w-[85%] mx-auto'>
-            <div className='w-1/4'>
+            <div className='w-1/4 hidden md:block'>
                 <h2 className='text-lg font-bold mt-10 mb-4'>Categories</h2>
                 <ul className='space-y-2'>
                     <li>
@@ -54,7 +54,7 @@ const CategorizedProductHome = () => {
                     ))}
                 </ul>
             </div>
-            <div className='w-3/4 relative'>
+            <div className='w-full md:w-3/4 relative'>
                 {
                     loading
                         ? <p>Loading...</p>
