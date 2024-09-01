@@ -32,7 +32,7 @@ const BuyNowModal = ({ show, onClose, products }) => {
                 </div>
                 <div >
                     <div className='flex justify-between items-start space-x-4'>
-                        <div>
+                        <div className='flex flex-col justify-start items-center'>
                             <img src={selectedProduct.image} alt={selectedProduct.name} className="mb-4" />
                             <p>{selectedProduct.name}</p>
                         </div>
@@ -59,17 +59,17 @@ const BuyNowModal = ({ show, onClose, products }) => {
                                                 {pharmacy.pharmacyName}
                                             </td>
                                             <td className="px-4 py-2 border-b">
-                                                {pharmacy.inStock ? (
-                                                    <span className="text-green-500">In Stock</span>
+                                                {pharmacy.stock ? (
+                                                    <span className="text-green-500">✓ In Stock</span>
                                                 ) : (
-                                                    <span className="text-red-500">Out of Stock</span>
+                                                    <span className="text-red-500">✘ Out of Stock</span>
                                                 )}
                                             </td>
                                             <td className="px-4 py-2 border-b">
                                                 <button
-                                                    className={`px-4 py-2 text-white rounded ${pharmacy.inStock ? 'bg-blue-500 hover:bg-blue-600' : 'bg-gray-400 cursor-not-allowed'
+                                                    className={`px-4 py-2 text-white rounded ${pharmacy.stock ? 'border-2 border-black bg-black hover:bg-white text-white hover:text-black' : 'bg-gray-400 cursor-not-allowed'
                                                         }`}
-                                                    disabled={!pharmacy.inStock}
+                                                    disabled={!pharmacy.stock}
                                                 >
                                                     Buy Now
                                                 </button>
