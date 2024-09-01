@@ -41,14 +41,6 @@ const BuyNowModal = ({ show, onClose, products }) => {
                                 <p>
                                     Available at
                                 </p>
-                                {/* <thead>
-                                    <tr>
-                                        <th className="px-4 py-2 border-b">Logo</th>
-                                        <th className="px-4 py-2 border-b">Pharmacy Name</th>
-                                        <th className="px-4 py-2 border-b">Stock Status</th>
-                                        <th className="px-4 py-2 border-b">Action</th>
-                                    </tr>
-                                </thead> */}
                                 <tbody>
                                     {selectedProduct.pharmacy.map(pharmacy => (
                                         <tr key={pharmacy._id}>
@@ -79,16 +71,6 @@ const BuyNowModal = ({ show, onClose, products }) => {
                                 </tbody>
                             </table>
                         </div>
-                        {/* <div>
-                            <ul>
-                                {selectedProduct.pharmacy.map(pharmacy => (
-                                    <li key={pharmacy._id} className="flex items-center mb-2">
-                                        <img src={pharmacy.pharmacyLogo} alt={pharmacy.pharmacyName} className="w-8 h-8 mr-2" />
-                                        {pharmacy.pharmacyName}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div> */}
                     </div>
                 </div>
                 <button
