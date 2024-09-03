@@ -9,7 +9,7 @@
 }
 
 .category-button.selected {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     /* color: #0049A5; */
     transform: scale(1.1);
