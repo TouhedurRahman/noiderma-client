@@ -8,25 +8,35 @@ import '@smastrom/react-rating/style.css';
 import { Link } from 'react-router-dom';
 import useProducts from '../../../Hooks/useProducts';
 import './CategorizedProductHome.css';
+import BuyNowSingleProductModal from '../../../Components/BuyNowSingleProductModal/BuyNowSingleProductModal';
 
 const CategorizedProductHome = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
     const [hoveredProduct, setHoveredProduct] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
     const [products, loading] = useProducts();
 
-    // Get unique categories from products
     const categories = Array.from(new Set(products.map(product => product.category)));
 
-    // Filter products based on selected category
     const filteredProducts = selectedCategory === 'all'
         ? products
         : products.filter(product => product.category === selectedCategory);
 
-    // Format category names for display
     const formatCategoryName = (category) => {
         const formatted = category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
         return selectedCategory === category ? `_ ${formatted}` : formatted;
+    };
+
+    const handleBuy = (product) => {
+        setSelectedProduct(product);
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+        setSelectedProduct(null);
     };
 
     return (
@@ -95,7 +105,7 @@ const CategorizedProductHome = () => {
                                                         </p>
                                                         <div className="flex justify-center items-center space-x-3">
                                                             <Rating
-                                                                style={{ maxWidth: 80 }} // Adjusts star size
+                                                                style={{ maxWidth: 80 }}
                                                                 value={product.rating}
                                                                 readOnly
                                                                 className="flex"
@@ -109,6 +119,7 @@ const CategorizedProductHome = () => {
                                                         <Link to={product.link || '/'}
                                                             className="w-full h-full"
                                                             style={{ letterSpacing: "0.1em" }}
+                                                            onClick={() => handleBuy(product)}
                                                         >
                                                             BUY NOW
                                                         </Link>
@@ -126,6 +137,20 @@ const CategorizedProductHome = () => {
                                 <div className="custom-scrollbar swiper-scrollbar"></div>
                             </div>
                         )
+                }
+            </div>
+            <div>
+                {
+                    loading
+                        ?
+                        "Loading..."
+                        :
+                        <BuyNowSingleProductModal
+                            show={isModalOpen}
+                            onClose={handleCloseModal}
+                            products={products}
+                            selectedProduct={selectedProduct}
+                        />
                 }
             </div>
         </div>
