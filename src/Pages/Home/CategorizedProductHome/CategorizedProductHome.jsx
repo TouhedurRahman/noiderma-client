@@ -115,15 +115,19 @@ const CategorizedProductHome = () => {
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <div className='bg-black text-white text-center py-2'>
-                                                        <Link to={product.link || '/'}
+                                                    {/* <Link to={product.link || '/'}> */}
+                                                    <div
+                                                        className='bg-black text-white text-center py-2 cursor-pointer'
+                                                    >
+                                                        <div
                                                             className="w-full h-full"
                                                             style={{ letterSpacing: "0.1em" }}
                                                             onClick={() => handleBuy(product)}
                                                         >
                                                             BUY NOW
-                                                        </Link>
+                                                        </div>
                                                     </div>
+                                                    {/* </Link> */}
                                                 </div>
                                             </SwiperSlide>
                                         ))
