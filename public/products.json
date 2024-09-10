@@ -96,7 +96,7 @@
         "_id": 4,
         "name": "Soothing Cream",
         "image": "https://via.placeholder.com/150?text=Product",
-        "category": "baby skincare",
+        "category": "baby-skincare",
         "typesDescription": "A gentle, hypoallergenic cream designed to soothe and protect delicate baby skin. Ideal for diaper rash and skin irritation, providing instant relief.",
         "features": "Pediatrician-approved, Hypoallergenic, Fragrance-free, Paraben-free, Safe for daily use, Suitable for newborns and infants.",
         "ingrediants": {
