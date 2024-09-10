@@ -4,6 +4,13 @@
         "name": "Healing Ointment",
         "image": "https://via.placeholder.com/150?text=Product",
         "category": "moisturizer",
+        "typesDescription": "A lightweight, non-greasy ointment designed to lock in moisture and promote healing. Suitable for all skin types, especially dry and sensitive skin.",
+        "features": "Dermatologist tested, Fragrance-free, Non-comedogenic, Hypoallergenic, Ideal for dry skin, Suitable for use on the body and face.",
+        "ingrediants": {
+            "activeIngrediants": "Petrolatum, Mineral oil",
+            "activeIngrediant": "Panthenol",
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+        },        
         "rating": 4.3,
         "rater": 55,
         "pharmacy": [
@@ -11,150 +18,202 @@
                 "_id": 1,
                 "pharmacyName": "Lazz pharma",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
-                "buyNowLink": "",
+                "buyNowLink": "https://lazzpharma.com/healing-ointment",
                 "stock": 1
             },
             {
                 "_id": 2,
                 "pharmacyName": "Arogga",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
-                "buyNowLink": "",
+                "buyNowLink": "https://arogga.com/healing-ointment",
                 "stock": 0
             }
-
-        ],
-        "link": ""
+        ]
     },
     {
         "_id": 2,
-        "name": "Healing Ointment",
+        "name": "Face Cream",
         "image": "https://via.placeholder.com/150?text=Product",
         "category": "face",
-        "rating": 4.3,
-        "rater": 55,
+        "typesDescription": "A daily face cream that intensely hydrates, leaving the skin soft and smooth. Perfect for normal to dry skin and contains anti-aging properties.",
+        "features": "Rich in antioxidants, SPF 15 protection, Paraben-free, Suitable for daily use, Absorbs quickly, Long-lasting hydration.",
+        "ingrediants": {
+            "activeIngrediants": "Hyaluronic Acid, Vitamin E",
+            "activeIngrediant": "Niacinamide",
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+        },        
+        "rating": 4.7,
+        "rater": 112,
         "pharmacy": [
             {
                 "_id": 1,
                 "pharmacyName": "Lazz pharma",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
-                "buyNowLink": "",
+                "buyNowLink": "https://lazzpharma.com/hydrating-face-cream",
+                "stock": 1
+            },
+            {
+                "_id": 2,
+                "pharmacyName": "Arogga",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
+                "buyNowLink": "https://arogga.com/hydrating-face-cream",
                 "stock": 1
             }
-        ],
-        "link": ""
+        ]
     },
     {
         "_id": 3,
-        "name": "Healing Ointment",
+        "name": "Body Lotion",
         "image": "https://via.placeholder.com/150?text=Product",
         "category": "body",
-        "rating": 4.3,
-        "rater": 55,
+        "typesDescription": "A deeply nourishing body lotion designed to repair and protect dry, cracked skin. Contains natural oils and soothing agents for lasting hydration.",
+        "features": "Non-greasy, Absorbs quickly, Fragrance-free, Suitable for sensitive skin, Dermatologist-recommended, Restores moisture balance.",
+        "ingrediants": {
+            "activeIngrediants": "Shea Butter, Coconut Oil",
+            "activeIngrediant": "Aloe Vera",
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+        },        
+        "rating": 4.6,
+        "rater": 80,
         "pharmacy": [
             {
                 "_id": 1,
                 "pharmacyName": "Lazz pharma",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
-                "buyNowLink": "",
+                "buyNowLink": "https://lazzpharma.com/body-repair-lotion",
                 "stock": 0
             },
             {
                 "_id": 2,
                 "pharmacyName": "Arogga",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
-                "buyNowLink": "",
+                "buyNowLink": "https://arogga.com/body-repair-lotion",
                 "stock": 1
             }
-
-        ],
-        "link": ""
+        ]
     },
     {
         "_id": 4,
-        "name": "Healing Ointment",
+        "name": "Soothing Cream",
         "image": "https://via.placeholder.com/150?text=Product",
-        "category": "body",
-        "rating": 4.3,
-        "rater": 55,
+        "category": "baby skincare",
+        "typesDescription": "A gentle, hypoallergenic cream designed to soothe and protect delicate baby skin. Ideal for diaper rash and skin irritation, providing instant relief.",
+        "features": "Pediatrician-approved, Hypoallergenic, Fragrance-free, Paraben-free, Safe for daily use, Suitable for newborns and infants.",
+        "ingrediants": {
+            "activeIngrediants": "Zinc Oxide, Glycerin",
+            "activeIngrediant": "Calendula Extract",
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+        },        
+        "rating": 4.8,
+        "rater": 60,
         "pharmacy": [
             {
                 "_id": 1,
                 "pharmacyName": "Lazz pharma",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
-                "buyNowLink": "",
-                "stock": 0
+                "buyNowLink": "https://lazzpharma.com/baby-soothing-cream",
+                "stock": 1
+            },
+            {
+                "_id": 2,
+                "pharmacyName": "Arogga",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
+                "buyNowLink": "https://arogga.com/baby-soothing-cream",
+                "stock": 1
             }
-        ],
-        "link": ""
+        ]
     },
     {
         "_id": 5,
-        "name": "Healing Ointment",
+        "name": "Sunscreen SPF 50",
         "image": "https://via.placeholder.com/150?text=Product",
-        "category": "baby-skincare",
-        "rating": 4.3,
-        "rater": 55,
+        "category": "sunscreens",
+        "typesDescription": "A broad-spectrum sunscreen with SPF 50 that protects against UVA and UVB rays. Lightweight and non-greasy, it is perfect for daily use.",
+        "features": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
+        "ingrediants": {
+            "activeIngrediants": "Zinc Oxide, Titanium Dioxide",
+            "activeIngrediant": "Vitamin C",
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+        },        
+        "rating": 4.9,
+        "rater": 95,
         "pharmacy": [
             {
                 "_id": 1,
                 "pharmacyName": "Lazz pharma",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
-                "buyNowLink": "",
-                "stock": 0
+                "buyNowLink": "https://lazzpharma.com/advanced-sunscreen-spf50",
+                "stock": 1
             },
             {
                 "_id": 2,
                 "pharmacyName": "Arogga",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
-                "buyNowLink": "",
-                "stock": 1
+                "buyNowLink": "https://arogga.com/advanced-sunscreen-spf50",
+                "stock": 0
             }
-
-        ],
-        "link": ""
+        ]
     },
     {
         "_id": 6,
-        "name": "Healing Ointment",
+        "name": "Moisture Cream",
         "image": "https://via.placeholder.com/150?text=Product",
-        "category": "sunscreens",
-        "rating": 4.3,
-        "rater": 55,
+        "category": "moisturizer",
+        "typesDescription": "A nourishing night cream that deeply hydrates and rejuvenates the skin while you sleep. Ideal for dry and combination skin, promoting a refreshed morning glow.",
+        "features": "Rich in antioxidants, Paraben-free, Fast-absorbing, Rejuvenates the skin overnight, Dermatologist-tested, Non-greasy texture.",
+        "ingrediants": {
+            "activeIngrediants": "Retinol, Hyaluronic Acid",
+            "activeIngrediant": "Vitamin E",
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+        },        
+        "rating": 4.4,
+        "rater": 150,
         "pharmacy": [
             {
                 "_id": 1,
                 "pharmacyName": "Lazz pharma",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
-                "buyNowLink": "",
-                "stock": 1
-            }
-        ],
-        "link": ""
-    },
-    {
-        "_id": 7,
-        "name": "Healing Ointment",
-        "image": "https://via.placeholder.com/150?text=Product",
-        "category": "sunscreens",
-        "rating": 4.3,
-        "rater": 55,
-        "pharmacy": [
-            {
-                "_id": 1,
-                "pharmacyName": "Lazz pharma",
-                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
-                "buyNowLink": "",
+                "buyNowLink": "https://lazzpharma.com/moisture-boost-night-cream",
                 "stock": 1
             },
             {
                 "_id": 2,
                 "pharmacyName": "Arogga",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
-                "buyNowLink": "",
-                "stock": 1
+                "buyNowLink": "https://arogga.com/moisture-boost-night-cream",
+                "stock": 0
             }
-
-        ],
-        "link": ""
+        ]
+    },
+    {
+        "_id": 7,
+        "name": "Body Emultion",
+        "image": "https://via.placeholder.com/150?text=Product",
+        "category": "body",
+        "typesDescription": "A calming body lotion enriched with aloe vera to soothe and hydrate irritated skin. Perfect for post-sun exposure or dry, sensitive skin.",
+        "features": "Aloe-based formula, Fast-absorbing, Suitable for daily use, Paraben-free, Gentle on sensitive skin, Lightweight and non-greasy.",
+        "ingrediants": {
+            "activeIngrediants": "Aloe Vera, Glycerin",
+            "activeIngrediant": "Chamomile Extract",
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+        },        
+        "rating": 4.5,
+        "rater": 45,
+        "pharmacy": [
+            {
+                "_id": 1,
+                "pharmacyName": "Lazz pharma",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
+                "buyNowLink": "https://lazzpharma.com/soothing-aloe-body-lotion",
+                "stock": 1
+            },
+            {
+                "_id": 2,
+                "pharmacyName": "Arogga",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
+                "buyNowLink": "https://arogga.com/soothing-aloe-body-lotion",
+                "stock": 0
+            }
+        ]
     }
 ]
