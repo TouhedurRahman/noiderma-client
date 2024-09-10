@@ -89,32 +89,36 @@ const CategorizedProductHome = () => {
                                                 onMouseLeave={() => setHoveredProduct(null)}
                                             >
                                                 <div className={`categorized-product-card ${hoveredProduct === product._id ? 'scale-110' : ''} shadow-lg rounded-lg overflow-hidden`}>
-                                                    <div className='h-64'>
-                                                        <img
-                                                            src={product.image}
-                                                            alt={product.name}
-                                                            className='h-full w-full rounded-t-lg'
-                                                        />
-                                                    </div>
-                                                    <div className='content flex flex-col justify-center items-center'>
-                                                        <p className='font-bold mb-10'>
-                                                            {product.name}
-                                                        </p>
-                                                        <p className='text-sm font-bold'>
-                                                            ৳ 200/-
-                                                        </p>
-                                                        <div className="flex justify-center items-center space-x-3">
-                                                            <Rating
-                                                                style={{ maxWidth: 80 }}
-                                                                value={product.rating}
-                                                                readOnly
-                                                                className="flex"
+                                                    <Link
+                                                        to={`/products/${product._id}`}
+                                                    >
+                                                        <div className='h-64'>
+                                                            <img
+                                                                src={product.image}
+                                                                alt={product.name}
+                                                                className='h-full w-full rounded-t-lg'
                                                             />
-                                                            <p>
-                                                                {product.rating} ({product.rater})
-                                                            </p>
                                                         </div>
-                                                    </div>
+                                                        <div className='content flex flex-col justify-center items-center'>
+                                                            <p className='font-bold mb-10'>
+                                                                {product.name}
+                                                            </p>
+                                                            <p className='text-sm font-bold'>
+                                                                ৳ 200/-
+                                                            </p>
+                                                            <div className="flex justify-center items-center space-x-3">
+                                                                <Rating
+                                                                    style={{ maxWidth: 80 }}
+                                                                    value={product.rating}
+                                                                    readOnly
+                                                                    className="flex"
+                                                                />
+                                                                <p>
+                                                                    {product.rating} ({product.rater})
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </Link>
                                                     {/* <Link to={product.link || '/'}> */}
                                                     <div
                                                         className='bg-black text-white text-center py-2 cursor-pointer'
