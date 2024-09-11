@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SingleProductFeature = ({ product }) => {
+const HowToUse = ({ product }) => {
     return (
         <div className='mt-20 bg-[#E6E6E6] py-10'>
             <div className='w-full md:w-[85%] mx-auto flex justify-between items-center'>
@@ -34,4 +34,4 @@ const SingleProductFeature = ({ product }) => {
     );
 };
 
-export default SingleProductFeature;
+export default HowToUse;

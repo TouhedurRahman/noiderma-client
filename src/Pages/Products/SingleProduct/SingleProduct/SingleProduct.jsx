@@ -5,7 +5,7 @@ import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { Rating } from '@smastrom/react-rating';
 import ShareOnSocialMedia from '../../../../Components/ShareOnSocialMedia/ShareOnSocialMedia';
 import { PiMapPinLineBold } from 'react-icons/pi';
-import SingleProductFeature from '../SingleProductFeature/SingleProductFeature';
+import HowToUse from '../HowToUse/HowToUse';
 
 const SingleProduct = () => {
     const [products, loading] = useProducts();
@@ -92,7 +92,7 @@ const SingleProduct = () => {
                                 </div>
                             </div>
                         </div>
-                        <SingleProductFeature
+                        <HowToUse
                             product={product}
                         />
                     </>
