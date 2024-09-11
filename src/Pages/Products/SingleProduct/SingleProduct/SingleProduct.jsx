@@ -6,6 +6,7 @@ import { Rating } from '@smastrom/react-rating';
 import ShareOnSocialMedia from '../../../../Components/ShareOnSocialMedia/ShareOnSocialMedia';
 import { PiMapPinLineBold } from 'react-icons/pi';
 import HowToUse from '../HowToUse/HowToUse';
+import Feature from '../Feature/Feature';
 
 const SingleProduct = () => {
     const [products, loading] = useProducts();
@@ -93,6 +94,9 @@ const SingleProduct = () => {
                             </div>
                         </div>
                         <HowToUse
+                            product={product}
+                        />
+                        <Feature
                             product={product}
                         />
                     </>
