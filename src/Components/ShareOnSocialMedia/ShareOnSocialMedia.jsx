@@ -24,18 +24,18 @@ const ShareOnSocialMedia = ({ url }) => {
                     size={48}
                 /> */}
                 <FaFacebook
-                    className="cursor-pointer transition duration-300 ease-in-out bg-white text-gray-600 hover:text-blue-500 border-4 border-[#FFFFFF] rounded-full p-2 border-x-0"
-                    size={48}
+                    className="cursor-pointer transition duration-300 ease-in-out bg-white text-gray-600 hover:text-blue-500 border-4 border-[#FFFFFF] rounded-full border-x-0"
+                    size={32}
                     onClick={shareOnFacebook}
                 />
                 <FaInstagram
-                    className="cursor-pointer transition duration-300 ease-in-out bg-white text-gray-600 hover:text-purple-600 border-4 border-[#FFFFFF] rounded-full p-2 border-x-0"
-                    size={48}
+                    className="cursor-pointer transition duration-300 ease-in-out bg-white text-gray-600 hover:text-purple-600 border-4 border-[#FFFFFF] rounded-full border-x-0"
+                    size={32}
                     onClick={shareOnInstagram}
                 />
                 <FaXTwitter
-                    className="cursor-pointer transition duration-300 ease-in-out bg-white text-gray-600 hover:text-red-900 border-4 border-[#FFFFFF] rounded-full p-2 border-x-0"
-                    size={48}
+                    className="cursor-pointer transition duration-300 ease-in-out bg-white text-gray-600 hover:text-red-900 border-4 border-[#FFFFFF] rounded-full border-x-0"
+                    size={32}
                     onClick={shareOnTwitter}
                 />
             </div>

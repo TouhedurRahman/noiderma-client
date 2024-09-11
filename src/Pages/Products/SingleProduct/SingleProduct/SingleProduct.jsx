@@ -1,10 +1,11 @@
 import React from 'react';
-import useProducts from '../../../Hooks/useProducts';
+import useProducts from '../../../../Hooks/useProducts';
 import { Link, useParams } from 'react-router-dom';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { Rating } from '@smastrom/react-rating';
-import ShareOnSocialMedia from '../../../Components/ShareOnSocialMedia/ShareOnSocialMedia';
+import ShareOnSocialMedia from '../../../../Components/ShareOnSocialMedia/ShareOnSocialMedia';
 import { PiMapPinLineBold } from 'react-icons/pi';
+import SingleProductFeature from '../SingleProductFeature/SingleProductFeature';
 
 const SingleProduct = () => {
     const [products, loading] = useProducts();
@@ -14,7 +15,7 @@ const SingleProduct = () => {
     const url = location.pathname;
 
     return (
-        <div className='my-20 lg:w-[85%] mx-auto'>
+        <div className='my-20'>
             {
                 loading
                     ?
@@ -29,7 +30,7 @@ const SingleProduct = () => {
                             Home <MdOutlineKeyboardArrowRight />
                             Product
                         </p>
-                        <div className='mt-5 flex justify-between items-start'>
+                        <div className='lg:w-[85%] mx-auto mt-5 flex justify-between items-start'>
                             <div
                                 className='w-full md:w-1/2 px-10 flex justify-center items-center'
                             >
@@ -91,6 +92,9 @@ const SingleProduct = () => {
                                 </div>
                             </div>
                         </div>
+                        <SingleProductFeature
+                            product={product}
+                        />
                     </>
             }
         </div>
