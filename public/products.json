@@ -9,7 +9,7 @@
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Petrolatum, Mineral oil",
-            "activeIngrediant": "Panthenol",
+            "inActiveIngrediants": "Panthenol",
             "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
         },
         "rating": 4.3,
@@ -41,7 +41,7 @@
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Hyaluronic Acid, Vitamin E",
-            "activeIngrediant": "Niacinamide",
+            "inActiveIngrediants": "Niacinamide",
             "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
         },        
         "rating": 4.7,
@@ -73,7 +73,7 @@
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Shea Butter, Coconut Oil",
-            "activeIngrediant": "Aloe Vera",
+            "inActiveIngrediants": "Aloe Vera",
             "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
         },        
         "rating": 4.6,
@@ -105,7 +105,7 @@
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Zinc Oxide, Glycerin",
-            "activeIngrediant": "Calendula Extract",
+            "inActiveIngrediants": "Calendula Extract",
             "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
         },        
         "rating": 4.8,
@@ -137,7 +137,7 @@
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Zinc Oxide, Titanium Dioxide",
-            "activeIngrediant": "Vitamin C",
+            "inActiveIngrediants": "Vitamin C",
             "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
         },        
         "rating": 4.9,
@@ -169,7 +169,7 @@
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Retinol, Hyaluronic Acid",
-            "activeIngrediant": "Vitamin E",
+            "inActiveIngrediants": "Vitamin E",
             "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
         },        
         "rating": 4.4,
@@ -201,7 +201,7 @@
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Aloe Vera, Glycerin",
-            "activeIngrediant": "Chamomile Extract",
+            "inActiveIngrediants": "Chamomile Extract",
             "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
         },        
         "rating": 4.5,

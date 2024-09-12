@@ -7,6 +7,7 @@ import ShareOnSocialMedia from '../../../../Components/ShareOnSocialMedia/ShareO
 import { PiMapPinLineBold } from 'react-icons/pi';
 import HowToUse from '../HowToUse/HowToUse';
 import Feature from '../Feature/Feature';
+import Ingrediants from '../Ingrediants/Ingrediants';
 
 const SingleProduct = () => {
     const [products, loading] = useProducts();
@@ -97,6 +98,9 @@ const SingleProduct = () => {
                             product={product}
                         />
                         <Feature
+                            product={product}
+                        />
+                        <Ingrediants
                             product={product}
                         />
                     </>
