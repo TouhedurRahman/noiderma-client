@@ -29,11 +29,11 @@ const SingleProduct = () => {
                     </>
                     :
                     <>
-                        <p className='flex items-center space-x-4'>
+                        <p className='w-[93%] mx-auto flex items-center space-x-4'>
                             Home <MdOutlineKeyboardArrowRight />
                             Product
                         </p>
-                        <div className='lg:w-[85%] mx-auto mt-5 flex justify-between items-start'>
+                        <div className='w-[93%] md:w-[85%] mx-auto mt-5 flex flex-col md:flex-row md:justify-between items-start space-y-6'>
                             <div
                                 className='w-full md:w-1/2 px-10 flex justify-center items-center'
                             >
@@ -46,7 +46,7 @@ const SingleProduct = () => {
                             <div className='w-full md:w-1/2'>
                                 <p
                                     style={{ letterSpacing: "0.2em" }}
-                                    className='text-4xl font-bold'
+                                    className='text-2xl md:text-4xl font-bold'
                                 >
                                     {product.name.toUpperCase()}
                                 </p>
@@ -109,7 +109,7 @@ const SingleProduct = () => {
                         />
                     </>
             }
-        </div>
+        </div >
     );
 };
 
