@@ -5,7 +5,31 @@
         "image": "https://via.placeholder.com/150?text=Product",
         "category": "moisturizer",
         "typesDescription": "A lightweight, non-greasy ointment designed to lock in moisture and promote healing. Suitable for all skin types, especially dry and sensitive skin.",
-        "features": "Dermatologist tested, Fragrance-free, Non-comedogenic, Hypoallergenic, Ideal for dry skin, Suitable for use on the body and face.",
+        "features": {
+            "fearutesDescription": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
+            "featuresMore": [
+                {
+                    "icon": "https://i.ibb.co.com/VLw2p8Z/PARABEN-FREE.webp",
+                    "title": "PARABEN FREE"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ct1pbsH/PERFUME-FREE.webp",
+                    "title": "PERFUME FREE" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ZJXJkgW/HYPOALLERGENIC.webp",
+                    "title": "HYPOALLERGENIC" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/f9nJLLt/DERMATOLOGYST-TESTED.webp",
+                    "title": "DERMATOLOGYST TESTED"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/7kYz21N/Clog-Pores.webp",
+                    "title": "ClOG PORES" 
+                }
+            ]
+        },
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Petrolatum, Mineral oil",
@@ -37,7 +61,31 @@
         "image": "https://via.placeholder.com/150?text=Product",
         "category": "face",
         "typesDescription": "A daily face cream that intensely hydrates, leaving the skin soft and smooth. Perfect for normal to dry skin and contains anti-aging properties.",
-        "features": "Rich in antioxidants, SPF 15 protection, Paraben-free, Suitable for daily use, Absorbs quickly, Long-lasting hydration.",
+        "features": {
+            "fearutesDescription": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
+            "featuresMore": [
+                {
+                    "icon": "https://i.ibb.co.com/VLw2p8Z/PARABEN-FREE.webp",
+                    "title": "PARABEN FREE"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ct1pbsH/PERFUME-FREE.webp",
+                    "title": "PERFUME FREE" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ZJXJkgW/HYPOALLERGENIC.webp",
+                    "title": "HYPOALLERGENIC" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/f9nJLLt/DERMATOLOGYST-TESTED.webp",
+                    "title": "DERMATOLOGYST TESTED"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/7kYz21N/Clog-Pores.webp",
+                    "title": "ClOG PORES" 
+                }
+            ]
+        },
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Hyaluronic Acid, Vitamin E",
@@ -69,7 +117,31 @@
         "image": "https://via.placeholder.com/150?text=Product",
         "category": "body",
         "typesDescription": "A deeply nourishing body lotion designed to repair and protect dry, cracked skin. Contains natural oils and soothing agents for lasting hydration.",
-        "features": "Non-greasy, Absorbs quickly, Fragrance-free, Suitable for sensitive skin, Dermatologist-recommended, Restores moisture balance.",
+        "features": {
+            "fearutesDescription": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
+            "featuresMore": [
+                {
+                    "icon": "https://i.ibb.co.com/VLw2p8Z/PARABEN-FREE.webp",
+                    "title": "PARABEN FREE"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ct1pbsH/PERFUME-FREE.webp",
+                    "title": "PERFUME FREE" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ZJXJkgW/HYPOALLERGENIC.webp",
+                    "title": "HYPOALLERGENIC" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/f9nJLLt/DERMATOLOGYST-TESTED.webp",
+                    "title": "DERMATOLOGYST TESTED"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/7kYz21N/Clog-Pores.webp",
+                    "title": "ClOG PORES" 
+                }
+            ]
+        },
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Shea Butter, Coconut Oil",
@@ -101,7 +173,31 @@
         "image": "https://via.placeholder.com/150?text=Product",
         "category": "baby-skincare",
         "typesDescription": "A gentle, hypoallergenic cream designed to soothe and protect delicate baby skin. Ideal for diaper rash and skin irritation, providing instant relief.",
-        "features": "Pediatrician-approved, Hypoallergenic, Fragrance-free, Paraben-free, Safe for daily use, Suitable for newborns and infants.",
+        "features": {
+            "fearutesDescription": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
+            "featuresMore": [
+                {
+                    "icon": "https://i.ibb.co.com/VLw2p8Z/PARABEN-FREE.webp",
+                    "title": "PARABEN FREE"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ct1pbsH/PERFUME-FREE.webp",
+                    "title": "PERFUME FREE" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ZJXJkgW/HYPOALLERGENIC.webp",
+                    "title": "HYPOALLERGENIC" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/f9nJLLt/DERMATOLOGYST-TESTED.webp",
+                    "title": "DERMATOLOGYST TESTED"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/7kYz21N/Clog-Pores.webp",
+                    "title": "ClOG PORES" 
+                }
+            ]
+        },
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Zinc Oxide, Glycerin",
@@ -133,7 +229,31 @@
         "image": "https://via.placeholder.com/150?text=Product",
         "category": "sunscreens",
         "typesDescription": "A broad-spectrum sunscreen with SPF 50 that protects against UVA and UVB rays. Lightweight and non-greasy, it is perfect for daily use.",
-        "features": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
+        "features": {
+            "fearutesDescription": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
+            "featuresMore": [
+                {
+                    "icon": "https://i.ibb.co.com/VLw2p8Z/PARABEN-FREE.webp",
+                    "title": "PARABEN FREE"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ct1pbsH/PERFUME-FREE.webp",
+                    "title": "PERFUME FREE" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ZJXJkgW/HYPOALLERGENIC.webp",
+                    "title": "HYPOALLERGENIC" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/f9nJLLt/DERMATOLOGYST-TESTED.webp",
+                    "title": "DERMATOLOGYST TESTED"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/7kYz21N/Clog-Pores.webp",
+                    "title": "ClOG PORES" 
+                }
+            ]
+        },
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Zinc Oxide, Titanium Dioxide",
@@ -165,7 +285,31 @@
         "image": "https://via.placeholder.com/150?text=Product",
         "category": "moisturizer",
         "typesDescription": "A nourishing night cream that deeply hydrates and rejuvenates the skin while you sleep. Ideal for dry and combination skin, promoting a refreshed morning glow.",
-        "features": "Rich in antioxidants, Paraben-free, Fast-absorbing, Rejuvenates the skin overnight, Dermatologist-tested, Non-greasy texture.",
+        "features": {
+            "fearutesDescription": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
+            "featuresMore": [
+                {
+                    "icon": "https://i.ibb.co.com/VLw2p8Z/PARABEN-FREE.webp",
+                    "title": "PARABEN FREE"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ct1pbsH/PERFUME-FREE.webp",
+                    "title": "PERFUME FREE" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ZJXJkgW/HYPOALLERGENIC.webp",
+                    "title": "HYPOALLERGENIC" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/f9nJLLt/DERMATOLOGYST-TESTED.webp",
+                    "title": "DERMATOLOGYST TESTED"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/7kYz21N/Clog-Pores.webp",
+                    "title": "ClOG PORES" 
+                }
+            ]
+        },
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Retinol, Hyaluronic Acid",
@@ -197,7 +341,31 @@
         "image": "https://via.placeholder.com/150?text=Product",
         "category": "body",
         "typesDescription": "A calming body lotion enriched with aloe vera to soothe and hydrate irritated skin. Perfect for post-sun exposure or dry, sensitive skin.",
-        "features": "Aloe-based formula, Fast-absorbing, Suitable for daily use, Paraben-free, Gentle on sensitive skin, Lightweight and non-greasy.",
+        "features": {
+            "fearutesDescription": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
+            "featuresMore": [
+                {
+                    "icon": "https://i.ibb.co.com/VLw2p8Z/PARABEN-FREE.webp",
+                    "title": "PARABEN FREE"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ct1pbsH/PERFUME-FREE.webp",
+                    "title": "PERFUME FREE" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ZJXJkgW/HYPOALLERGENIC.webp",
+                    "title": "HYPOALLERGENIC" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/f9nJLLt/DERMATOLOGYST-TESTED.webp",
+                    "title": "DERMATOLOGYST TESTED"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/7kYz21N/Clog-Pores.webp",
+                    "title": "ClOG PORES" 
+                }
+            ]
+        },
         "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
         "ingrediants": {
             "activeIngrediants": "Aloe Vera, Glycerin",
