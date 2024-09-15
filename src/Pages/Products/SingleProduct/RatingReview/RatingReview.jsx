@@ -24,7 +24,7 @@ const RatingReview = ({ product }) => {
                 </div>
             </div>
 
-            <div className='mt-10 flex flex-col md:flex-row justify-start items-start space-y-6'>
+            <div className='mt-10 flex flex-col md:flex-row justify-start items-start space-y-6 md:space-y-0'>
                 <div className='w-full lg:w-1/2'>
                     <div className='flex flex-col justify-start items-start space-y-6'>
                         <p>Rating Snapshot</p>
