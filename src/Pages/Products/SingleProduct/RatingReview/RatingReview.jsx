@@ -14,7 +14,7 @@ const RatingReview = ({ product }) => {
     const totalRatings = ratings.reduce((sum, rating) => sum + rating.count, 0);
 
     return (
-        <div className='mt-20 w-full lg:w-[65%] mx-auto'>
+        <div className='mt-20 w-[93%] md:w-[85%] lg:w-[65%] mx-auto'>
             <div className='flex justify-between items-center'>
                 <p className='text-2xl font-bold'>Reviews</p>
                 <div className='flex justify-end items-center'>
@@ -24,15 +24,14 @@ const RatingReview = ({ product }) => {
                 </div>
             </div>
 
-            <div className='mt-10 flex justify-start items-start'>
+            <div className='mt-10 flex flex-col md:flex-row justify-start items-start space-y-6'>
                 <div className='w-full lg:w-1/2'>
                     <div className='flex flex-col justify-start items-start space-y-6'>
                         <p>Rating Snapshot</p>
                         <p>Select a row below to filter reviews.</p>
                     </div>
-                    <div className="mt-4 w-[80%]">
+                    <div className="mt-4 w-full md:w-[80%]">
                         {ratings.map((rating, index) => {
-                            // Calculate percentage
                             const percentage = Math.round((rating.count / totalRatings) * 100);
                             return (
                                 <div key={index} className="flex items-center space-x-4 mb-2">
