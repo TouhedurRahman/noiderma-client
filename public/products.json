@@ -34,7 +34,29 @@
         "ingrediants": {
             "activeIngrediants": "Petrolatum, Mineral oil",
             "inActiveIngrediants": "Panthenol",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "moreIngrediants": [
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                }
+            ]
         },
         "rating": 4.3,
         "rater": 55,
@@ -90,7 +112,29 @@
         "ingrediants": {
             "activeIngrediants": "Hyaluronic Acid, Vitamin E",
             "inActiveIngrediants": "Niacinamide",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "moreIngrediants": [
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                }
+            ]
         },        
         "rating": 4.7,
         "rater": 112,
@@ -146,7 +190,29 @@
         "ingrediants": {
             "activeIngrediants": "Shea Butter, Coconut Oil",
             "inActiveIngrediants": "Aloe Vera",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "moreIngrediants": [
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                }
+            ]
         },        
         "rating": 4.6,
         "rater": 80,
@@ -202,7 +268,29 @@
         "ingrediants": {
             "activeIngrediants": "Zinc Oxide, Glycerin",
             "inActiveIngrediants": "Calendula Extract",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "moreIngrediants": [
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                }
+            ]
         },        
         "rating": 4.8,
         "rater": 60,
@@ -258,7 +346,29 @@
         "ingrediants": {
             "activeIngrediants": "Zinc Oxide, Titanium Dioxide",
             "inActiveIngrediants": "Vitamin C",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "moreIngrediants": [
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                }
+            ]
         },        
         "rating": 4.9,
         "rater": 95,
@@ -314,7 +424,29 @@
         "ingrediants": {
             "activeIngrediants": "Retinol, Hyaluronic Acid",
             "inActiveIngrediants": "Vitamin E",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "moreIngrediants": [
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                }
+            ]
         },        
         "rating": 4.4,
         "rater": 150,
@@ -370,7 +502,29 @@
         "ingrediants": {
             "activeIngrediants": "Aloe Vera, Glycerin",
             "inActiveIngrediants": "Chamomile Extract",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants"
+            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "moreIngrediants": [
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                }
+            ]
         },        
         "rating": 4.5,
         "rater": 45,
