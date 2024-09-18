@@ -32,6 +32,7 @@ const RatingReview = ({ product }) => {
                             <p>Select a row below to filter reviews.</p>
                         </div>
                         <div className="mt-4 w-full md:w-[80%]">
+                            {/*
                             {ratings.map((rating, index) => {
                                 const percentage = Math.round((rating.count / totalRatings) * 100);
                                 return (
@@ -40,6 +41,49 @@ const RatingReview = ({ product }) => {
                                             {[...Array(rating.stars)].map((_, starIndex) => (
                                                 <AiFillStar key={starIndex} className="text-yellow-500" />
                                             ))}
+                                        </div>
+                                        <div className="w-full bg-gray-300 rounded-full h-4">
+                                            <div
+                                                className="bg-yellow-500 h-4 rounded-full"
+                                                style={{ width: `${percentage}%` }}
+                                            />
+                                        </div>
+                                        <span className="ml-2 text-gray-700">{rating.count}</span>
+                                    </div>
+                                );
+                            })} 
+                            */}
+                            {/* 
+                            {ratings.map((rating, index) => {
+                                const percentage = Math.round((rating.count / totalRatings) * 100);
+                                return (
+                                    <div key={index} className="flex items-center space-x-4 mb-2">
+                                        <div className="flex items-center space-x-1">
+                                            {[...Array(5)].map((_, starIndex) => (
+                                                <AiFillStar
+                                                    key={starIndex}
+                                                    className={starIndex < rating.stars ? "text-yellow-500" : "text-gray-300"}
+                                                />
+                                            ))}
+                                        </div>
+                                        <div className="w-full bg-gray-300 rounded-full h-4">
+                                            <div
+                                                className="bg-yellow-500 h-4 rounded-full"
+                                                style={{ width: `${percentage}%` }}
+                                            />
+                                        </div>
+                                        <span className="ml-2 text-gray-700">{rating.count}</span>
+                                    </div>
+                                );
+                            })}
+                             */}
+                            {ratings.map((rating, index) => {
+                                const percentage = Math.round((rating.count / totalRatings) * 100);
+                                return (
+                                    <div key={index} className="flex items-center space-x-4 mb-2">
+                                        <div className='flex justify-start items-center'>
+                                            <span className="w-4 text-gray-700">{rating.stars}</span>
+                                            <AiFillStar className="text-gray-600" />
                                         </div>
                                         <div className="w-full bg-gray-300 rounded-full h-4">
                                             <div

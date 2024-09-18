@@ -13,7 +13,7 @@ const ProductScrollNav = () => {
         { name: 'How to Use', to: 'use' },
         { name: 'Features', to: 'features' },
         { name: 'All Ingredients', to: 'ingrediants' },
-        { name: 'reviews', to: 'reviews' }
+        { name: 'Reviews', to: 'reviews' }
     ];
 
     const navbarHeight = 64;
