@@ -85,13 +85,13 @@ const RatingReview = ({ product }) => {
                                             <span className="w-4 text-gray-700">{rating.stars}</span>
                                             <AiFillStar className="text-gray-600" />
                                         </div>
-                                        <div className="w-full bg-gray-300 rounded-full h-4">
+                                        <div className="w-full bg-gray-300 rounded-[2px] h-4">
                                             <div
-                                                className="bg-yellow-500 h-4 rounded-full"
+                                                className="bg-yellow-500 h-4 rounded-[2px]"
                                                 style={{ width: `${percentage}%` }}
                                             />
                                         </div>
-                                        <span className="ml-2 text-gray-700">{rating.count}</span>
+                                        <span className="ml-2 text-gray-700 text-center">{rating.count}</span>
                                     </div>
                                 );
                             })}
