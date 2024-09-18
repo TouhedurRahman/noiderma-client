@@ -9,6 +9,7 @@ import HowToUse from '../HowToUse/HowToUse';
 import Feature from '../Feature/Feature';
 import Ingrediants from '../Ingrediants/Ingrediants';
 import RatingReview from '../RatingReview/RatingReview';
+import ProductScrollNav from '../ProductScrollNav/ProductScrollNav';
 
 const SingleProduct = () => {
     const [products, loading] = useProducts();
@@ -95,6 +96,7 @@ const SingleProduct = () => {
                                 </div>
                             </div>
                         </div>
+                        <ProductScrollNav />
                         <HowToUse
                             product={product}
                         />
