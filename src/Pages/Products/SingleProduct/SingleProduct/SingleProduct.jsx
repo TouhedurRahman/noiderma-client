@@ -11,10 +11,12 @@ import Ingrediants from '../Ingrediants/Ingrediants';
 import RatingReview from '../RatingReview/RatingReview';
 import ProductScrollNav from '../ProductScrollNav/ProductScrollNav';
 import BuyNowSingleProductModal from '../../../../Components/BuyNowSingleProductModal/BuyNowSingleProductModal';
+import RatingsReviewModal from '../../../../Components/RatingsReviewModal/RatingsReviewModal';
 
 const SingleProduct = () => {
     const [products, loading] = useProducts();
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
 
     const { id } = useParams();
@@ -27,8 +29,14 @@ const SingleProduct = () => {
         setIsModalOpen(true);
     };
 
+    const handleReview = (product) => {
+        setSelectedProduct(product);
+        setIsReviewModalOpen(true);
+    };
+
     const handleCloseModal = () => {
         setIsModalOpen(false);
+        setIsReviewModalOpen(false);
         setSelectedProduct(null);
     };
 
@@ -76,8 +84,11 @@ const SingleProduct = () => {
                                         <p>
                                             {product.rating} ({product.rater})
                                         </p>
-                                        <p className='hover:link'>
-                                            write a review
+                                        <p
+                                            className='hover:link'
+                                            onClick={() => handleReview(product)}
+                                        >
+                                            Write a Rview
                                         </p>
                                     </div>
                                     <div>
@@ -124,6 +135,7 @@ const SingleProduct = () => {
                             />
                             <RatingReview
                                 product={product}
+                                loading={loading}
                             />
                         </>
                 }
@@ -136,6 +148,20 @@ const SingleProduct = () => {
                         :
                         <BuyNowSingleProductModal
                             show={isModalOpen}
+                            onClose={handleCloseModal}
+                            products={products}
+                            selectedProduct={selectedProduct}
+                        />
+                }
+            </div>
+            <div>
+                {
+                    loading
+                        ?
+                        "Loading..."
+                        :
+                        <RatingsReviewModal
+                            show={isReviewModalOpen}
                             onClose={handleCloseModal}
                             products={products}
                             selectedProduct={selectedProduct}
