@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import ReactRating from 'react-rating';
 import { useForm } from 'react-hook-form';
-import 'font-awesome/css/font-awesome.min.css'; // Ensure FontAwesome CSS is imported
+import 'font-awesome/css/font-awesome.min.css';
 
 const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialSelectedProduct }) => {
     const [selectedProduct, setSelectedProduct] = useState(initialSelectedProduct || products[0]);
+    const [rating, setRating] = useState(0);
     const [ratingLabel, setRatingLabel] = useState('');
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -23,6 +24,7 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
     };
 
     const handleRatingChange = (value) => {
+        setRating(value);
         setRatingLabel(getRatingLabel(value));
     };
 
@@ -38,7 +40,21 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
     };
 
     const onSubmit = (data) => {
-        console.log(data); // Handle form submission
+        const { title, description, photo, nickname, location, email, mobile, agree } = data;
+
+        console.log('Form Data:', {
+            title,
+            description,
+            rating,
+            ratingLabel,
+            photo: photo.length > 0 ? photo[0].name : 'No photo uploaded',
+            nickname,
+            location,
+            email,
+            mobile,
+            agree
+        });
+
         reset();
         onClose();
     };
@@ -48,7 +64,7 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
     }
 
     return (
-        <div className="fixed inset-0 h-96 my-auto bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
+        <div className="fixed inset-0 my-auto bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
             <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg max-w-xl w-full overflow-y-auto max-h-screen">
                 <div className="flex justify-between items-center mb-4">
                     <h2 className="text-2xl font-bold text-gray-800">Write a Review</h2>
@@ -58,7 +74,6 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
                 </div>
 
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-                    {/* Select Product */}
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Select Product</label>
                         <select
@@ -74,24 +89,21 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
                         </select>
                     </div>
 
-                    {/* Overall Rating with Star Hover */}
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Overall Rating</label>
                         <div className="flex items-center mt-2">
                             <ReactRating
-                                initialRating={0}
+                                initialRating={rating}
                                 emptySymbol="fa fa-star-o text-gray-300 text-xl"
                                 fullSymbol="fa fa-star text-yellow-500 text-xl"
                                 onChange={handleRatingChange}
-                                onHover={handleRatingChange}
-                                fractions={2}
+                                fractions={1}
                                 className="text-xl"
                             />
                             <span className="ml-4 text-lg font-semibold">{ratingLabel}</span>
                         </div>
                     </div>
 
-                    {/* Review Title */}
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Review Title</label>
                         <input
@@ -102,7 +114,6 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
                         {errors.title && <p className="text-red-500 text-xs mt-1">{errors.title.message}</p>}
                     </div>
 
-                    {/* Review Description */}
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Review Description</label>
                         <textarea
@@ -113,7 +124,6 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
                         {errors.description && <p className="text-red-500 text-xs mt-1">{errors.description.message}</p>}
                     </div>
 
-                    {/* Upload Review Photo */}
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Upload Review Photo</label>
                         <input
@@ -123,7 +133,7 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
                         />
                     </div>
 
-                    {/* Nickname */}
+
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Nickname</label>
                         <input
@@ -134,7 +144,6 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
                         {errors.nickname && <p className="text-red-500 text-xs mt-1">{errors.nickname.message}</p>}
                     </div>
 
-                    {/* Location */}
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Location</label>
                         <input
@@ -144,7 +153,6 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
                         />
                     </div>
 
-                    {/* Email */}
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Email</label>
                         <input
@@ -155,7 +163,6 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
                         {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
                     </div>
 
-                    {/* Mobile */}
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Mobile Number</label>
                         <input
@@ -166,7 +173,6 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
                         {errors.mobile && <p className="text-red-500 text-xs mt-1">{errors.mobile.message}</p>}
                     </div>
 
-                    {/* Agreement */}
                     <div className="flex items-start">
                         <div className="flex items-center h-5">
                             <input
@@ -182,7 +188,6 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
                     </div>
                     {errors.agree && <p className="text-red-500 text-xs mt-1">{errors.agree.message}</p>}
 
-                    {/* Submit Button */}
                     <div>
                         <button
                             type="submit"
