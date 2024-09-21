@@ -7,7 +7,7 @@ import 'font-awesome/css/font-awesome.min.css';
 const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialSelectedProduct }) => {
     const [selectedProduct, setSelectedProduct] = useState(initialSelectedProduct || products[0]);
     const [rating, setRating] = useState(0);
-    const [ratingLabel, setRatingLabel] = useState('');
+    const [ratingLabel, setRatingLabel] = useState('Click to rate!');
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
