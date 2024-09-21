@@ -4,24 +4,11 @@ import ReactRating from 'react-rating';
 import { useForm } from 'react-hook-form';
 import 'font-awesome/css/font-awesome.min.css';
 
-const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialSelectedProduct }) => {
-    const [selectedProduct, setSelectedProduct] = useState(initialSelectedProduct || products[0]);
+const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
     const [rating, setRating] = useState(0);
     const [ratingLabel, setRatingLabel] = useState('Click to rate!');
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-
-    useEffect(() => {
-        if (initialSelectedProduct) {
-            setSelectedProduct(initialSelectedProduct);
-        }
-    }, [initialSelectedProduct]);
-
-    const handleChange = (event) => {
-        const selectedProductId = parseInt(event.target.value, 10);
-        const product = products.find(p => p._id === selectedProductId);
-        setSelectedProduct(product);
-    };
 
     const handleRatingChange = (value) => {
         setRating(value);
@@ -59,7 +46,7 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
         onClose();
     };
 
-    if (!show) {
+    if (!show || !selectedProduct) {
         return null;
     }
 
@@ -67,28 +54,13 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
         <div className="fixed inset-0 my-auto bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
             <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg max-w-xl w-full overflow-y-auto max-h-screen">
                 <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-2xl font-bold text-gray-800">Write a Review</h2>
+                    <h2 className="text-2xl font-bold text-gray-800">Write a Review for {selectedProduct.name}</h2>
                     <button onClick={onClose} className="text-gray-500 hover:text-red-600 transition-colors">
                         <FaTimes size={20} />
                     </button>
                 </div>
 
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">Select Product</label>
-                        <select
-                            value={selectedProduct?._id || ""}
-                            onChange={handleChange}
-                            className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-                        >
-                            {products.map(product => (
-                                <option key={product._id} value={product._id}>
-                                    {product.name}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
-
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Overall Rating</label>
                         <div className="flex items-center mt-2">
@@ -132,7 +104,6 @@ const RatingsReviewModal = ({ show, onClose, products, selectedProduct: initialS
                             className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                         />
                     </div>
-
 
                     <div>
                         <label className="block text-sm font-medium text-gray-700">Nickname</label>
