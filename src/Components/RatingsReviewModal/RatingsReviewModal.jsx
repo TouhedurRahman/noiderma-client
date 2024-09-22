@@ -96,7 +96,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                                 <input
                                     type="text"
                                     {...register('title', { required: 'Review title is required' })}
-                                    className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                    className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                                 />
                                 {errors.title && <p className="text-red-500 text-xs mt-1">{errors.title.message}</p>}
                             </div>
@@ -108,7 +108,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                                 <textarea
                                     {...register('description', { required: 'Review description is required' })}
                                     rows="4"
-                                    className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                    className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                                 />
                                 {errors.description && <p className="text-red-500 text-xs mt-1">{errors.description.message}</p>}
                             </div>
@@ -130,7 +130,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                                     <input
                                         type="text"
                                         {...register('nickname', { required: 'Nickname is required' })}
-                                        className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                                     />
                                     {errors.nickname && <p className="text-red-500 text-xs mt-1">{errors.nickname.message}</p>}
                                 </div>
@@ -142,7 +142,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                                     <input
                                         type="text"
                                         {...register('location')}
-                                        className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                                     />
                                 </div>
                             </div>
@@ -155,7 +155,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                                     <input
                                         type="email"
                                         {...register('email', { required: 'Email is required' })}
-                                        className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                                     />
                                     {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
                                 </div>
@@ -167,7 +167,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                                     <input
                                         type="tel"
                                         {...register('mobile', { required: 'Mobile number is required' })}
-                                        className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                                     />
                                     {errors.mobile && <p className="text-red-500 text-xs mt-1">{errors.mobile.message}</p>}
                                 </div>
