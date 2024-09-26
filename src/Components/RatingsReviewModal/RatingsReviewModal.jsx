@@ -27,7 +27,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
     };
 
     const onSubmit = (data) => {
-        const { title, description, photo, nickname, location, email, mobile, agree } = data;
+        const { title, description, photo, nickname, location, email, mobile, agree, age, gender, skinType, likeMost, primaryReason, usageFrequency, usageDuration, buyAgain } = data;
 
         console.log('Form Data:', {
             title,
@@ -39,7 +39,15 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
             location,
             email,
             mobile,
-            agree
+            agree,
+            age,
+            gender,
+            skinType,
+            likeMost,
+            primaryReason,
+            usageFrequency,
+            usageDuration,
+            buyAgain,
         });
 
         reset();
@@ -141,9 +149,10 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                                     </label>
                                     <input
                                         type="text"
-                                        {...register('location')}
+                                        {...register('location', { required: 'Location is required' })}
                                         className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                                     />
+                                    {errors.location && <p className="text-red-500 text-xs mt-1">{errors.location.message}</p>}
                                 </div>
                             </div>
 
@@ -171,6 +180,147 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                                     />
                                     {errors.mobile && <p className="text-red-500 text-xs mt-1">{errors.mobile.message}</p>}
                                 </div>
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">
+                                    What is your age? <span className='text-red-600 font-bold'>*</span>
+                                </label>
+                                <select
+                                    {...register('age', { required: 'Please select your age group' })}
+                                    className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                >
+                                    <option value="">Select</option>
+                                    <option value="Under 18">Under 18</option>
+                                    <option value="18-24">18-24</option>
+                                    <option value="25-34">25-34</option>
+                                    <option value="35-44">35-44</option>
+                                    <option value="45-54">45-54</option>
+                                    <option value="55-64">55-64</option>
+                                    <option value="65+">65+</option>
+                                </select>
+                                {errors.age && <p className="text-red-500 text-xs mt-1">{errors.age.message}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">
+                                    What is your gender? <span className='text-red-600 font-bold'>*</span>
+                                </label>
+                                <select
+                                    {...register('gender', { required: 'Please select your gender' })}
+                                    className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                >
+                                    <option value="">Select</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                {errors.gender && <p className="text-red-500 text-xs mt-1">{errors.gender.message}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">
+                                    What is your skin type? <span className='text-red-600 font-bold'>*</span>
+                                </label>
+                                <select
+                                    {...register('skinType', { required: 'Please select your skin type' })}
+                                    className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                >
+                                    <option value="">Select</option>
+                                    <option value="Normal">Normal</option>
+                                    <option value="Dry">Dry</option>
+                                    <option value="Oily">Oily</option>
+                                    <option value="Combination">Combination</option>
+                                    <option value="Sensitive">Sensitive</option>
+                                </select>
+                                {errors.skinType && <p className="text-red-500 text-xs mt-1">{errors.skinType.message}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">
+                                    What did you like most about this product? <span className='text-red-600 font-bold'>*</span>
+                                </label>
+                                <select
+                                    {...register('likeMost', { required: 'Please select an option' })}
+                                    className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                >
+                                    <option value="">Select</option>
+                                    <option value="Quality">Quality</option>
+                                    <option value="Effectiveness">Effectiveness</option>
+                                    <option value="Price">Price</option>
+                                    <option value="Scent">Scent</option>
+                                    <option value="Texture">Texture</option>
+                                </select>
+                                {errors.likeMost && <p className="text-red-500 text-xs mt-1">{errors.likeMost.message}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">
+                                    Which of the following was your primary reason for buying? <span className='text-red-600 font-bold'>*</span>
+                                </label>
+                                <select
+                                    {...register('primaryReason', { required: 'Please select a reason' })}
+                                    className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                >
+                                    <option value="">Select</option>
+                                    <option value="Recommendation">Recommendation</option>
+                                    <option value="Advertising">Advertising</option>
+                                    <option value="Review">Review</option>
+                                    <option value="Brand Loyalty">Brand Loyalty</option>
+                                    <option value="Promotional Offer">Promotional Offer</option>
+                                </select>
+                                {errors.primaryReason && <p className="text-red-500 text-xs mt-1">{errors.primaryReason.message}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">
+                                    How often do you use this product? <span className='text-red-600 font-bold'>*</span>
+                                </label>
+                                <select
+                                    {...register('usageFrequency', { required: 'Please select a frequency' })}
+                                    className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                >
+                                    <option value="">Select</option>
+                                    <option value="Daily">Daily</option>
+                                    <option value="Weekly">Weekly</option>
+                                    <option value="Monthly">Monthly</option>
+                                    <option value="Rarely">Rarely</option>
+                                </select>
+                                {errors.usageFrequency && <p className="text-red-500 text-xs mt-1">{errors.usageFrequency.message}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">
+                                    How long have you been using this product? <span className='text-red-600 font-bold'>*</span>
+                                </label>
+                                <select
+                                    {...register('usageDuration', { required: 'Please select a duration' })}
+                                    className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                >
+                                    <option value="">Select</option>
+                                    <option value="Less than a month">Less than a month</option>
+                                    <option value="1-3 months">1-3 months</option>
+                                    <option value="3-6 months">3-6 months</option>
+                                    <option value="6-12 months">6-12 months</option>
+                                    <option value="Over a year">Over a year</option>
+                                </select>
+                                {errors.usageDuration && <p className="text-red-500 text-xs mt-1">{errors.usageDuration.message}</p>}
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">
+                                    Would you buy this product again? <span className='text-red-600 font-bold'>*</span>
+                                </label>
+                                <select
+                                    {...register('buyAgain', { required: 'Please select an option' })}
+                                    className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                                >
+                                    <option value="">Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Not Sure">Not Sure</option>
+                                </select>
+                                {errors.buyAgain && <p className="text-red-500 text-xs mt-1">{errors.buyAgain.message}</p>}
                             </div>
 
                             <div className="flex items-start">
