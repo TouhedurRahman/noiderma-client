@@ -5,8 +5,9 @@ import RatingsReviewModal from '../../../../Components/RatingsReviewModal/Rating
 import useReviews from '../../../../Hooks/useReviews';
 
 const RatingReview = ({ product, loading }) => {
-    const [reviews, reviewsloading] = useReviews();
+    const [reviews, reviewsLoading] = useReviews();
     const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
+    const [selectedRating, setSelectedRating] = useState(null);
     const url = location.pathname;
 
     const filteredReviews = reviews.filter(review => review.pid === product._id);
@@ -27,10 +28,8 @@ const RatingReview = ({ product, loading }) => {
         }
     });
 
-    // calculate total raters
     const totalRaters = filteredReviews.length;
 
-    // Calculate overall rating
     const totalScore = ratings.reduce((acc, rating) => acc + (rating.stars * rating.count), 0);
     const overallRating = totalRaters > 0 ? (totalScore / totalRaters).toFixed(1) : 0;
 
@@ -40,10 +39,18 @@ const RatingReview = ({ product, loading }) => {
 
     const handleCloseModal = () => {
         setIsReviewModalOpen(false);
-        setSelectedProduct(null);
+        setSelectedRating(null);
     };
 
     const totalRatings = ratings.reduce((sum, rating) => sum + rating.count, 0);
+
+    const displayedReviews = selectedRating
+        ? filteredReviews.filter(review => review.rating === selectedRating)
+        : filteredReviews;
+
+    const handleClearSelection = () => {
+        setSelectedRating(null); // Clear the selected rating
+    };
 
     return (
         <>
@@ -68,55 +75,14 @@ const RatingReview = ({ product, loading }) => {
                                 <p>Select a row below to filter reviews.</p>
                             </div>
                             <div className="mt-4 w-full md:w-[80%]">
-                                {/*
-                            {ratings.map((rating, index) => {
-                                const percentage = Math.round((rating.count / totalRatings) * 100);
-                                return (
-                                    <div key={index} className="flex items-center space-x-4 mb-2">
-                                        <div className="flex items-center space-x-1">
-                                            {[...Array(rating.stars)].map((_, starIndex) => (
-                                                <AiFillStar key={starIndex} className="text-yellow-500" />
-                                            ))}
-                                        </div>
-                                        <div className="w-full bg-gray-300 rounded-full h-4">
-                                            <div
-                                                className="bg-yellow-500 h-4 rounded-full"
-                                                style={{ width: `${percentage}%` }}
-                                            />
-                                        </div>
-                                        <span className="ml-2 text-gray-700">{rating.count}</span>
-                                    </div>
-                                );
-                            })} 
-                            */}
-                                {/* 
-                            {ratings.map((rating, index) => {
-                                const percentage = Math.round((rating.count / totalRatings) * 100);
-                                return (
-                                    <div key={index} className="flex items-center space-x-4 mb-2">
-                                        <div className="flex items-center space-x-1">
-                                            {[...Array(5)].map((_, starIndex) => (
-                                                <AiFillStar
-                                                    key={starIndex}
-                                                    className={starIndex < rating.stars ? "text-yellow-500" : "text-gray-300"}
-                                                />
-                                            ))}
-                                        </div>
-                                        <div className="w-full bg-gray-300 rounded-full h-4">
-                                            <div
-                                                className="bg-yellow-500 h-4 rounded-full"
-                                                style={{ width: `${percentage}%` }}
-                                            />
-                                        </div>
-                                        <span className="ml-2 text-gray-700">{rating.count}</span>
-                                    </div>
-                                );
-                            })}
-                             */}
                                 {ratings.map((rating, index) => {
                                     const percentage = Math.round((rating.count / totalRatings) * 100);
                                     return (
-                                        <div key={index} className="flex items-center space-x-4 mb-2">
+                                        <div
+                                            key={index}
+                                            className="flex items-center space-x-4 mb-2 cursor-pointer"
+                                            onClick={() => setSelectedRating(rating.stars)}
+                                        >
                                             <div className='flex justify-start items-center'>
                                                 <span className="w-4 text-gray-700">{rating.stars}</span>
                                                 <AiFillStar className="text-gray-600" />
@@ -149,55 +115,60 @@ const RatingReview = ({ product, loading }) => {
                             </div>
                         </div>
                     </div>
+
+                    {/* Selected Ratings Section */}
+                    {selectedRating && (
+                        <div className="mt-4 flex justify-between items-center bg-gray-100 p-4 rounded">
+                            <p className="font-bold">{`Showing ${selectedRating} star ratings (${displayedReviews.length})`}</p>
+                            <button
+                                className="text-red-600 font-semibold hover:underline"
+                                onClick={handleClearSelection}
+                            >
+                                Clear All
+                            </button>
+                        </div>
+                    )}
+
                     <div>
-                        {
-                            filteredReviews.map(review => (
-                                <div className='flex flex-col space-y-4'>
-                                    <div className='flex justify-start items-center space-x-3'>
-                                        <div className="flex justify-start items-center space-x-10">
-                                            <Rating
-                                                style={{ maxWidth: 80 }}
-                                                value={review.rating}
-                                                readOnly
-                                                className="flex"
-                                            />
-                                            <p>{review.rating.toFixed(1)}</p>
-                                        </div>
+                        {displayedReviews.map(review => (
+                            <div className='flex flex-col space-y-4' key={review._id}>
+                                <div className='flex justify-start items-center space-x-3'>
+                                    <div className="flex justify-start items-center space-x-10">
+                                        <Rating
+                                            style={{ maxWidth: 80 }}
+                                            value={review.rating}
+                                            readOnly
+                                            className="flex"
+                                        />
+                                        <p>{review.rating.toFixed(1)}</p>
                                     </div>
-                                    <div className='flex flex-col space-y-2'>
-                                        <p className='font-bold'>
-                                            {review.title}
-                                        </p>
-                                        <p>
-                                            {review.description}
-                                        </p>
-                                        <div className='flex flex-wrap items-center space-x-2'>
-                                            {review.img.map(singleImg => (
-                                                <>
-                                                    <img src={singleImg} alt="" />
-                                                </>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <hr className='my-5' />
                                 </div>
-                            ))
-                        }
+                                <div className='flex flex-col space-y-2'>
+                                    <p className='font-bold'>
+                                        {review.title}
+                                    </p>
+                                    <p>
+                                        {review.description}
+                                    </p>
+                                    <div className='flex flex-wrap items-center space-x-2'>
+                                        {review.img.map((singleImg, index) => (
+                                            <img key={index} src={singleImg} alt="" />
+                                        ))}
+                                    </div>
+                                </div>
+                                <hr className='my-5' />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
             <div>
-                {
-                    loading
-                        ?
-                        "Loading..."
-                        :
-                        <RatingsReviewModal
-                            show={isReviewModalOpen}
-                            onClose={handleCloseModal}
-                            // products={products}
-                            selectedProduct={product}
-                        />
+                {loading ? "Loading..." :
+                    <RatingsReviewModal
+                        show={isReviewModalOpen}
+                        onClose={handleCloseModal}
+                        selectedProduct={product}
+                    />
                 }
             </div>
         </>
