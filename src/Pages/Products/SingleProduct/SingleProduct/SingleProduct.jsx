@@ -12,17 +12,43 @@ import RatingReview from '../RatingReview/RatingReview';
 import ProductScrollNav from '../ProductScrollNav/ProductScrollNav';
 import BuyNowSingleProductModal from '../../../../Components/BuyNowSingleProductModal/BuyNowSingleProductModal';
 import RatingsReviewModal from '../../../../Components/RatingsReviewModal/RatingsReviewModal';
+import useReviews from '../../../../Hooks/useReviews';
 
 const SingleProduct = () => {
     const [products, loading] = useProducts();
+    const [reviews, reviewsloading] = useReviews();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
+    const url = location.pathname;
 
     const { id } = useParams();
     const product = products.find(product => product._id == id);
 
-    const url = location.pathname;
+    const filteredReviews = reviews.filter(review => review.pid === product._id);
+
+    const ratings = [
+        { stars: 5, count: 0 },
+        { stars: 4, count: 0 },
+        { stars: 3, count: 0 },
+        { stars: 2, count: 0 },
+        { stars: 1, count: 0 },
+    ];
+
+    filteredReviews.forEach(item => {
+        const rating = item.rating;
+        const ratingObj = ratings.find(r => r.stars === rating);
+        if (ratingObj) {
+            ratingObj.count += 1;
+        }
+    });
+
+    // calculate total raters
+    const totalRaters = filteredReviews.length;
+
+    // Calculate overall rating
+    const totalScore = ratings.reduce((acc, rating) => acc + (rating.stars * rating.count), 0);
+    const overallRating = totalRaters > 0 ? (totalScore / totalRaters).toFixed(1) : 0;
 
     const handleBuy = (product) => {
         setSelectedProduct(product);
@@ -77,12 +103,12 @@ const SingleProduct = () => {
                                     <div className="mt-10 flex justify-start items-center space-x-3">
                                         <Rating
                                             style={{ maxWidth: 80 }}
-                                            value={product.rating}
+                                            value={overallRating}
                                             readOnly
                                             className="flex"
                                         />
                                         <p>
-                                            {product.rating} ({product.rater})
+                                            {overallRating} ({totalRaters})
                                         </p>
                                         <p
                                             className='hover:link'

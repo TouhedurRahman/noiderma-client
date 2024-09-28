@@ -2,19 +2,37 @@ import { Rating } from '@smastrom/react-rating';
 import React, { useState } from 'react';
 import { AiFillStar } from 'react-icons/ai';
 import RatingsReviewModal from '../../../../Components/RatingsReviewModal/RatingsReviewModal';
+import useReviews from '../../../../Hooks/useReviews';
 
 const RatingReview = ({ product, loading }) => {
+    const [reviews, reviewsloading] = useReviews();
+    const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
+    const url = location.pathname;
+
+    const filteredReviews = reviews.filter(review => review.pid === product._id);
+
     const ratings = [
-        { stars: 5, count: 99 },
-        { stars: 4, count: 80 },
-        { stars: 3, count: 60 },
-        { stars: 2, count: 30 },
-        { stars: 1, count: 10 },
+        { stars: 5, count: 0 },
+        { stars: 4, count: 0 },
+        { stars: 3, count: 0 },
+        { stars: 2, count: 0 },
+        { stars: 1, count: 0 },
     ];
 
-    const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
+    filteredReviews.forEach(item => {
+        const rating = item.rating;
+        const ratingObj = ratings.find(r => r.stars === rating);
+        if (ratingObj) {
+            ratingObj.count += 1;
+        }
+    });
 
-    const url = location.pathname;
+    // calculate total raters
+    const totalRaters = filteredReviews.length;
+
+    // Calculate overall rating
+    const totalScore = ratings.reduce((acc, rating) => acc + (rating.stars * rating.count), 0);
+    const overallRating = totalRaters > 0 ? (totalScore / totalRaters).toFixed(1) : 0;
 
     const handleReview = () => {
         setIsReviewModalOpen(true);
@@ -122,14 +140,49 @@ const RatingReview = ({ product, loading }) => {
                                 <div className="flex justify-start items-center space-x-10">
                                     <Rating
                                         style={{ maxWidth: 80 }}
-                                        value={product.rating}
+                                        value={overallRating}
                                         readOnly
                                         className="flex"
                                     />
-                                    <p>{product.rating.toFixed(1)}</p>
+                                    <p>{overallRating} ({totalRaters})</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        {
+                            filteredReviews.map(review => (
+                                <div className='flex flex-col space-y-4'>
+                                    <div className='flex justify-start items-center space-x-3'>
+                                        <div className="flex justify-start items-center space-x-10">
+                                            <Rating
+                                                style={{ maxWidth: 80 }}
+                                                value={review.rating}
+                                                readOnly
+                                                className="flex"
+                                            />
+                                            <p>{review.rating.toFixed(1)}</p>
+                                        </div>
+                                    </div>
+                                    <div className='flex flex-col space-y-2'>
+                                        <p className='font-bold'>
+                                            {review.title}
+                                        </p>
+                                        <p>
+                                            {review.description}
+                                        </p>
+                                        <div className='flex flex-wrap items-center space-x-2'>
+                                            {review.img.map(singleImg => (
+                                                <>
+                                                    <img src={singleImg} alt="" />
+                                                </>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <hr className='my-5' />
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>

@@ -1,0 +1,578 @@
+[
+    {
+        "_id": 1,
+        "pid": 1,
+        "pname": "Healing Ointment",
+        "rating": 4,
+        "title": "Good Product",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod est obcaecati suscipit vero, temporibus sit sunt aspernatur aperiam itaque dolor.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-1",
+            "https://via.placeholder.com/150?text=review-2"
+        ],
+        "email": "abc@gmail.com"
+    },
+    {
+        "_id": 2,
+        "pid": 1,
+        "pname": "Healing Ointment",
+        "rating": 5,
+        "title": "Amazing Results",
+        "description": "This product worked wonders on my skin. Highly recommended!",
+        "img": [
+            "https://via.placeholder.com/150?text=review-3"
+        ],
+        "email": "user1@example.com"
+    },
+    {
+        "_id": 3,
+        "pid": 2,
+        "pname": "Face Cream",
+        "rating": 3,
+        "title": "Average Product",
+        "description": "It’s an okay product, but didn’t meet my expectations.",
+        "img": [
+            "https://via.placeholder.com/150?text=review",
+            "https://via.placeholder.com/150?text=review"
+        ],
+        "email": "user2@example.com"
+    },
+    {
+        "_id": 4,
+        "pid": 2,
+        "pname": "Face Cream",
+        "rating": 4,
+        "title": "Good for Daily Use",
+        "description": "Perfect for regular use. Not greasy and absorbs quickly.",
+        "img": [
+            "https://via.placeholder.com/150?text=review",
+            "https://via.placeholder.com/150?text=review",
+            "https://via.placeholder.com/150?text=review",
+            "https://via.placeholder.com/150?text=review"
+        ],
+        "email": "user3@example.com"
+    },
+    {
+        "_id": 5,
+        "pid": 3,
+        "pname": "Body Lotion",
+        "rating": 5,
+        "title": "Very Soothing",
+        "description": "Excellent product! It really helps to calm my sensitive skin.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-5"
+        ],
+        "email": "user4@example.com"
+    },
+    {
+        "_id": 6,
+        "pid": 3,
+        "pname": "Body Lotion",
+        "rating": 4,
+        "title": "Nice Product",
+        "description": "Good product but a bit pricey.",
+        "img": [],
+        "email": "user5@example.com"
+    },
+    {
+        "_id": 7,
+        "pid": 4,
+        "pname": "Soothing Cream",
+        "rating": 5,
+        "title": "Excellent Results",
+        "description": "I can see visible improvements in my skin texture. Highly recommend!",
+        "img": [
+            "https://via.placeholder.com/150?text=review-6"
+        ],
+        "email": "user6@example.com"
+    },
+    {
+        "_id": 8,
+        "pid": 4,
+        "pname": "Soothing Cream",
+        "rating": 4,
+        "title": "Feels Great",
+        "description": "Makes my skin feel very smooth and refreshed.",
+        "img": [],
+        "email": "user7@example.com"
+    },
+    {
+        "_id": 9,
+        "pid": 5,
+        "pname": "Sunscreen SPF 50",
+        "rating": 3,
+        "title": "Not Effective",
+        "description": "Didn’t see much difference after using for a month.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-7"
+        ],
+        "email": "user8@example.com"
+    },
+    {
+        "_id": 10,
+        "pid": 5,
+        "pname": "Sunscreen SPF 50",
+        "rating": 4,
+        "title": "Good Product",
+        "description": "Brightens up my skin. Would buy again.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-8",
+            "https://via.placeholder.com/150?text=review-9"
+        ],
+        "email": "user9@example.com"
+    },
+    {
+        "_id": 11,
+        "pid": 6,
+        "pname": "Moisture Cream",
+        "rating": 5,
+        "title": "Great for Acne",
+        "description": "Helped clear up my acne in just a few weeks. Love it!",
+        "img": [
+            "https://via.placeholder.com/150?text=review-10"
+        ],
+        "email": "user10@example.com"
+    },
+    {
+        "_id": 12,
+        "pid": 6,
+        "pname": "Moisture Cream",
+        "rating": 4,
+        "title": "Works Well",
+        "description": "Good product but needs to be used regularly for best results.",
+        "img": [],
+        "email": "user11@example.com"
+    },
+    {
+        "_id": 13,
+        "pid": 7,
+        "pname": "Body Emultion",
+        "rating": 4,
+        "title": "Nice Sunscreen",
+        "description": "Feels light and non-greasy. Provides good protection.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-11"
+        ],
+        "email": "user12@example.com"
+    },
+    {
+        "_id": 14,
+        "pid": 7,
+        "pname": "Body Emultion",
+        "rating": 5,
+        "title": "Best Sunscreen Ever",
+        "description": "Provides excellent sun protection without leaving a white cast.",
+        "img": [],
+        "email": "user13@example.com"
+    },
+    {
+        "_id": 15,
+        "pid": 1,
+        "pname": "Healing Ointment",
+        "rating": 4,
+        "title": "Good for Dry Skin",
+        "description": "Keeps my dry skin hydrated all day long.",
+        "img": [],
+        "email": "user14@example.com"
+    },
+    {
+        "_id": 16,
+        "pid": 1,
+        "pname": "Healing Ointment",
+        "rating": 5,
+        "title": "Heals Quickly",
+        "description": "I used it for minor cuts and it heals them quickly.",
+        "img": [
+            "https://via.placeholder.com/150?text=review"
+        ],
+        "email": "user15@example.com"
+    },
+    {
+        "_id": 17,
+        "pid": 2,
+        "pname": "Face Cream",
+        "rating": 4,
+        "title": "Good Moisturizer",
+        "description": "Lightweight and keeps my skin soft.",
+        "img": [],
+        "email": "user16@example.com"
+    },
+    {
+        "_id": 18,
+        "pid": 2,
+        "pname": "Face Cream",
+        "rating": 3,
+        "title": "Too Light",
+        "description": "Not moisturizing enough for very dry skin.",
+        "img": [],
+        "email": "user17@example.com"
+    },
+    {
+        "_id": 19,
+        "pid": 3,
+        "pname": "Body Lotion",
+        "rating": 5,
+        "title": "Perfect for Sensitive Skin",
+        "description": "This cream really calms my irritated skin. A must-have!",
+        "img": [
+            "https://via.placeholder.com/150?text=review-13"
+        ],
+        "email": "user18@example.com"
+    },
+    {
+        "_id": 20,
+        "pid": 3,
+        "pname": "Body Lotion",
+        "rating": 4,
+        "title": "Great Product",
+        "description": "Soothes and hydrates well. Would recommend.",
+        "img": [],
+        "email": "user19@example.com"
+    },
+    {
+        "_id": 21,
+        "pid": 4,
+        "pname": "Soothing Cream",
+        "rating": 5,
+        "title": "Great for Wrinkles",
+        "description": "Noticed a reduction in fine lines within a month of use.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-14"
+        ],
+        "email": "user20@example.com"
+    },
+    {
+        "_id": 22,
+        "pid": 4,
+        "pname": "Soothing Cream",
+        "rating": 3,
+        "title": "No Visible Changes",
+        "description": "Didn’t see much improvement in my skin.",
+        "img": [],
+        "email": "user21@example.com"
+    },
+    {
+        "_id": 23,
+        "pid": 5,
+        "pname": "Sunscreen SPF 50",
+        "rating": 4,
+        "title": "Brightens Skin",
+        "description": "Helps to brighten up my complexion. Worth a try.",
+        "img": [],
+        "email": "user22@example.com"
+    },
+    {
+        "_id": 24,
+        "pid": 5,
+        "pname": "Sunscreen SPF 50",
+        "rating": 5,
+        "title": "Great Product",
+        "description": "One of the best brightening creams I’ve used so far.",
+        "img": [],
+        "email": "user23@example.com"
+    },
+    {
+        "_id": 25,
+        "pid": 6,
+        "pname": "Moisture Cream",
+        "rating": 4,
+        "title": "Helps with Acne",
+        "description": "Reduced my acne significantly.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-15"
+        ],
+        "email": "user24@example.com"
+    },
+    {
+        "_id": 26,
+        "pid": 6,
+        "pname": "Moisture Cream",
+        "rating": 3,
+        "title": "Too Strong",
+        "description": "Can be a bit harsh on sensitive skin.",
+        "img": [],
+        "email": "user25@example.com"
+    },
+    {
+        "_id": 27,
+        "pid": 7,
+        "pname": "Body Emultion",
+        "rating": 5,
+        "title": "Perfect for Sun Protection",
+        "description": "Provides excellent protection from the sun.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-16"
+        ],
+        "email": "user26@example.com"
+    },
+    {
+        "_id": 28,
+        "pid": 7,
+        "pname": "Body Emultion",
+        "rating": 4,
+        "title": "Works Well",
+        "description": "Good sunscreen but feels a bit heavy on my skin.",
+        "img": [],
+        "email": "user27@example.com"
+    },
+    {
+        "_id": 29,
+        "pid": 1,
+        "pname": "Healing Ointment",
+        "rating": 5,
+        "title": "Amazing Healing Power",
+        "description": "Works quickly on wounds and keeps them moisturized.",
+        "img": [],
+        "email": "user28@example.com"
+    },
+    {
+        "_id": 30,
+        "pid": 2,
+        "pname": "Face Cream",
+        "rating": 4,
+        "title": "Nice Moisturizer",
+        "description": "Makes my skin feel soft and smooth.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-17"
+        ],
+        "email": "user29@example.com"
+    },
+    {
+        "_id": 31,
+        "pid": 3,
+        "pname": "Body Lotion",
+        "rating": 4,
+        "title": "Soothes Irritation",
+        "description": "Really helps calm down any redness or irritation.",
+        "img": [],
+        "email": "user30@example.com"
+    },
+    {
+        "_id": 32,
+        "pid": 1,
+        "pname": "Healing Ointment",
+        "rating": 5,
+        "title": "Healed My Skin",
+        "description": "This ointment is a lifesaver for dry patches and minor cuts. Definitely recommend!",
+        "img": [
+            "https://via.placeholder.com/150?text=review-18"
+        ],
+        "email": "user31@example.com"
+    },
+    {
+        "_id": 33,
+        "pid": 1,
+        "pname": "Healing Ointment",
+        "rating": 4,
+        "title": "Good for Cuts",
+        "description": "Works well on small wounds but takes time to heal larger ones.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-19"
+        ],
+        "email": "user32@example.com"
+    },
+    {
+        "_id": 34,
+        "pid": 2,
+        "pname": "Face Cream",
+        "rating": 5,
+        "title": "Smooth Skin",
+        "description": "This cream keeps my skin smooth and radiant.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-20"
+        ],
+        "email": "user33@example.com"
+    },
+    {
+        "_id": 35,
+        "pid": 2,
+        "pname": "Face Cream",
+        "rating": 4,
+        "title": "Good Hydration",
+        "description": "Provides good hydration but doesn’t feel heavy.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-21"
+        ],
+        "email": "user34@example.com"
+    },
+    {
+        "_id": 36,
+        "pid": 3,
+        "pname": "Body Lotion",
+        "rating": 4,
+        "title": "Effective Moisturizer",
+        "description": "Great moisturizer, but needs frequent reapplication.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-22"
+        ],
+        "email": "user35@example.com"
+    },
+    {
+        "_id": 37,
+        "pid": 3,
+        "pname": "Body Lotion",
+        "rating": 5,
+        "title": "Love This Product!",
+        "description": "This lotion is fantastic for my sensitive skin.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-23"
+        ],
+        "email": "user36@example.com"
+    },
+    {
+        "_id": 38,
+        "pid": 4,
+        "pname": "Soothing Cream",
+        "rating": 3,
+        "title": "Not as Expected",
+        "description": "Didn’t work as well as I hoped for calming redness.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-24"
+        ],
+        "email": "user37@example.com"
+    },
+    {
+        "_id": 39,
+        "pid": 4,
+        "pname": "Soothing Cream",
+        "rating": 5,
+        "title": "Very Effective",
+        "description": "Works great on sensitive skin without irritation.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-25"
+        ],
+        "email": "user38@example.com"
+    },
+    {
+        "_id": 40,
+        "pid": 5,
+        "pname": "Sunscreen SPF 50",
+        "rating": 4,
+        "title": "Good Protection",
+        "description": "Provides good sun protection, but can feel a bit sticky.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-26"
+        ],
+        "email": "user39@example.com"
+    },
+    {
+        "_id": 41,
+        "pid": 5,
+        "pname": "Sunscreen SPF 50",
+        "rating": 5,
+        "title": "Light and Effective",
+        "description": "Feels lightweight and doesn’t clog pores.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-27"
+        ],
+        "email": "user40@example.com"
+    },
+    {
+        "_id": 42,
+        "pid": 6,
+        "pname": "Moisture Cream",
+        "rating": 5,
+        "title": "Best for Oily Skin",
+        "description": "Keeps my oily skin hydrated without making it greasy.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-28"
+        ],
+        "email": "user41@example.com"
+    },
+    {
+        "_id": 43,
+        "pid": 6,
+        "pname": "Moisture Cream",
+        "rating": 4,
+        "title": "Good for Daily Use",
+        "description": "Perfect for everyday use, though a bit pricey.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-29"
+        ],
+        "email": "user42@example.com"
+    },
+    {
+        "_id": 44,
+        "pid": 7,
+        "pname": "Body Emultion",
+        "rating": 4,
+        "title": "Great for Sun Protection",
+        "description": "Light and easy to apply. Protects well against the sun.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-30"
+        ],
+        "email": "user43@example.com"
+    },
+    {
+        "_id": 45,
+        "pid": 7,
+        "pname": "Body Emultion",
+        "rating": 5,
+        "title": "Excellent for Outdoors",
+        "description": "Perfect for outdoor activities. Keeps skin protected all day.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-31"
+        ],
+        "email": "user44@example.com"
+    },
+    {
+        "_id": 46,
+        "pid": 1,
+        "pname": "Healing Ointment",
+        "rating": 5,
+        "title": "Quick Healing",
+        "description": "Healed my cuts and burns quickly. Great product!",
+        "img": [
+            "https://via.placeholder.com/150?text=review-32"
+        ],
+        "email": "user45@example.com"
+    },
+    {
+        "_id": 47,
+        "pid": 2,
+        "pname": "Face Cream",
+        "rating": 4,
+        "title": "Nice Product",
+        "description": "Feels nice on the skin, but a bit thick for my liking.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-33"
+        ],
+        "email": "user46@example.com"
+    },
+    {
+        "_id": 48,
+        "pid": 3,
+        "pname": "Body Lotion",
+        "rating": 5,
+        "title": "Calming Effect",
+        "description": "Helps calm my irritated skin. Love it!",
+        "img": [
+            "https://via.placeholder.com/150?text=review-34"
+        ],
+        "email": "user47@example.com"
+    },
+    {
+        "_id": 49,
+        "pid": 4,
+        "pname": "Soothing Cream",
+        "rating": 4,
+        "title": "Smooth and Hydrating",
+        "description": "Great cream for sensitive skin. Keeps it hydrated.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-35"
+        ],
+        "email": "user48@example.com"
+    },
+    {
+        "_id": 50,
+        "pid": 5,
+        "pname": "Sunscreen SPF 50",
+        "rating": 5,
+        "title": "Best Sunscreen",
+        "description": "Doesn’t leave a white cast and protects well.",
+        "img": [
+            "https://via.placeholder.com/150?text=review-36"
+        ],
+        "email": "user49@example.com"
+    }
+]
