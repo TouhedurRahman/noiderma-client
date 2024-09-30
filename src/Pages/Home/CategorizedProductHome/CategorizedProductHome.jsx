@@ -3,12 +3,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { Rating } from '@smastrom/react-rating';
+// import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
 import { Link } from 'react-router-dom';
 import useProducts from '../../../Hooks/useProducts';
 import './CategorizedProductHome.css';
 import BuyNowSingleProductModal from '../../../Components/BuyNowSingleProductModal/BuyNowSingleProductModal';
+import OnlyRating from '../../../Components/OnlyRating/OnlyRating';
 
 const CategorizedProductHome = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -106,7 +107,10 @@ const CategorizedProductHome = () => {
                                                             <p className='text-sm font-bold'>
                                                                 ৳ 200/-
                                                             </p>
-                                                            <div className="flex justify-center items-center space-x-3">
+                                                            <OnlyRating
+                                                                product={product}
+                                                            />
+                                                            {/* <div className="flex justify-center items-center space-x-3">
                                                                 <Rating
                                                                     style={{ maxWidth: 80 }}
                                                                     value={product.rating}
@@ -116,7 +120,7 @@ const CategorizedProductHome = () => {
                                                                 <p>
                                                                     {product.rating} ({product.rater})
                                                                 </p>
-                                                            </div>
+                                                            </div> */}
                                                         </div>
                                                     </Link>
                                                     {/* <Link to={product.link || '/'}> */}
