@@ -8,10 +8,10 @@ const RatingReview = ({ product, loading }) => {
     const [reviews, reviewsLoading] = useReviews();
     const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
     const [selectedRating, setSelectedRating] = useState(null);
-    const url = location.pathname;
+    const [currentPage, setCurrentPage] = useState(1);
+    const reviewsPerPage = 3;
 
     const filteredReviews = reviews.filter(review => review.pid === product._id);
-
     const ratings = [
         { stars: 5, count: 0 },
         { stars: 4, count: 0 },
@@ -29,7 +29,6 @@ const RatingReview = ({ product, loading }) => {
     });
 
     const totalRaters = filteredReviews.length;
-
     const totalScore = ratings.reduce((acc, rating) => acc + (rating.stars * rating.count), 0);
     const overallRating = totalRaters > 0 ? (totalScore / totalRaters).toFixed(1) : 0;
 
@@ -46,10 +45,20 @@ const RatingReview = ({ product, loading }) => {
 
     const displayedReviews = selectedRating
         ? filteredReviews.filter(review => review.rating === selectedRating)
-        : filteredReviews;
+        : filteredReviews.slice((currentPage - 1) * reviewsPerPage, currentPage * reviewsPerPage); // Paginated reviews
 
     const handleClearSelection = () => {
-        setSelectedRating(null); // Clear the selected rating
+        setSelectedRating(null);
+    };
+
+    const totalPages = Math.ceil(filteredReviews.length / reviewsPerPage);
+
+    const handleNextPage = () => {
+        setCurrentPage(prevPage => (prevPage < totalPages ? prevPage + 1 : prevPage));
+    };
+
+    const handlePreviousPage = () => {
+        setCurrentPage(prevPage => (prevPage > 1 ? prevPage - 1 : prevPage));
     };
 
     return (
@@ -117,18 +126,34 @@ const RatingReview = ({ product, loading }) => {
                     </div>
 
                     {/* Selected Ratings Section */}
-                    {selectedRating && (
-                        <div className="mt-4 flex justify-between items-center bg-gray-100 p-4 rounded">
-                            <p className="font-bold">{`Showing ${selectedRating} star ratings (${displayedReviews.length})`}</p>
-                            <button
-                                className="text-red-600 font-semibold hover:underline"
-                                onClick={handleClearSelection}
-                            >
-                                Clear All
-                            </button>
-                        </div>
-                    )}
+                    {selectedRating
+                        ?
+                        (
+                            <div className="my-5 flex justify-between items-center bg-gray-100 p-4 rounded">
+                                <p className="font-bold">{`Showing ${selectedRating} star ratings (${displayedReviews.length})`}</p>
+                                <button
+                                    className="text-red-600 font-semibold hover:underline"
+                                    onClick={handleClearSelection}
+                                >
+                                    Clear All
+                                </button>
+                            </div>
+                        )
+                        :
+                        (
+                            <div className="my-5 flex justify-between items-center bg-gray-100 p-4 rounded">
+                                <p className="font-bold">{`Showing all ratings (${totalRaters})`}</p>
+                                <button
+                                    className="text-red-600 font-semibold hover:underline"
+                                    onClick={handleClearSelection}
+                                >
+                                    Clear All
+                                </button>
+                            </div>
+                        )
+                    }
 
+                    {/* Displayed Reviews */}
                     <div>
                         {displayedReviews.map(review => (
                             <div className='flex flex-col space-y-4' key={review._id}>
@@ -159,6 +184,29 @@ const RatingReview = ({ product, loading }) => {
                                 <hr className='my-5' />
                             </div>
                         ))}
+                    </div>
+
+                    {/* Pagination Section */}
+                    <div className='mt-10 flex justify-between items-center'>
+                        <p className='text-gray-700'>
+                            {`${(currentPage - 1) * reviewsPerPage + 1}–${Math.min(currentPage * reviewsPerPage, filteredReviews.length)} of ${filteredReviews.length} Reviews`}
+                        </p>
+                        <div className='flex space-x-4'>
+                            <button
+                                className={`px-4 py-2 rounded ${currentPage === 1 ? 'bg-gray-300 cursor-not-allowed' : 'bg-black text-white'}`}
+                                onClick={handlePreviousPage}
+                                disabled={currentPage === 1}
+                            >
+                                Previous
+                            </button>
+                            <button
+                                className={`px-4 py-2 rounded ${currentPage === totalPages ? 'bg-gray-300 cursor-not-allowed' : 'bg-black text-white'}`}
+                                onClick={handleNextPage}
+                                disabled={currentPage === totalPages}
+                            >
+                                Next
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
