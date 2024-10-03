@@ -114,7 +114,7 @@ const SingleProduct = () => {
                                             className='hover:link'
                                             onClick={() => handleReview(product)}
                                         >
-                                            Write a Rview
+                                            Write a Review
                                         </p>
                                     </div>
                                     <div>

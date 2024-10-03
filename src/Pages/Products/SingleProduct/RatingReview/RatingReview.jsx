@@ -130,7 +130,7 @@ const RatingReview = ({ product, loading }) => {
                         ?
                         (
                             <div className="my-5 flex justify-between items-center bg-gray-100 p-4 rounded">
-                                <p className="font-bold">{`Showing ${selectedRating} star ratings (${displayedReviews.length})`}</p>
+                                <p className="font-bold">{`Showing reviews contains ${selectedRating} star ratings (${displayedReviews.length})`}</p>
                                 <button
                                     className="text-red-600 font-semibold hover:underline"
                                     onClick={handleClearSelection}
@@ -142,10 +142,9 @@ const RatingReview = ({ product, loading }) => {
                         :
                         (
                             <div className="my-5 flex justify-between items-center bg-gray-100 p-4 rounded">
-                                <p className="font-bold">{`Showing all ratings (${totalRaters})`}</p>
+                                <p className="font-bold">{`Showing all reviews (${totalRaters})`}</p>
                                 <button
-                                    className="text-red-600 font-semibold hover:underline"
-                                    onClick={handleClearSelection}
+                                    className="text-gray-700 font-semibold cursor-not-allowed"
                                 >
                                     Clear All
                                 </button>
