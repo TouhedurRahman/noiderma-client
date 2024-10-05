@@ -32,7 +32,8 @@ const Navbar = () => {
     };
 
     const menuItems = [
-        { name: 'PRODUCTS', subOptions: ['Product 1', 'Product 2'] },
+        // { name: 'PRODUCTS', subOptions: ['Product 1', 'Product 2'] },
+        { name: 'PRODUCTS', subOptions: [] },
         { name: 'CONTACT US', subOptions: [] },
         { name: 'FIND A STORE', subOptions: [] }
     ];
