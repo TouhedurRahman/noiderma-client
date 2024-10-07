@@ -8,18 +8,18 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const [rating, setRating] = useState(0);
     const [ratingLabel, setRatingLabel] = useState('Click to rate!');
-    const [isChecking, setIsChecking] = useState(false);
+    // const [isChecking, setIsChecking] = useState(false);
 
-    const zero_bounce_api = import.meta.env.VITE_ZEROBOUNCE_API;
+    // const zero_bounce_api = import.meta.env.VITE_ZEROBOUNCE_API;
     // console.log(zero_bounce_api);
 
-    const checkEmailValidity = async (email) => {
+    /* const checkEmailValidity = async (email) => {
         setIsChecking(true);
         const response = await fetch(`https://api.zerobounce.net/v2/validate?api_key=${zero_bounce_api}&email=${email}`);
         const data = await response.json();
         setIsChecking(false);
         return data.status === 'valid';
-    };
+    }; */
 
     const handleRatingChange = (value) => {
         setRating(value);
@@ -38,37 +38,37 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
     };
 
     const onSubmit = (data) => {
-        const isValid = checkEmailValidity(data.email);
+        /* const isValid = checkEmailValidity(data.email);
         if (!isValid) {
             setError('email', { type: 'manual', message: 'Invalid email address or domain' });
         } else {
-            // console.log('Email is valid');
-            const { title, description, photo, nickname, location, email, mobile, agree, age, gender, skinType, likeMost, primaryReason, usageFrequency, usageDuration, buyAgain } = data;
+            console.log('Email is valid');
+        } */
+        const { title, description, photo, nickname, location, email, mobile, agree, age, gender, skinType, likeMost, primaryReason, usageFrequency, usageDuration, buyAgain } = data;
 
-            console.log('Form Data:', {
-                title,
-                description,
-                rating,
-                ratingLabel,
-                photo: photo.length > 0 ? photo[0].name : 'No photo uploaded',
-                nickname,
-                location,
-                email,
-                mobile,
-                agree,
-                age,
-                gender,
-                skinType,
-                likeMost,
-                primaryReason,
-                usageFrequency,
-                usageDuration,
-                buyAgain,
-            });
+        console.log('Form Data:', {
+            title,
+            description,
+            rating,
+            ratingLabel,
+            photo: photo.length > 0 ? photo[0].name : 'No photo uploaded',
+            nickname,
+            location,
+            email,
+            mobile,
+            agree,
+            age,
+            gender,
+            skinType,
+            likeMost,
+            primaryReason,
+            usageFrequency,
+            usageDuration,
+            buyAgain,
+        });
 
-            reset();
-            onClose();
-        }
+        reset();
+        onClose();
     };
 
     if (!show || !selectedProduct) {
@@ -186,13 +186,13 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                                                 value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                                                 message: 'Please enter a valid email address',
                                             },
-                                            validate: async (value) => {
+                                            /* validate: async (value) => {
                                                 const isValid = await checkEmailValidity(value);
                                                 return isValid || 'Invalid email address or domain';
-                                            }
+                                            } */
                                         })}
                                         className="block w-full mt-1 p-2 border border-gray-900 text-sm rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-                                        disabled={isChecking}
+                                    // disabled={isChecking}
                                     />
                                     {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
                                 </div>
@@ -375,7 +375,8 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                                     type="submit"
                                     className="w-full bg-black text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition duration-200"
                                 >
-                                    {isChecking ? 'Validating...' : 'Submit Review'}
+                                    {/* {isChecking ? 'Validating...' : 'Submit Review'} */}
+                                    Submit Review
                                 </button>
                             </div>
                         </form>
