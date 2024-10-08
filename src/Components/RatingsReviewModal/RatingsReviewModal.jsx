@@ -10,7 +10,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const [rating, setRating] = useState(0);
     const [ratingLabel, setRatingLabel] = useState('Click to rate!');
-    const [imagePreviews, setImagePreviews] = useState([]);
+    // const [imagePreviews, setImagePreviews] = useState([]);
     // const [isChecking, setIsChecking] = useState(false);
 
     const img_hosting_url = useHosting();
@@ -93,7 +93,6 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
             location,
             email,
             mobile,
-            agree,
             age,
             gender,
             skinType,
@@ -104,7 +103,21 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
             buyAgain
         };
 
-        axios.post('http://localhost:5000/reviews', reviewData);
+        try {
+            const response = await axios.post('http://localhost:5000/reviews', reviewData);
+
+            if (response.status === 200) {
+                alert(response.data.message); // Product updated successfully
+                reset();
+                onClose();
+            } else if (response.status === 201) {
+                alert(response.data.message); // New product created successfully
+                reset();
+                onClose();
+            }
+        } catch (error) {
+            alert('Error saving product: ' + error.response.data.message);
+        }
     };
 
     if (!show || !selectedProduct) {
