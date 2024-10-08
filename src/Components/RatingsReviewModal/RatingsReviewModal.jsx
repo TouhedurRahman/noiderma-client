@@ -1,14 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import ReactRating from 'react-rating';
 import { useForm } from 'react-hook-form';
 import 'font-awesome/css/font-awesome.min.css';
+import useHosting from '../../Hooks/useHosting';
+import axios from 'axios';
 
 const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const [rating, setRating] = useState(0);
     const [ratingLabel, setRatingLabel] = useState('Click to rate!');
+    const [imagePreviews, setImagePreviews] = useState([]);
     // const [isChecking, setIsChecking] = useState(false);
+
+    const img_hosting_url = useHosting();
 
     // const zero_bounce_api = import.meta.env.VITE_ZEROBOUNCE_API;
     // console.log(zero_bounce_api);
@@ -20,6 +25,32 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
         setIsChecking(false);
         return data.status === 'valid';
     }; */
+
+    /* const handleImageChange = (e) => {
+        const files = Array.from(e.target.files);
+        const previews = files.map((file) => URL.createObjectURL(file));
+        setImagePreviews(previews);
+    }; */
+
+    const uploadImages = async (files) => {
+        const uploadedImageUrls = [];
+
+        for (let i = 0; i < files.length; i++) {
+            const formData = new FormData();
+            formData.append('image', files[i]);
+
+            const response = await fetch(img_hosting_url, {
+                method: 'POST',
+                body: formData,
+            });
+
+            const result = await response.json();
+            if (result.success) {
+                uploadedImageUrls.push(result.data.url);
+            }
+        }
+        return uploadedImageUrls;
+    };
 
     const handleRatingChange = (value) => {
         setRating(value);
@@ -37,7 +68,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
         }
     };
 
-    const onSubmit = (data) => {
+    const onSubmit = async (data) => {
         /* const isValid = checkEmailValidity(data.email);
         if (!isValid) {
             setError('email', { type: 'manual', message: 'Invalid email address or domain' });
@@ -46,12 +77,18 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
         } */
         const { title, description, photo, nickname, location, email, mobile, agree, age, gender, skinType, likeMost, primaryReason, usageFrequency, usageDuration, buyAgain } = data;
 
-        console.log('Form Data:', {
+        // Upload images and get URLs
+        const imageFiles = photo.length > 0 ? photo : [];
+        const imageUrls = await uploadImages(imageFiles);
+
+        const reviewData = {
+            pid: selectedProduct._id,
+            pname: selectedProduct.name,
             title,
             description,
             rating,
             ratingLabel,
-            photo: photo.length > 0 ? photo[0].name : 'No photo uploaded',
+            photos: photo.length > 0 ? imageUrls : [],
             nickname,
             location,
             email,
@@ -64,11 +101,10 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
             primaryReason,
             usageFrequency,
             usageDuration,
-            buyAgain,
-        });
+            buyAgain
+        };
 
-        reset();
-        onClose();
+        axios.post('http://localhost:5000/reviews', reviewData);
     };
 
     if (!show || !selectedProduct) {
@@ -139,11 +175,12 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                             </div>
 
                             <div>
-                                <label className="block text-sm font-medium text-gray-700">Upload Review Photo</label>
+                                <label className="block text-sm font-medium text-gray-700">Upload Review Photos</label>
                                 <input
                                     type="file"
                                     {...register('photo')}
                                     className="file-input file-input-bordered w-full mt-1"
+                                    multiple
                                 />
                             </div>
 
