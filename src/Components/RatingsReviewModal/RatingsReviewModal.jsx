@@ -107,13 +107,15 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
             const response = await axios.post('http://localhost:5000/reviews', reviewData);
 
             if (response.status === 200) {
+                reset();
+                onClose();
+                window.location.reload();
                 alert(response.data.message); // Product updated successfully
-                reset();
-                onClose();
             } else if (response.status === 201) {
-                alert(response.data.message); // New product created successfully
                 reset();
                 onClose();
+                window.location.reload();
+                alert(response.data.message); // New product created successfully
             }
         } catch (error) {
             alert('Error saving product: ' + error.response.data.message);
