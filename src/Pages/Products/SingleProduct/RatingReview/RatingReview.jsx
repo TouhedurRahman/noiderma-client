@@ -175,8 +175,8 @@ const RatingReview = ({ product, loading }) => {
                                         {review.description}
                                     </p>
                                     <div className='flex flex-wrap items-center space-x-2'>
-                                        {review.img.map((singleImg, index) => (
-                                            <img key={index} src={singleImg} alt="" />
+                                        {review.photos.map((photo, index) => (
+                                            <img key={index} src={photo} alt="" />
                                         ))}
                                     </div>
                                 </div>
