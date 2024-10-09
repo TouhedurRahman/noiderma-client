@@ -176,7 +176,12 @@ const RatingReview = ({ product, loading }) => {
                                     </p>
                                     <div className='flex flex-wrap items-center space-x-2'>
                                         {review.photos.map((photo, index) => (
-                                            <img key={index} src={photo} alt="" />
+                                            <img
+                                                key={index}
+                                                src={photo}
+                                                alt=""
+                                                className='h-[150px] w-[150px]'
+                                            />
                                         ))}
                                     </div>
                                 </div>

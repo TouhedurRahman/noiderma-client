@@ -4,7 +4,7 @@ const useReviews = () => {
     const { data: reviews = [], isLoading: reviewsloading, refetch } = useQuery({
         queryKey: ['reviews'],
         queryFn: async () => {
-            const url = '/reviews.json';
+            const url = 'http://localhost:5000/reviews';
             const result = await fetch(url);
             return result.json();
         }
