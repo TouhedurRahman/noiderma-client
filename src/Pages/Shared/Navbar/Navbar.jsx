@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes, FaChevronDown, FaSearch } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +47,7 @@ const Navbar = () => {
         >
             <div className='w-[93%] lg:w-[85%] mx-auto flex justify-between items-center py-4'>
                 {/* Logo */}
-                <div className='text-2xl font-bold flex justify-center items-center'>
+                <Link to="/" className='text-2xl font-bold flex justify-center items-center'>
                     <img
                         src={
                             isScrolled || isHovered
@@ -56,7 +57,7 @@ const Navbar = () => {
                         alt="Logo"
                         className='w-[150px] lg:w-[180px] h-[40px]'
                     />
-                </div>
+                </Link>
 
                 {/* Menu Items */}
                 <ul className='hidden md:flex space-x-4 ml-auto'>
