@@ -3,10 +3,13 @@ import React, { useState } from 'react';
 import { AiFillStar } from 'react-icons/ai';
 import RatingsReviewModal from '../../../../Components/RatingsReviewModal/RatingsReviewModal';
 import useReviews from '../../../../Hooks/useReviews';
+import PhotoModal from '../../../../Components/PhotoModal/PhotoModal';
 
 const RatingReview = ({ product, loading }) => {
     const [reviews, reviewsLoading] = useReviews();
     const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
+    const [isPhotoModalOpen, setIsPhotoModalOpen] = useState(false);
+    const [selectedPhoto, setSelectedPhoto] = useState(null);
     const [selectedRating, setSelectedRating] = useState(null);
     const [currentPage, setCurrentPage] = useState(1);
     const reviewsPerPage = 3;
@@ -34,6 +37,16 @@ const RatingReview = ({ product, loading }) => {
 
     const handleReview = () => {
         setIsReviewModalOpen(true);
+    };
+
+    const handlePhotoClick = (photo) => {
+        setSelectedPhoto(photo);
+        setIsPhotoModalOpen(true);
+    };
+
+    const handleClosePhotoModal = () => {
+        setIsPhotoModalOpen(false);
+        setSelectedPhoto(null);
     };
 
     const handleCloseModal = () => {
@@ -180,7 +193,8 @@ const RatingReview = ({ product, loading }) => {
                                                 key={index}
                                                 src={photo}
                                                 alt=""
-                                                className='h-full w-full md:h-[150px] md:w-[150px]'
+                                                className='h-full w-full md:h-[150px] md:w-[150px] cursor-pointer'
+                                                onClick={() => handlePhotoClick(photo)} // Add onClick handler
                                             />
                                         ))}
                                     </div>
@@ -214,6 +228,14 @@ const RatingReview = ({ product, loading }) => {
                     </div>
                 </div>
             </div>
+            {/* Photo Modal */}
+            <PhotoModal
+                isOpen={isPhotoModalOpen}
+                photo={selectedPhoto}
+                onClose={handleClosePhotoModal}
+            />
+
+            {/* Existing Code for Rating Review Modal... */}
             <div>
                 {loading ? "Loading..." :
                     <RatingsReviewModal
