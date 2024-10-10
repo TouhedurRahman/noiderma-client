@@ -174,13 +174,13 @@ const RatingReview = ({ product, loading }) => {
                                     <p>
                                         {review.description}
                                     </p>
-                                    <div className='flex flex-wrap items-center space-x-2'>
+                                    <div className='grid grid-cols-2 gap-1 md:flex flex-wrap justify-center md:justify-start items-center md:space-x-2'>
                                         {review.photos.map((photo, index) => (
                                             <img
                                                 key={index}
                                                 src={photo}
                                                 alt=""
-                                                className='h-[150px] w-[150px]'
+                                                className='h-full w-full md:h-[150px] md:w-[150px]'
                                             />
                                         ))}
                                     </div>
