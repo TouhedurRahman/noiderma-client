@@ -149,9 +149,9 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
 
     return (
         <div className="fixed inset-0 my-auto bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
-            <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg w-[50%] mx-auto h-96 overflow-y-auto max-h-screen">
-                <div className='flex justify-start items-start'>
-                    <div className='w-[30%] px-2 px-auto'>
+            <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg md:w-[50%] mx-auto h-96 overflow-y-auto max-h-screen">
+                <div className='flex flex-col md:flex-row justify-start items-start space-y-10 md:space-y-0'>
+                    <div className='w-full md:w-[30%] px-2 px-auto md:sticky top-0'>
                         <div className='flex justify-center items-center'>
                             <img src={selectedProduct.image} alt="" />
                         </div>
@@ -167,7 +167,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                             </p>
                         </div>
                     </div>
-                    <div className='w-[70%]'>
+                    <div className='w-full md:w-[70%]'>
                         <div>
                             <div className="flex justify-between items-center mb-4">
                                 <h2 className="text-2xl font-bold text-gray-800">My Review for {selectedProduct.name}</h2>
@@ -180,11 +180,11 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                             </p>
                         </div>
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-                            <div className='flex justify-start items-center space-x-2'>
+                            <div className='flex flex-col md:flex-row justify-start items-center space-x-2 space-y-2 md:space-y-0'>
                                 <label className="text-sm font-medium text-gray-700">
                                     Overall Rating <span className='text-red-600 font-bold'>*</span>
                                 </label>
-                                <div className="flex items-center">
+                                <div className="flex flex-col md:flex-row justify-center md:justify-start items-center">
                                     <ReactRating
                                         initialRating={rating}
                                         emptySymbol="fa fa-star-o text-gray-300 text-xl"
@@ -193,7 +193,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                                         fractions={1}
                                         className="text-xl"
                                     />
-                                    <span className="ml-4 text-sm font-semibold">{ratingLabel}</span>
+                                    <span className="md:ml-4 text-sm font-semibold">{ratingLabel}</span>
                                 </div>
                             </div>
 
