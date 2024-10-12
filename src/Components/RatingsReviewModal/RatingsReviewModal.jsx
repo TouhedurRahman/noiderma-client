@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import 'font-awesome/css/font-awesome.min.css';
 import useHosting from '../../Hooks/useHosting';
 import axios from 'axios';
+import OnlyRating from '../OnlyRating/OnlyRating';
 
 const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -133,6 +134,17 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
                     <div className='w-[30%] px-2 px-auto'>
                         <div className='flex justify-center items-center'>
                             <img src={selectedProduct.image} alt="" />
+                        </div>
+                        <div className='flex flex-col justify-center items-center mt-5'>
+                            <p className='font-bold'>
+                                {selectedProduct.name}
+                            </p>
+                            <OnlyRating
+                                product={selectedProduct}
+                            />
+                            <p className='text-sm font-bold'>
+                                ৳ 200/-
+                            </p>
                         </div>
                     </div>
                     <div className='w-[70%]'>
