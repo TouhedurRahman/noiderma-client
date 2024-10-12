@@ -6,6 +6,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import useHosting from '../../Hooks/useHosting';
 import axios from 'axios';
 import OnlyRating from '../OnlyRating/OnlyRating';
+import Swal from 'sweetalert2';
 
 const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -107,19 +108,38 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
         try {
             const response = await axios.post('http://localhost:5000/reviews', reviewData);
 
-            if (response.status === 200) {
+            if (response.status === 200 || response.status === 201) {
                 reset();
                 onClose();
-                window.location.reload();
-                alert(response.data.message); // Product updated successfully
-            } else if (response.status === 201) {
-                reset();
-                onClose();
-                window.location.reload();
-                alert(response.data.message); // New product created successfully
+
+                let timerInterval;
+                Swal.fire({
+                    title: "Review successfully submitting!",
+                    html: "Submitting in <b></b> milliseconds.",
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading();
+                        const timer = Swal.getPopup().querySelector("b");
+                        timerInterval = setInterval(() => {
+                            timer.textContent = `${Swal.getTimerLeft()}`;
+                        }, 100);
+                    },
+                    willClose: () => {
+                        clearInterval(timerInterval);
+                    }
+                }).then(() => {
+                    window.location.reload();
+                });
             }
         } catch (error) {
-            alert('Error saving product: ' + error.response.data.message);
+            Swal.fire({
+                title: 'Error!',
+                text: error?.response?.data?.message || error.message,
+                icon: 'error',
+                confirmButtonText: 'OK',
+                confirmButtonColor: '#d33',
+            });
         }
     };
 
