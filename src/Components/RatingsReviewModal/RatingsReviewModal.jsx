@@ -114,9 +114,9 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
 
                 let timerInterval;
                 Swal.fire({
-                    title: "Review successfully submitting!",
-                    html: "Submitting in <b></b> milliseconds.",
-                    timer: 2000,
+                    title: "Review submission processing...",
+                    html: "Submitting within <b></b> milliseconds.",
+                    timer: 3000,
                     timerProgressBar: true,
                     didOpen: () => {
                         Swal.showLoading();
