@@ -8,20 +8,20 @@ const ContactAddress = () => {
                 <div className="p-6 bg-white shadow-lg rounded-lg">
                     <h2 className="text-2xl font-semibold mb-4">Head Office</h2>
                     <p className="text-gray-700 mb-2">Navantis Pharma Limited</p>
-                    <p className="text-gray-700">123 Corporate Avenue</p>
+                    <p className="text-gray-700">Mirpur - 1</p>
                     <p className="text-gray-700">Dhaka, Bangladesh</p>
                     <p className="text-gray-700">Phone: +880 1329-747657</p>
-                    <p className="text-gray-700">Email: headoffice@navantispharma.com</p>
+                    <p className="text-gray-700">Email: info@navantispharma.com</p>
                 </div>
 
                 {/* Manufacturing Plant Address */}
                 <div className="p-6 bg-white shadow-lg rounded-lg">
                     <h2 className="text-2xl font-semibold mb-4">Manufacturing Plant</h2>
                     <p className="text-gray-700 mb-2">Navantis Pharma Limited</p>
-                    <p className="text-gray-700">456 Industrial Road</p>
-                    <p className="text-gray-700">Gazipur, Bangladesh</p>
+                    <p className="text-gray-700">Mirpur - 1</p>
+                    <p className="text-gray-700">Dhaka, Bangladesh</p>
                     <p className="text-gray-700">Phone: +880 1329-747657</p>
-                    <p className="text-gray-700">Email: plant@navantispharma.com</p>
+                    <p className="text-gray-700">Email: info@navantispharma.com</p>
                 </div>
             </div>
         </div>
