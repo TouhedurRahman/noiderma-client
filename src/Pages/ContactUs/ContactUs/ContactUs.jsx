@@ -57,7 +57,7 @@ const ContactUs = () => {
                             onClick={() => handleCategoryClick(category)}
                             className={`bg-[#E2E2E2] p-4 aspect-square w-full h-48 lg:h-36 flex flex-col items-center justify-center ${selectedCategory.role === category.role ? 'active bg-[#E0E8F8]' : ''}`}
                         >
-                            <span className='text-2xl mb-3'>
+                            <span className='text-5xl mb-3'>
                                 {category.icon}
                             </span>
                             <span className='italic'>
