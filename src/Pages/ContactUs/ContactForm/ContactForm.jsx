@@ -36,7 +36,7 @@ const ContactForm = ({ title, subtitle, description }) => {
                         {errors.products && <span className="text-red-500 text-sm">This field is required</span>}
                     </div>
 
-                    <div className="flex gap-4">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <div className="w-full">
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                                 First Name <span className="text-red-500">*</span>
@@ -59,7 +59,7 @@ const ContactForm = ({ title, subtitle, description }) => {
                         </div>
                     </div>
 
-                    <div className="flex gap-4">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <div className="w-full">
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                                 Phone <span className="text-red-500">*</span>
@@ -93,7 +93,7 @@ const ContactForm = ({ title, subtitle, description }) => {
                         {errors.company && <span className="text-red-500 text-sm">Company/Organization is required</span>}
                     </div>
 
-                    <div className="flex gap-4">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <div className="w-full">
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                                 Address <span className="text-red-500">*</span>
@@ -116,7 +116,7 @@ const ContactForm = ({ title, subtitle, description }) => {
                         </div>
                     </div>
 
-                    <div className="flex gap-4">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <div className="w-full">
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                                 State <span className="text-red-500">*</span>
