@@ -21,10 +21,12 @@ const ContactForm = ({ title, subtitle, description }) => {
                     className="w-full space-y-4"
                 >
                     <div className="w-full">
-                        <label className="block text-sm font-medium text-gray-700 mb-1">Products</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                            Products <span className="text-red-500">*</span>
+                        </label>
                         <select
                             {...register("products", { required: true })}
-                            className="w-full p-2 border border-gray-300 rounded"
+                            className="w-full p-2 border border-black"
                         >
                             <option value="">Select a product</option>
                             <option value="product1">Product 1</option>
@@ -36,18 +38,22 @@ const ContactForm = ({ title, subtitle, description }) => {
 
                     <div className="flex gap-4">
                         <div className="w-full">
-                            <label className="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                First Name <span className="text-red-500">*</span>
+                            </label>
                             <input
                                 {...register("firstName", { required: true })}
-                                className="w-full p-2 border border-gray-300 rounded"
+                                className="w-full p-2 border border-black"
                             />
                             {errors.firstName && <span className="text-red-500 text-sm">First name is required</span>}
                         </div>
                         <div className="w-full">
-                            <label className="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Last Name <span className="text-red-500">*</span>
+                            </label>
                             <input
                                 {...register("lastName", { required: true })}
-                                className="w-full p-2 border border-gray-300 rounded"
+                                className="w-full p-2 border border-black"
                             />
                             {errors.lastName && <span className="text-red-500 text-sm">Last name is required</span>}
                         </div>
@@ -55,46 +61,56 @@ const ContactForm = ({ title, subtitle, description }) => {
 
                     <div className="flex gap-4">
                         <div className="w-full">
-                            <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Phone <span className="text-red-500">*</span>
+                            </label>
                             <input
                                 {...register("phone", { required: true })}
-                                className="w-full p-2 border border-gray-300 rounded"
+                                className="w-full p-2 border border-black"
                             />
                             {errors.phone && <span className="text-red-500 text-sm">Phone is required</span>}
                         </div>
                         <div className="w-full">
-                            <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Email <span className="text-red-500">*</span>
+                            </label>
                             <input
                                 {...register("email", { required: true })}
-                                className="w-full p-2 border border-gray-300 rounded"
+                                className="w-full p-2 border border-black"
                             />
                             {errors.email && <span className="text-red-500 text-sm">Email is required</span>}
                         </div>
                     </div>
 
                     <div className="w-full">
-                        <label className="block text-sm font-medium text-gray-700 mb-1">Company or Organization</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                            Company or Organization <span className="text-red-500">*</span>
+                        </label>
                         <input
                             {...register("company", { required: true })}
-                            className="w-full p-2 border border-gray-300 rounded"
+                            className="w-full p-2 border border-black"
                         />
                         {errors.company && <span className="text-red-500 text-sm">Company/Organization is required</span>}
                     </div>
 
                     <div className="flex gap-4">
                         <div className="w-full">
-                            <label className="block text-sm font-medium text-gray-700 mb-1">Address</label>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Address <span className="text-red-500">*</span>
+                            </label>
                             <input
                                 {...register("address", { required: true })}
-                                className="w-full p-2 border border-gray-300 rounded"
+                                className="w-full p-2 border border-black"
                             />
                             {errors.address && <span className="text-red-500 text-sm">Address is required</span>}
                         </div>
                         <div className="w-full">
-                            <label className="block text-sm font-medium text-gray-700 mb-1">City</label>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                City <span className="text-red-500">*</span>
+                            </label>
                             <input
                                 {...register("city", { required: true })}
-                                className="w-full p-2 border border-gray-300 rounded"
+                                className="w-full p-2 border border-black"
                             />
                             {errors.city && <span className="text-red-500 text-sm">City is required</span>}
                         </div>
@@ -102,28 +118,34 @@ const ContactForm = ({ title, subtitle, description }) => {
 
                     <div className="flex gap-4">
                         <div className="w-full">
-                            <label className="block text-sm font-medium text-gray-700 mb-1">State</label>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                State <span className="text-red-500">*</span>
+                            </label>
                             <input
                                 {...register("state", { required: true })}
-                                className="w-full p-2 border border-gray-300 rounded"
+                                className="w-full p-2 border border-black"
                             />
                             {errors.state && <span className="text-red-500 text-sm">State is required</span>}
                         </div>
                         <div className="w-full">
-                            <label className="block text-sm font-medium text-gray-700 mb-1">Zip Code</label>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Zip Code <span className="text-red-500">*</span>
+                            </label>
                             <input
                                 {...register("zipCode", { required: true })}
-                                className="w-full p-2 border border-gray-300 rounded"
+                                className="w-full p-2 border border-black"
                             />
                             {errors.zipCode && <span className="text-red-500 text-sm">Zip Code is required</span>}
                         </div>
                     </div>
 
                     <div className="w-full">
-                        <label className="block text-sm font-medium text-gray-700 mb-1">Request</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                            Request <span className="text-red-500">*</span>
+                        </label>
                         <textarea
                             {...register("request", { required: true })}
-                            className="w-full p-2 border border-gray-300 rounded"
+                            className="w-full p-2 border border-black"
                             rows="4"
                         />
                         {errors.request && <span className="text-red-500 text-sm">Request is required</span>}

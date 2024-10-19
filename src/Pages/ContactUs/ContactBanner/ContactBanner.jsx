@@ -6,7 +6,7 @@ const ContactBanner = () => {
     return (
         <div className='mt-20 flex flex-col-reverse md:flex-row bg-[#E2E2E2]'>
             <div className='w-full md:w-[40%] flex justify-center items-center'>
-                <div className='w-[80%] mx-auto flex flex-col space-y-3'>
+                <div className='w-[80%] mx-auto my-5 flex flex-col space-y-3'>
                     <p className='text-4xl font-bold'>
                         Contact Us
                     </p>
