@@ -4,12 +4,12 @@ import { LuPhoneCall } from 'react-icons/lu';
 
 const ContactBanner = () => {
     return (
-        <div className='mt-20 flex flex-col-reverse md:flex-row bg-[#E2E2E2]'>
+        <div className='flex flex-col-reverse md:flex-row bg-[#E2E2E2]'>
             <div className='w-full md:w-[40%] flex justify-center items-center'>
                 <div className='w-[80%] mx-auto my-5 flex flex-col space-y-3'>
-                    <p className='text-4xl font-bold'>
+                    {/* <p className='text-4xl font-bold'>
                         Contact Us
-                    </p>
+                    </p> */}
                     <p className='text-2xl font-medium'>
                         DO YOU HAVE QUESTIONS FOR NOIDERMA? ASK US NOW.
                     </p>

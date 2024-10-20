@@ -44,7 +44,10 @@ const ContactUs = () => {
     };
 
     return (
-        <div>
+        <div className='mt-20'>
+            <p className='py-20 text-4xl font-medium text-center'>
+                Contact Us
+            </p>
             <ContactBanner />
             <div className='my-10'>
                 <p className='text-4xl text-center font-bold mb-10'>
