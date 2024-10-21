@@ -45,9 +45,15 @@ const ContactUs = () => {
 
     return (
         <div className='mt-20'>
-            <p className='py-20 text-4xl font-medium text-center'>
-                Contact Us
-            </p>
+            <div className='py-16 w-[85%] md:w-[60%] mx-auto text-center'>
+                <p className='text-4xl font-medium mb-3'>
+                    {/* Contact Us */}
+                    Get in Touch with Us
+                </p>
+                <p className='text-sm'>
+                    We are here to assist you with any questions or concerns you may have about our products, services, or your skincare journey. Whether you need more information, have a specific inquiry, or simply want to share your feedback, we’d love to hear from you!
+                </p>
+            </div>
             <ContactBanner />
             <div className='my-10'>
                 <p className='text-4xl text-center font-bold mb-10'>
