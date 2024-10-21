@@ -64,7 +64,7 @@ const ContactUs = () => {
                         <button
                             key={index}
                             onClick={() => handleCategoryClick(category)}
-                            className={`bg-[#E2E2E2] p-4 aspect-square w-full h-48 lg:h-36 flex flex-col items-center justify-center ${selectedCategory.role === category.role ? 'active bg-[#E0E8F8]' : ''}`}
+                            className={`p-4 aspect-square w-full h-48 lg:h-36 flex flex-col items-center justify-center ${selectedCategory.role === category.role ? 'active bg-[#E0E8F8]' : 'bg-[#E2E2E2]'}`}
                         >
                             <span className='text-4xl mb-3'>
                                 {category.icon}
@@ -81,6 +81,7 @@ const ContactUs = () => {
                 <hr className='hidden md:block bg-[#E0E8F8] w-[90%] h-[10px] mx-auto' />
 
                 <ContactForm
+                    role={selectedCategory.role}
                     title={selectedCategory.title}
                     subtitle={selectedCategory.subtitle}
                     description={selectedCategory.description} />

@@ -1,13 +1,54 @@
 import { useForm } from 'react-hook-form';
 import useProducts from '../../../Hooks/useProducts';
+import axios from 'axios';
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
-const ContactForm = ({ title, subtitle, description }) => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+const ContactForm = ({ role, title, subtitle, description }) => {
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const [products] = useProducts();
+    const navigate = useNavigate();
 
-    const onSubmit = (data) => {
-        console.log(data);
+    const onSubmit = data => {
+        const newQuery = {
+            role: role,
+            pname: data.product,
+            name: data.fname + " " + data.lname,
+            phone: data.phone,
+            email: data.email,
+            company: data.company,
+            address: data.address,
+            city: data.city,
+            state: data.state,
+            zip: data.zip,
+            message: data.request
+        };
+
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, Submit!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                axios.post('http://localhost:5000/queries', newQuery)
+                    .then(data => {
+                        if (data.data.insertedId) {
+                            reset();
+                            navigate('/');
+                            Swal.fire({
+                                title: "Submitted!",
+                                text: "We reply you as soon as possible.",
+                                icon: "success"
+                            });
+                        }
+                    });
+            }
+        });
     };
 
     return (
@@ -28,7 +69,7 @@ const ContactForm = ({ title, subtitle, description }) => {
                             Products <span className="text-red-500">*</span>
                         </label>
                         <select
-                            {...register("products", { required: true })}
+                            {...register("product", { required: true })}
                             className="w-full p-2 border border-black"
                         >
                             <option value="">Select a product</option>
@@ -53,7 +94,7 @@ const ContactForm = ({ title, subtitle, description }) => {
                                 First Name <span className="text-red-500">*</span>
                             </label>
                             <input
-                                {...register("firstName", { required: true })}
+                                {...register("fname", { required: true })}
                                 className="w-full p-2 border border-black"
                             />
                             {errors.firstName && <span className="text-red-500 text-sm">First name is required</span>}
@@ -63,7 +104,7 @@ const ContactForm = ({ title, subtitle, description }) => {
                                 Last Name <span className="text-red-500">*</span>
                             </label>
                             <input
-                                {...register("lastName", { required: true })}
+                                {...register("lname", { required: true })}
                                 className="w-full p-2 border border-black"
                             />
                             {errors.lastName && <span className="text-red-500 text-sm">Last name is required</span>}
@@ -143,7 +184,7 @@ const ContactForm = ({ title, subtitle, description }) => {
                                 Zip Code <span className="text-red-500">*</span>
                             </label>
                             <input
-                                {...register("zipCode", { required: true })}
+                                {...register("zip", { required: true })}
                                 className="w-full p-2 border border-black"
                             />
                             {errors.zipCode && <span className="text-red-500 text-sm">Zip Code is required</span>}
