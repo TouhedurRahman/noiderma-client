@@ -1,7 +1,10 @@
 import { useForm } from 'react-hook-form';
+import useProducts from '../../../Hooks/useProducts';
 
 const ContactForm = ({ title, subtitle, description }) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
+
+    const [products] = useProducts();
 
     const onSubmit = (data) => {
         console.log(data);
@@ -29,9 +32,17 @@ const ContactForm = ({ title, subtitle, description }) => {
                             className="w-full p-2 border border-black"
                         >
                             <option value="">Select a product</option>
-                            <option value="product1">Product 1</option>
-                            <option value="product2">Product 2</option>
-                            <option value="product3">Product 3</option>
+                            {
+                                products &&
+                                products.map((product) => (
+                                    <option
+                                        key={product.id}
+                                        value={product.name}
+                                    >
+                                        {product.name}
+                                    </option>
+                                ))
+                            }
                         </select>
                         {errors.products && <span className="text-red-500 text-sm">This field is required</span>}
                     </div>
