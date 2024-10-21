@@ -20,7 +20,7 @@ const ContactAddress = () => {
                     <FaIndustry className="absolute top-3 right-3 text-gray-500 w-10 h-10" />
 
                     <h2 className="text-3xl font-bold text-gray-600 mb-4">Manufacturing Plant</h2>
-                    <p className="text-gray-800 mb-2 font-medium">SKY RESOURCES SDN.BHD.</p>
+                    <p className="text-gray-800 mb-2 font-medium">SKY RESOURCES SDN. BHD.</p>
                     <address className="text-gray-600">
                         No.1720, Lorong Perusahaan Utama 1, Kawasan Perindustrian,
                         Bukit Tengah, 14000 Bukit Mertajam (SPT) Penang, Malaysia
