@@ -3,9 +3,15 @@ import { Link } from 'react-router-dom';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { Rating } from '@smastrom/react-rating';
 import useProducts from '../../../Hooks/useProducts';
+import OnlyRating from '../../../Components/OnlyRating/OnlyRating';
 
 const Products = () => {
     const [products, loading] = useProducts();
+
+    const formatCategoryName = (category) => {
+        const formatted = category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        return formatted;
+    };
 
     return (
         <div>
@@ -27,25 +33,35 @@ const Products = () => {
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                         {products.map((product) => (
-                            <div key={product._id} className="bg-white shadow-lg rounded-lg overflow-hidden">
+                            <Link
+                                to={`/products/${product._id}`}
+                                key={product._id}
+                                className="bg-white shadow-lg overflow-hidden rounded-b-lg"
+                            >
                                 <img src={product.image} alt={product.name} className="w-full h-60 object-cover" />
                                 <div className="p-5">
                                     <h2 className="text-2xl font-bold text-gray-800">{product.name}</h2>
-                                    <p className="mt-2 text-gray-600">{product.category}</p>
+                                    <p className="mt-2 text-gray-600">{formatCategoryName(product.category)}</p>
 
-                                    <Rating
+                                    {/* <Rating
                                         value={parseFloat(product.overallRating || 0)}
                                         readOnly
                                         style={{ maxWidth: 100 }}
                                         className="flex items-center my-3"
-                                    />
+                                    /> */}
 
-                                    <p className="text-sm text-gray-600 mt-2">
+                                    <div className='flex justify-start my-3'>
+                                        <OnlyRating
+                                            product={product}
+                                        />
+                                    </div>
+
+                                    <p className="text-sm text-gray-600 mt-2 text-justify">
                                         {product.typesDescription}
                                     </p>
 
                                     <div className="mt-4 flex space-x-2">
-                                        <Link
+                                        {/* <Link
                                             to={`/products/${product._id}`}
                                             className="btn bg-gradient-to-r from-black via-gray-700 to-black text-white px-4 py-2 rounded-full"
                                         >
@@ -58,10 +74,16 @@ const Products = () => {
                                             rel="noopener noreferrer"
                                         >
                                             Buy Now
-                                        </a>
+                                        </a> */}
                                     </div>
                                 </div>
-                            </div>
+                                <Link
+                                    to="#"
+                                    className="w-full btn bg-gradient-to-r from-black via-gray-700 to-black text-white px-4 py-2 rounded-t-none rounded-b-lg"
+                                >
+                                    Buy Now
+                                </Link>
+                            </Link>
                         ))}
                     </div>
                 )}
