@@ -92,9 +92,20 @@ const Products = () => {
             {/* Parallax Section */}
             <div className="h-[400px] bg-fixed bg-cover bg-center relative flex items-center justify-center" style={{ backgroundImage: "url('https://via.placeholder.com/1600x400?text=Contact+Us')" }}>
                 <div className="bg-black bg-opacity-50 w-full h-full flex items-center justify-center">
-                    <Link to="/contact-us" className="text-3xl md:text-5xl font-bold text-white hover:underline">
-                        Contact Us for More Information
-                    </Link>
+                    <div className="w-[80%] flex flex-col justify-center items-center space-y-8 text-white">
+                        <h1 className="text-5xl font-bold">Skin Rejuvenation with Aromatherapy</h1>
+                        <p>
+                            Embrace holistic self-care with the nurturing power of natural ingredients for your skin and the soothing essence of essential oils for your mind.
+                        </p>
+                        <div>
+                            <Link
+                                to="/contact-us"
+                                className="btn border border-black bg-black hover:bg-white text-white hover:text-black  font-bold px-24 py-3 rounded-lg"
+                            >
+                                Contact Us
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
