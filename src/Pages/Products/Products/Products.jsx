@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { Rating } from '@smastrom/react-rating';
 import useProducts from '../../../Hooks/useProducts';
 import OnlyRating from '../../../Components/OnlyRating/OnlyRating';
+import BuyNowSingleProductModal from '../../../Components/BuyNowSingleProductModal/BuyNowSingleProductModal';
 
 const Products = () => {
     const [products, loading] = useProducts();
+    const [selectedProduct, setSelectedProduct] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const formatCategoryName = (category) => {
         const formatted = category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
         return formatted;
+    };
+
+    const handleBuy = (product) => {
+        setSelectedProduct(product);
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+        setSelectedProduct(null);
     };
 
     return (
@@ -78,7 +91,7 @@ const Products = () => {
                                     </div>
                                 </div>
                                 <Link
-                                    to="#"
+                                    onClick={() => handleBuy(product)}
                                     className="w-full btn bg-gradient-to-r from-black via-gray-700 to-black text-white px-4 py-2 rounded-t-none rounded-b-lg"
                                 >
                                     Buy Now
@@ -107,6 +120,20 @@ const Products = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                {
+                    loading
+                        ?
+                        "Loading..."
+                        :
+                        <BuyNowSingleProductModal
+                            show={isModalOpen}
+                            onClose={handleCloseModal}
+                            products={products}
+                            selectedProduct={selectedProduct}
+                        />
+                }
             </div>
         </div>
     );
