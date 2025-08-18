@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
@@ -6,32 +5,32 @@ const DiscoverHome = () => {
     const categories = [
         {
             _id: 1,
-            image: "https://via.placeholder.com/150?text=All+Cleansers", // Replace with actual image URL
+            image: "https://placehold.co/150?text=All+Cleansers", // Replace with actual image URL
             title: "All Cleansers"
         },
         {
             _id: 2,
-            image: "https://via.placeholder.com/150?text=All+Moisturizers", // Replace with actual image URL
+            image: "https://placehold.co/150?text=All+Moisturizers", // Replace with actual image URL
             title: "All Moisturizers"
         },
         {
             _id: 3,
-            image: "https://via.placeholder.com/150?text=Face", // Replace with actual image URL
+            image: "https://placehold.co/150?text=Face", // Replace with actual image URL
             title: "Face"
         },
         {
             _id: 4,
-            image: "https://via.placeholder.com/150?text=Body", // Replace with actual image URL
+            image: "https://placehold.co/150?text=Body", // Replace with actual image URL
             title: "Body"
         },
         {
             _id: 5,
-            image: "https://via.placeholder.com/150?text=Baby+Skincare", // Replace with actual image URL
+            image: "https://placehold.co/150?text=Baby+Skincare", // Replace with actual image URL
             title: "Baby Skincare"
         },
         {
             _id: 6,
-            image: "https://via.placeholder.com/150?text=Sunscreens", // Replace with actual image URL
+            image: "https://placehold.co/150?text=Sunscreens", // Replace with actual image URL
             title: "Sunscreens"
         }
     ];

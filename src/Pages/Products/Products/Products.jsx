@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
-import { Rating } from '@smastrom/react-rating';
-import useProducts from '../../../Hooks/useProducts';
-import OnlyRating from '../../../Components/OnlyRating/OnlyRating';
+import { Link } from 'react-router-dom';
 import BuyNowSingleProductModal from '../../../Components/BuyNowSingleProductModal/BuyNowSingleProductModal';
+import OnlyRating from '../../../Components/OnlyRating/OnlyRating';
+import useProducts from '../../../Hooks/useProducts';
 
 const Products = () => {
     const [products, loading] = useProducts();
@@ -29,7 +28,7 @@ const Products = () => {
     return (
         <div>
             {/* Banner Section */}
-            <div className="w-full h-[400px] bg-cover bg-center relative flex items-center justify-center" style={{ backgroundImage: "url('https://via.placeholder.com/1600x400?text=Our+Products')" }}>
+            <div className="w-full h-[400px] bg-cover bg-center relative flex items-center justify-center" style={{ backgroundImage: "url('https://placehold.co/1600x400?text=Our+Products')" }}>
                 <h1 className="text-4xl md:text-6xl font-bold text-white">Our Products</h1>
             </div>
 
@@ -103,7 +102,7 @@ const Products = () => {
             </div>
 
             {/* Parallax Section */}
-            <div className="h-[400px] bg-fixed bg-cover bg-center relative flex items-center justify-center" style={{ backgroundImage: "url('https://via.placeholder.com/1600x400?text=Contact+Us')" }}>
+            <div className="h-[400px] bg-fixed bg-cover bg-center relative flex items-center justify-center" style={{ backgroundImage: "url('https://placehold.co/1600x400?text=Contact+Us')" }}>
                 <div className="bg-black bg-opacity-50 w-full h-full flex items-center justify-center">
                     <div className="w-[80%] flex flex-col justify-center items-center space-y-8 text-white">
                         <h1 className="text-5xl font-bold">Skin Rejuvenation with Aromatherapy</h1>

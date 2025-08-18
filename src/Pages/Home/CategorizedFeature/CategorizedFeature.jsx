@@ -1,33 +1,32 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CategorizedFeature = () => {
     const contents = [
         {
             _id: 1,
-            image: "https://via.placeholder.com/150?text=Skin", // Replace with an actual image URL
+            image: "https://placehold.co/417x501?text=Skin",
             title: "There's Science to Sensitive Skin",
             description: "Our cleansers and moisturizers are backed by scientific research and clinical studies to ensure the most effective blend of ingredients for your sensitive skin. We draw from the latest scientific research to develop our sensitive skincare products, making them a top choice recommended by dermatologists.",
             gototext: "The Science of Sensitive Skin",
-            link: "https://example.com/science-sensitive-skin", // Replace with an actual link
+            link: "https://example.com/science-sensitive-skin",
             flexprop: "no-reverse"
         },
         {
             _id: 2,
-            image: "https://via.placeholder.com/150?text=Beauty", // Replace with an actual image URL
+            image: "https://placehold.co/417x501?text=Beauty",
             title: "Beauty is More Than Skin Deep",
             description: "Our gentle skin cleansers and moisturizers hydrate and strengthen the skin barrier, making them the perfect first step of your daily routine, whether you’re going barefaced or full glam.",
             gototext: "Beautiful Skin Begins with Care",
-            link: "https://example.com/beauty-more-than-skin-deep", // Replace with an actual link
+            link: "https://example.com/beauty-more-than-skin-deep",
             flexprop: "reverse"
         },
         {
             _id: 3,
-            image: "https://via.placeholder.com/150?text=Hydration", // Replace with an actual image URL
+            image: "https://placehold.co/417x501?text=Hydration",
             title: "Hydration Never Goes Out of Style",
             description: "Dare to wear any fabric, any time of year. With our dermatologist-recommended moisturizers, you can embrace any style and own every season, even if you have sensitive skin.",
             gototext: "Hydration, but Make it Fashion",
-            link: "https://example.com/hydration-style", // Replace with an actual link
+            link: "https://example.com/hydration-style",
             flexprop: "no-reverse"
         },
     ]

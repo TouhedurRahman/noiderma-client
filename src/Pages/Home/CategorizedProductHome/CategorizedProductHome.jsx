@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
 import { Link } from 'react-router-dom';
-import useProducts from '../../../Hooks/useProducts';
-import './CategorizedProductHome.css';
 import BuyNowSingleProductModal from '../../../Components/BuyNowSingleProductModal/BuyNowSingleProductModal';
 import OnlyRating from '../../../Components/OnlyRating/OnlyRating';
+import useProducts from '../../../Hooks/useProducts';
+import './CategorizedProductHome.css';
 
 const CategorizedProductHome = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');

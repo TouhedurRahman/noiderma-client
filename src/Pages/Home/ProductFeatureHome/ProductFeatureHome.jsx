@@ -1,6 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import '@smastrom/react-rating/style.css';
+import { Link } from 'react-router-dom';
 
 const ProductFeatureHome = () => {
     return (
@@ -9,7 +8,7 @@ const ProductFeatureHome = () => {
                 {/* Image Section */}
                 <div className='lg:absolute left-0 flex justify-center lg:justify-start items-center lg:ms-24 z-20'>
                     <img
-                        src="https://via.placeholder.com/150?text=Dermatologist+Recommended"
+                        src="https://placehold.co/600x350?text=Dermatologist+Recommended"
                         alt="Recommended"
                         className='w-[300px] h-[175px] md:w-[450px] md:h-[250px] lg:w-[600px] lg:h-[350px] rounded-[25px]'
                     />

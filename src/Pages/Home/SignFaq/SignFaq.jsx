@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const SignFaq = () => {
@@ -42,7 +42,7 @@ const SignFaq = () => {
             }}
         >
             <div className='w-full md:w-1/2 flex flex-col justify-center items-center space-y-10'>
-                <img src="https://via.placeholder.com/150?text=Signs"
+                <img src="https://placehold.co/200?text=Signs"
                     alt=""
                     className='rounded-full'
                 />

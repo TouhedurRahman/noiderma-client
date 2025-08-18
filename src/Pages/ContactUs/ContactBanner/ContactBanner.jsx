@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaRegCalendarAlt, FaRegClock } from 'react-icons/fa';
 import { LuPhoneCall } from 'react-icons/lu';
 
@@ -40,7 +39,7 @@ const ContactBanner = () => {
             </div>
             <div className='w-full md:w-[60%]'>
                 <img
-                    src="https://via.placeholder.com/150?text=ContactUs"
+                    src="https://placehold.co/150?text=ContactUs"
                     alt=""
                     className='w-full h-96'
                 />

@@ -2,7 +2,7 @@
     {
         "_id": 1,
         "name": "Healing Ointment",
-        "image": "https://via.placeholder.com/150?text=Product",
+        "image": "https://placehold.co/150?text=Product",
         "category": "moisturizer",
         "typesDescription": "A lightweight, non-greasy ointment designed to lock in moisture and promote healing. Suitable for all skin types, especially dry and sensitive skin.",
         "features": {
@@ -34,27 +34,27 @@
         "ingrediants": {
             "activeIngrediants": "Petrolatum, Mineral oil",
             "inActiveIngrediants": "Panthenol",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
             "moreIngrediants": [
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
                 }
             ]
         },
@@ -78,7 +78,7 @@
     {
         "_id": 2,
         "name": "Face Cream",
-        "image": "https://via.placeholder.com/150?text=Product",
+        "image": "https://placehold.co/150?text=Product",
         "category": "face",
         "typesDescription": "A daily face cream that intensely hydrates, leaving the skin soft and smooth. Perfect for normal to dry skin and contains anti-aging properties.",
         "features": {
@@ -110,27 +110,27 @@
         "ingrediants": {
             "activeIngrediants": "Hyaluronic Acid, Vitamin E",
             "inActiveIngrediants": "Niacinamide",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
             "moreIngrediants": [
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
                 }
             ]
         },
@@ -154,7 +154,7 @@
     {
         "_id": 3,
         "name": "Body Lotion",
-        "image": "https://via.placeholder.com/150?text=Product",
+        "image": "https://placehold.co/150?text=Product",
         "category": "body",
         "typesDescription": "A deeply nourishing body lotion designed to repair and protect dry, cracked skin. Contains natural oils and soothing agents for lasting hydration.",
         "features": {
@@ -186,27 +186,27 @@
         "ingrediants": {
             "activeIngrediants": "Shea Butter, Coconut Oil",
             "inActiveIngrediants": "Aloe Vera",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
             "moreIngrediants": [
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
                 }
             ]
         },
@@ -230,7 +230,7 @@
     {
         "_id": 4,
         "name": "Soothing Cream",
-        "image": "https://via.placeholder.com/150?text=Product",
+        "image": "https://placehold.co/150?text=Product",
         "category": "baby-skincare",
         "typesDescription": "A gentle, hypoallergenic cream designed to soothe and protect delicate baby skin. Ideal for diaper rash and skin irritation, providing instant relief.",
         "features": {
@@ -262,27 +262,27 @@
         "ingrediants": {
             "activeIngrediants": "Zinc Oxide, Glycerin",
             "inActiveIngrediants": "Calendula Extract",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
             "moreIngrediants": [
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
                 }
             ]
         },
@@ -306,7 +306,7 @@
     {
         "_id": 5,
         "name": "Sunscreen SPF 50",
-        "image": "https://via.placeholder.com/150?text=Product",
+        "image": "https://placehold.co/150?text=Product",
         "category": "sunscreens",
         "typesDescription": "A broad-spectrum sunscreen with SPF 50 that protects against UVA and UVB rays. Lightweight and non-greasy, it is perfect for daily use.",
         "features": {
@@ -338,27 +338,27 @@
         "ingrediants": {
             "activeIngrediants": "Zinc Oxide, Titanium Dioxide",
             "inActiveIngrediants": "Vitamin C",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
             "moreIngrediants": [
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
                 }
             ]
         },
@@ -382,7 +382,7 @@
     {
         "_id": 6,
         "name": "Moisture Cream",
-        "image": "https://via.placeholder.com/150?text=Product",
+        "image": "https://placehold.co/150?text=Product",
         "category": "moisturizer",
         "typesDescription": "A nourishing night cream that deeply hydrates and rejuvenates the skin while you sleep. Ideal for dry and combination skin, promoting a refreshed morning glow.",
         "features": {
@@ -414,27 +414,27 @@
         "ingrediants": {
             "activeIngrediants": "Retinol, Hyaluronic Acid",
             "inActiveIngrediants": "Vitamin E",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
             "moreIngrediants": [
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
                 }
             ]
         },
@@ -458,7 +458,7 @@
     {
         "_id": 7,
         "name": "Body Emultion",
-        "image": "https://via.placeholder.com/150?text=Product",
+        "image": "https://placehold.co/150?text=Product",
         "category": "body",
         "typesDescription": "A calming body lotion enriched with aloe vera to soothe and hydrate irritated skin. Perfect for post-sun exposure or dry, sensitive skin.",
         "features": {
@@ -490,27 +490,27 @@
         "ingrediants": {
             "activeIngrediants": "Aloe Vera, Glycerin",
             "inActiveIngrediants": "Chamomile Extract",
-            "ingrediantImg": "https://via.placeholder.com/150?text=Ingrediants",
+            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
             "moreIngrediants": [
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-1"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-2"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-3"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
                 },
                 {
                     "title": "Triple Acid blend",
                     "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://via.placeholder.com/150?text=Ingrediants-4"
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
                 }
             ]
         },

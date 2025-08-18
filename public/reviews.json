@@ -7,8 +7,8 @@
         "title": "Good Product",
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod est obcaecati suscipit vero, temporibus sit sunt aspernatur aperiam itaque dolor.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-1",
-            "https://via.placeholder.com/150?text=review-2"
+            "https://placehold.co/150?text=review-1",
+            "https://placehold.co/150?text=review-2"
         ],
         "email": "abc@gmail.com"
     },
@@ -20,7 +20,7 @@
         "title": "Amazing Results",
         "description": "This product worked wonders on my skin. Highly recommended!",
         "photos": [
-            "https://via.placeholder.com/150?text=review-3"
+            "https://placehold.co/150?text=review-3"
         ],
         "email": "user1@example.com"
     },
@@ -32,8 +32,8 @@
         "title": "Average Product",
         "description": "It’s an okay product, but didn’t meet my expectations.",
         "photos": [
-            "https://via.placeholder.com/150?text=review",
-            "https://via.placeholder.com/150?text=review"
+            "https://placehold.co/150?text=review",
+            "https://placehold.co/150?text=review"
         ],
         "email": "user2@example.com"
     },
@@ -45,10 +45,10 @@
         "title": "Good for Daily Use",
         "description": "Perfect for regular use. Not greasy and absorbs quickly.",
         "photos": [
-            "https://via.placeholder.com/150?text=review",
-            "https://via.placeholder.com/150?text=review",
-            "https://via.placeholder.com/150?text=review",
-            "https://via.placeholder.com/150?text=review"
+            "https://placehold.co/150?text=review",
+            "https://placehold.co/150?text=review",
+            "https://placehold.co/150?text=review",
+            "https://placehold.co/150?text=review"
         ],
         "email": "user3@example.com"
     },
@@ -60,7 +60,7 @@
         "title": "Very Soothing",
         "description": "Excellent product! It really helps to calm my sensitive skin.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-5"
+            "https://placehold.co/150?text=review-5"
         ],
         "email": "user4@example.com"
     },
@@ -82,7 +82,7 @@
         "title": "Excellent Results",
         "description": "I can see visible improvements in my skin texture. Highly recommend!",
         "photos": [
-            "https://via.placeholder.com/150?text=review-6"
+            "https://placehold.co/150?text=review-6"
         ],
         "email": "user6@example.com"
     },
@@ -104,7 +104,7 @@
         "title": "Not Effective",
         "description": "Didn’t see much difference after using for a month.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-7"
+            "https://placehold.co/150?text=review-7"
         ],
         "email": "user8@example.com"
     },
@@ -116,8 +116,8 @@
         "title": "Good Product",
         "description": "Brightens up my skin. Would buy again.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-8",
-            "https://via.placeholder.com/150?text=review-9"
+            "https://placehold.co/150?text=review-8",
+            "https://placehold.co/150?text=review-9"
         ],
         "email": "user9@example.com"
     },
@@ -129,7 +129,7 @@
         "title": "Great for Acne",
         "description": "Helped clear up my acne in just a few weeks. Love it!",
         "photos": [
-            "https://via.placeholder.com/150?text=review-10"
+            "https://placehold.co/150?text=review-10"
         ],
         "email": "user10@example.com"
     },
@@ -151,7 +151,7 @@
         "title": "Nice Sunscreen",
         "description": "Feels light and non-greasy. Provides good protection.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-11"
+            "https://placehold.co/150?text=review-11"
         ],
         "email": "user12@example.com"
     },
@@ -183,7 +183,7 @@
         "title": "Heals Quickly",
         "description": "I used it for minor cuts and it heals them quickly.",
         "photos": [
-            "https://via.placeholder.com/150?text=review"
+            "https://placehold.co/150?text=review"
         ],
         "email": "user15@example.com"
     },
@@ -215,7 +215,7 @@
         "title": "Perfect for Sensitive Skin",
         "description": "This cream really calms my irritated skin. A must-have!",
         "photos": [
-            "https://via.placeholder.com/150?text=review-13"
+            "https://placehold.co/150?text=review-13"
         ],
         "email": "user18@example.com"
     },
@@ -237,7 +237,7 @@
         "title": "Great for Wrinkles",
         "description": "Noticed a reduction in fine lines within a month of use.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-14"
+            "https://placehold.co/150?text=review-14"
         ],
         "email": "user20@example.com"
     },
@@ -279,7 +279,7 @@
         "title": "Helps with Acne",
         "description": "Reduced my acne significantly.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-15"
+            "https://placehold.co/150?text=review-15"
         ],
         "email": "user24@example.com"
     },
@@ -301,7 +301,7 @@
         "title": "Perfect for Sun Protection",
         "description": "Provides excellent protection from the sun.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-16"
+            "https://placehold.co/150?text=review-16"
         ],
         "email": "user26@example.com"
     },
@@ -333,7 +333,7 @@
         "title": "Nice Moisturizer",
         "description": "Makes my skin feel soft and smooth.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-17"
+            "https://placehold.co/150?text=review-17"
         ],
         "email": "user29@example.com"
     },
@@ -355,7 +355,7 @@
         "title": "Healed My Skin",
         "description": "This ointment is a lifesaver for dry patches and minor cuts. Definitely recommend!",
         "photos": [
-            "https://via.placeholder.com/150?text=review-18"
+            "https://placehold.co/150?text=review-18"
         ],
         "email": "user31@example.com"
     },
@@ -367,7 +367,7 @@
         "title": "Good for Cuts",
         "description": "Works well on small wounds but takes time to heal larger ones.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-19"
+            "https://placehold.co/150?text=review-19"
         ],
         "email": "user32@example.com"
     },
@@ -379,7 +379,7 @@
         "title": "Smooth Skin",
         "description": "This cream keeps my skin smooth and radiant.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-20"
+            "https://placehold.co/150?text=review-20"
         ],
         "email": "user33@example.com"
     },
@@ -391,7 +391,7 @@
         "title": "Good Hydration",
         "description": "Provides good hydration but doesn’t feel heavy.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-21"
+            "https://placehold.co/150?text=review-21"
         ],
         "email": "user34@example.com"
     },
@@ -403,7 +403,7 @@
         "title": "Effective Moisturizer",
         "description": "Great moisturizer, but needs frequent reapplication.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-22"
+            "https://placehold.co/150?text=review-22"
         ],
         "email": "user35@example.com"
     },
@@ -415,7 +415,7 @@
         "title": "Love This Product!",
         "description": "This lotion is fantastic for my sensitive skin.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-23"
+            "https://placehold.co/150?text=review-23"
         ],
         "email": "user36@example.com"
     },
@@ -427,7 +427,7 @@
         "title": "Not as Expected",
         "description": "Didn’t work as well as I hoped for calming redness.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-24"
+            "https://placehold.co/150?text=review-24"
         ],
         "email": "user37@example.com"
     },
@@ -439,7 +439,7 @@
         "title": "Very Effective",
         "description": "Works great on sensitive skin without irritation.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-25"
+            "https://placehold.co/150?text=review-25"
         ],
         "email": "user38@example.com"
     },
@@ -451,7 +451,7 @@
         "title": "Good Protection",
         "description": "Provides good sun protection, but can feel a bit sticky.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-26"
+            "https://placehold.co/150?text=review-26"
         ],
         "email": "user39@example.com"
     },
@@ -463,7 +463,7 @@
         "title": "Light and Effective",
         "description": "Feels lightweight and doesn’t clog pores.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-27"
+            "https://placehold.co/150?text=review-27"
         ],
         "email": "user40@example.com"
     },
@@ -475,7 +475,7 @@
         "title": "Best for Oily Skin",
         "description": "Keeps my oily skin hydrated without making it greasy.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-28"
+            "https://placehold.co/150?text=review-28"
         ],
         "email": "user41@example.com"
     },
@@ -487,7 +487,7 @@
         "title": "Good for Daily Use",
         "description": "Perfect for everyday use, though a bit pricey.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-29"
+            "https://placehold.co/150?text=review-29"
         ],
         "email": "user42@example.com"
     },
@@ -499,7 +499,7 @@
         "title": "Great for Sun Protection",
         "description": "Light and easy to apply. Protects well against the sun.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-30"
+            "https://placehold.co/150?text=review-30"
         ],
         "email": "user43@example.com"
     },
@@ -511,7 +511,7 @@
         "title": "Excellent for Outdoors",
         "description": "Perfect for outdoor activities. Keeps skin protected all day.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-31"
+            "https://placehold.co/150?text=review-31"
         ],
         "email": "user44@example.com"
     },
@@ -523,7 +523,7 @@
         "title": "Quick Healing",
         "description": "Healed my cuts and burns quickly. Great product!",
         "photos": [
-            "https://via.placeholder.com/150?text=review-32"
+            "https://placehold.co/150?text=review-32"
         ],
         "email": "user45@example.com"
     },
@@ -535,7 +535,7 @@
         "title": "Nice Product",
         "description": "Feels nice on the skin, but a bit thick for my liking.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-33"
+            "https://placehold.co/150?text=review-33"
         ],
         "email": "user46@example.com"
     },
@@ -547,7 +547,7 @@
         "title": "Calming Effect",
         "description": "Helps calm my irritated skin. Love it!",
         "photos": [
-            "https://via.placeholder.com/150?text=review-34"
+            "https://placehold.co/150?text=review-34"
         ],
         "email": "user47@example.com"
     },
@@ -559,7 +559,7 @@
         "title": "Smooth and Hydrating",
         "description": "Great cream for sensitive skin. Keeps it hydrated.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-35"
+            "https://placehold.co/150?text=review-35"
         ],
         "email": "user48@example.com"
     },
@@ -571,7 +571,7 @@
         "title": "Best Sunscreen",
         "description": "Doesn’t leave a white cast and protects well.",
         "photos": [
-            "https://via.placeholder.com/150?text=review-36"
+            "https://placehold.co/150?text=review-36"
         ],
         "email": "user49@example.com"
     }

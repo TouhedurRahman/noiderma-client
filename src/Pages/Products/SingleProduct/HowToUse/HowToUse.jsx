@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const HowToUse = ({ product }) => {
@@ -25,7 +24,7 @@ const HowToUse = ({ product }) => {
                     </div>
                     <div className='w-full md:w-1/2 px-10 flex justify-center items-center'>
                         <img
-                            src="https://via.placeholder.com/150?text=Use"
+                            src="https://placehold.co/150?text=Use"
                             alt="Loading..."
                             className='w-full h-96 rounded-[25px]'
                         />

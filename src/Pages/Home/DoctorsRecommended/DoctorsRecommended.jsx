@@ -1,5 +1,3 @@
-import React from 'react';
-
 const DoctorsRecommended = () => {
     return (
         <div className='pt-20'>
@@ -13,7 +11,7 @@ const DoctorsRecommended = () => {
                     <div className="hero">
                         <div className="hero-content flex-col lg:flex-row">
                             <img
-                                src="https://via.placeholder.com/150?text=Doctor's+Recommended"
+                                src="https://placehold.co/901x507?text=Doctor's+Recommended"
                                 className="-mt-96 w-[901px] h-[507px] hidden lg:block rounded-[25px]"
                                 alt='Loading...'
                             />

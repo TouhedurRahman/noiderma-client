@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const ProductsHome = () => {
@@ -15,7 +15,7 @@ const ProductsHome = () => {
         {
             _id: 1,
             name: "Healing Ointment",
-            image: "https://via.placeholder.com/150?text=Product",
+            image: "https://placehold.co/150?text=Product",
             rating: 4.3,
             rater: 55,
             link: ""
@@ -23,7 +23,7 @@ const ProductsHome = () => {
         {
             _id: 2,
             name: "Healing Ointment",
-            image: "https://via.placeholder.com/150?text=Product",
+            image: "https://placehold.co/150?text=Product",
             rating: 4.6,
             rater: 1000,
             link: ""
@@ -31,7 +31,7 @@ const ProductsHome = () => {
         {
             _id: 3,
             name: "Healing Ointment",
-            image: "https://via.placeholder.com/150?text=Product",
+            image: "https://placehold.co/150?text=Product",
             rating: 4.5,
             rater: 555,
             link: ""
@@ -39,7 +39,7 @@ const ProductsHome = () => {
         {
             _id: 4,
             name: "Healing Ointment",
-            image: "https://via.placeholder.com/150?text=Product",
+            image: "https://placehold.co/150?text=Product",
             rating: 4.6,
             rater: 205,
             link: ""
@@ -47,7 +47,7 @@ const ProductsHome = () => {
         {
             _id: 5,
             name: "Healing Ointment",
-            image: "https://via.placeholder.com/150?text=Product",
+            image: "https://placehold.co/150?text=Product",
             rating: 4.5,
             rater: 55,
             link: ""
@@ -55,7 +55,7 @@ const ProductsHome = () => {
         {
             _id: 6,
             name: "Healing Ointment",
-            image: "https://via.placeholder.com/150?text=Product",
+            image: "https://placehold.co/150?text=Product",
             rating: 4.3,
             rater: 305,
             link: ""
@@ -63,7 +63,7 @@ const ProductsHome = () => {
         {
             _id: 7,
             name: "Healing Ointment",
-            image: "https://via.placeholder.com/150?text=Product",
+            image: "https://placehold.co/150?text=Product",
             rating: 4.2,
             rater: 5005,
             link: ""
