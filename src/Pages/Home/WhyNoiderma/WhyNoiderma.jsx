@@ -1,4 +1,3 @@
-import React from 'react';
 import './WhyNoiderma.css';
 
 const WhyNoiderma = () => {
@@ -10,8 +9,8 @@ const WhyNoiderma = () => {
                     <h1 className="mb-5 text-5xl">
                         Why <span className='font-bold'>NoiDerma</span>?
                     </h1>
-                    <p className="py-5">
-                        With an aim in mind to improve skin whitening and hydration as naturally as possible, our range of customized skincare formulations contains only the most necessary ingredients, completely free of parabens, artificial fragrances and animal testing.
+                    <p className="py-5 text-xl">
+                        Our aim is to improve skin as naturally as possible. NOIDERMA products’ ingredients are ECOCERT, Halal, GMP, and ISO certified, ensuring quality, safety, and dermatological care for all skin types. Our formulations contain only the most necessary ingredients, completely free of
                     </p>
                     <div className='flex justify-center items-center space-x-4 parallax-images'>
                         <img

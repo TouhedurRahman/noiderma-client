@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Feature = ({ product }) => {
     return (
@@ -13,7 +12,12 @@ const Feature = ({ product }) => {
                             FEATURES
                         </p>
                         <p className='text-sm text-justify'>
-                            {product.features.fearutesDescription}
+                            {/* {product.features.fearutesDescription} */}
+                            {product.features.fearutesDescription.split('. ').map((line, index) => (
+                                <p key={index} className="list-disc text-justify">
+                                    • {line}{index === product.typesDescription.split('. ').length - 1 ? '' : '.'}
+                                </p>
+                            ))}
                         </p>
                     </div>
                     <div className='w-full md:w-1/2 md:px-10 flex justify-center items-center'>

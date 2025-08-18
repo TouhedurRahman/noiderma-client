@@ -4,18 +4,18 @@ const CategorizedFeature = () => {
     const contents = [
         {
             _id: 1,
-            image: "https://placehold.co/417x501?text=Skin",
+            image: "https://i.ibb.co.com/sdPfGL5T/Whats-App-Image-2025-08-18-at-12-37-35-PM.jpg",
             title: "There's Science to Sensitive Skin",
-            description: "Our cleansers and moisturizers are backed by scientific research and clinical studies to ensure the most effective blend of ingredients for your sensitive skin. We draw from the latest scientific research to develop our sensitive skincare products, making them a top choice recommended by dermatologists.",
+            description: "Enriched with clinically proven natural ingredients, this unique formulation is carefully designed to suit even the most delicate and sensitive skin. By bringing together the purity of nature with advanced dermatological science, it ensures maximum safety, effectiveness, and long-lasting results. Gentle yet powerful, it works to soothe irritation, calm redness, restore natural balance, and strengthen the skin’s protective barrier, giving your skin the comfort, it deserves. With every application, you experience safe, effective, and trusted care specially crafted for the needs of sensitive skin.",
             gototext: "The Science of Sensitive Skin",
             link: "https://example.com/science-sensitive-skin",
             flexprop: "no-reverse"
         },
         {
             _id: 2,
-            image: "https://placehold.co/417x501?text=Beauty",
+            image: "https://i.ibb.co.com/TBMJy581/istockphoto-540568994-2048x2048.jpg",
             title: "Beauty is More Than Skin Deep",
-            description: "Our gentle skin cleansers and moisturizers hydrate and strengthen the skin barrier, making them the perfect first step of your daily routine, whether you’re going barefaced or full glam.",
+            description: "True beauty reflects inner confidence, vitality, and well-being. At NOIDERMA, we are dedicated to helping you achieve skin that is radiant, healthy, and nourished from within. Our scientifically advanced skincare solutions are carefully formulated to protect, restore, and enhance your skin’s natural barrier, ensuring long-lasting hydration, softness, and a youthful glow. Experience skincare that goes beyond surface-level beauty, empowering you to reveal your authentic and lasting elegance.",
             gototext: "Beautiful Skin Begins with Care",
             link: "https://example.com/beauty-more-than-skin-deep",
             flexprop: "reverse"
@@ -55,10 +55,7 @@ const CategorizedFeature = () => {
                                     <p
                                         className="mb-3 text-justify text-[#5E656B] text-sm leading-relaxed"
                                     >
-                                        {/* {content.description} */}
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde libero eius repudiandae iure ad quos veritatis pariatur illo porro fuga culpa, enim blanditiis deleniti animi reiciendis nemo harum, in voluptatibus, ratione est nam cum! Dicta ipsam repellat ullam deserunt unde minus, voluptatum, neque ex itaque laudantium molestiae provident quaerat eligendi. <br /><br />
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sequi reprehenderit ratione facilis quam officiis consectetur non repudiandae perspiciatis odit.<br /><br />
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nemo ipsam placeat atque assumenda exercitationem sed necessitatibus laudantium quidem enim, ea quos dignissimos ad quasi. Dolores ratione ipsam veritatis corrupti!
+                                        {content.description}
                                     </p>
                                     <Link
                                         to={content.link}

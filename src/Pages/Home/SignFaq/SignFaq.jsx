@@ -7,23 +7,23 @@ const SignFaq = () => {
     const faqs = [
         {
             question: "Dryness",
-            answer: "Dryness occurs when the skin loses moisture and becomes dehydrated. This can be caused by environmental factors, aging, or the use of harsh skincare products. Our products are formulated with hydrating ingredients like hyaluronic acid and glycerin to replenish moisture and restore the skin’s natural balance, leaving it soft and supple."
+            answer: "Insufficient moisture in the skin, resulting in a rough, flaky, or tight appearance."
         },
         {
             question: "Irritation",
-            answer: "Skin irritation can result from allergies, harsh ingredients, or environmental stressors. It often manifests as redness, itching, or discomfort. Our dermatologist-recommended products are free from common irritants and are designed to soothe and calm sensitive skin, reducing inflammation and promoting a healthy complexion."
+            answer: "Inflammatory response or discomfort in the skin caused by external factors, environmental stressors, or unsuitable products."
         },
         {
             question: "Roughness",
-            answer: "Roughness in the skin texture can be a sign of dryness, dead skin buildup, or a compromised skin barrier. Regular exfoliation and the use of gentle, nourishing moisturizers can help smooth out the skin's surface. Our products contain ingredients like lactic acid and ceramides that gently exfoliate and reinforce the skin’s barrier, improving texture over time."
+            answer: "Uneven skin texture due to dryness, buildup of dead skin cells, or lack of hydration."
         },
         {
             question: "Tightness",
-            answer: "Tightness is often a sign of dehydration, where the skin feels stretched or uncomfortable. It can occur after cleansing or in response to dry conditions. Our skincare solutions are designed to provide deep hydration and reinforce the skin’s natural moisture barrier, ensuring long-lasting comfort and elasticity."
+            answer: "Sensation of tautness in the skin, often caused by dehydration or diminished natural oils."
         },
         {
             question: "Weakened skin barrier",
-            answer: "A weakened skin barrier can lead to increased sensitivity, dryness, and a higher risk of irritation. This condition can be caused by over-exfoliation, harsh ingredients, or environmental damage. Our products are formulated with barrier-strengthening ingredients such as niacinamide and ceramides to help restore and protect the skin’s natural defense mechanism, promoting overall skin health."
+            answer: "A compromised skin barrier that reduces the skin’s ability to retain moisture and protect against environmental stressors, resulting in increased sensitivity, dryness, and irritation."
         }
     ];
 
@@ -47,7 +47,7 @@ const SignFaq = () => {
                     className='rounded-full'
                 />
                 <p className='w-[70%] mx-auto text-center'>
-                    70% of people around the world say that they have some degree of skin sensitivity. We've partnered with dermatologists to identify 5 signs of sensitivity, and our products are clinically tested to defend against these 5 signs and improve the resilience of your skin.
+                    Approximately 70% of individuals globally report experiencing some degree of skin sensitivity. In consultation with leading dermatologists, we have identified five principal indicators of sensitivity, and our products are clinically validated to provide protection against these indicators while reinforcing the skin’s natural resilience.
                 </p>
             </div>
             <div className='w-full md:w-1/2 p-3 lg:pr-10'>
@@ -57,7 +57,7 @@ const SignFaq = () => {
                             key={index}
                             className="border-b"
                             data-aos="fade-up"
-                            data-aos-delay={`${index * 100}`} // Staggered delay for each FAQ
+                            data-aos-delay={`${index * 100}`}
                             smooth={true}
                         >
                             <button
