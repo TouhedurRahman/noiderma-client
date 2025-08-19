@@ -2,7 +2,7 @@
     {
         "_id": 1,
         "name": "Purifying Ampoule",
-        "image": "https://placehold.co/150?text=Product",
+        "image": "https://i.ibb.co.com/LXjT6Tbg/Noiderma-Purifying-Ampoule.png",
         "category": "Serum",
         "typesDescription": "Oil & Anti-Acne Serum. Controls Oil & Reduces Acne – Regulates excess sebum to prevent acne. Fights Bacteria Naturally – Tea Tree Oil targets acne-causing bacteria. Promotes Clear Skin – Supports a healthier, radiant complexion.",
         "features": {
@@ -30,31 +30,34 @@
                 }
             ]
         },
-        "use": "Apply onto cleansed skin. Use twice daily. Gently massage until absorbed",
+        "use": {
+            "useDescription": "Apply onto cleansed skin. Use twice daily. Gently massage until absorbed.",
+            "useImg": "https://i.ibb.co.com/LdmkYtdJ/Use-PA.jpg"
+        } ,
         "ingrediants": {
             "activeIngrediants": "Aqua, Hydrolyzed Yeast Protein, Glycerin, Propylene Glycol, C12-15 Pareth-12, Diazolidinyl Urea, Pyridoxine HCL, Niacinamide, Melaleuca Alternifolia Leaf Oil, Hydroxyethylcellulose, Disodium EDTA, Buteth-3, Panthenol, Sodium Benzotriazolyl Butylphenol Sulfonate, Sodium Hyaluronate, CI 42090, Allantoin, Tributyl Citrate, Iodopropynyl Butylcarbamate, Biotin, Sodium Sulfate, CI19140.",
             "inActiveIngrediants": "Panthenol",
-            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
+            "ingrediantImg": "https://i.ibb.co.com/39RjXLMK/Ingradiants-PA.jpg",
             "moreIngrediants": [
                 {
                     "title": "Niacinamide",
                     "description": "Brightens and evens skin tone and redness. Minimizes pores and keeps skin hydrated and smooth.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
+                    "moreIngrediantsImg": "https://i.ibb.co.com/Y4K6Pm16/Niacinamaide-BWE.jpg"
                 },
                 {
                     "title": "Tea Tree Oil",
                     "description": "Natural antibacterial agent that helps reduce acne-causing bacteria and soothes inflammation.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
+                    "moreIngrediantsImg": "https://i.ibb.co.com/Csh5XPjh/Tea-Tree-Oil.jpg"
                 },
                 {
                     "title": "Hyaluronic Acid",
                     "description": "Naturally in the skin, Sodium Hyaluronate draws moisture, keeps skin hydrated, smooth, and supports youthful collagen.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
+                    "moreIngrediantsImg": "https://i.ibb.co.com/SwSwx1Wd/Hyaluronic-Acid.jpg"
                 },
                 {
-                    "title": "Hydrolyzed Yeast Protein & Vitamin B5, B6, B7",
+                    "title": "Hydrolyzed Yeast Protein",
                     "description": "Nourishes, hydrates, and soothes skin while strengthening and improving texture.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
+                    "moreIngrediantsImg": "https://i.ibb.co.com/RpQxhdDL/Hydrolyzed-Yeast-Protein.jpg"
                 }
             ]
         },
@@ -78,7 +81,7 @@
     {
         "_id": 2,
         "name": "Radiant Glow Serum",
-        "image": "https://placehold.co/150?text=Product",
+        "image": "https://i.ibb.co.com/Z6bVdxN8/moiderma-Radiant-Glow-Serum.png",
         "category": "Serum",
         "typesDescription": "This Serum is specially formulated to reduce brown spots and brighten the skin tone by promoting a more uniform complexion. It smoothens skin texture and enhances skin clarity, giving a radiant look from within. The skin becomes noticeably softer and more supple.",
         "features": {
@@ -106,31 +109,34 @@
                 }
             ]
         },
-        "use": "Apply a few serum pumps to your palms and lightly pat the serum onto your face until it is absorbed. Use twice daily for optimal results, followed by your preferred moisturizer.",
+        "use": {
+            "useDescription": "Apply a few serum pumps to your palms and lightly pat the serum onto your face until it is absorbed. Use twice daily for optimal results, followed by your preferred moisturizer.",
+            "useImg": "https://i.ibb.co.com/sJztRrRz/Radiant-Glow-Serum-Use.jpg"
+        } ,
         "ingrediants": {
             "activeIngrediants": "Aqua, Butylene Glycol, Squalane, Glycerin, Simmondsia Chinensis Seed Oil, Polyacrylate-13, Propylene Glycol, Xanthan Gum, Polyisobutene, Narcissus Poeticus Callus Extract, Diazolidinyl Urea, Disodium EDTA, Pelargonium Graveolens Flower Oil, Polysorbate 20, Citrus Reticulata (Tangerine) Peel Extract, Portulaca Oleracea Extract, Iodopropynyl Butylcarbamate.",
             "inActiveIngrediants": "lorem",
-            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
+            "ingrediantImg": "https://i.ibb.co.com/d4PvTzQV/Ingradiants-RGS.jpg",
             "moreIngrediants": [
                 {
                     "title": "Narcissus Poeticus Callus Extract",
                     "description": "Brightens skin, reduces brown spots.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
+                    "moreIngrediantsImg": "https://i.ibb.co.com/gbQDMkT5/Daffodil-Flower.jpg"
                 },
                 {
                     "title": "Citrus Reticulata Peel Extract",
                     "description": "Boosts clarity and inner glow for radiant skin.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
+                    "moreIngrediantsImg": "https://i.ibb.co.com/j70KrQD/Citrus-Reticulata.webp"
                 },
                 {
                     "title": "Squalane",
                     "description": "Restores lipid barrier, locks in hydration, enhances softness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
+                    "moreIngrediantsImg": "https://i.ibb.co.com/Q7fGxvRK/Squalane.jpg"
                 },
                 {
                     "title": "Jojoba Seed Oil",
                     "description": "Deeply hydrates & nourishes skin.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
+                    "moreIngrediantsImg": "https://i.ibb.co.com/mC5fx7PV/Jojoba.jpg"
                 }
             ]
         },
@@ -154,7 +160,7 @@
     {
         "_id": 3,
         "name": "Brilliant White Emulsion",
-        "image": "https://placehold.co/150?text=Product",
+        "image": "https://i.ibb.co.com/6JPFPrcV/Noiderma-Brilliant-White-Emulsion.png",
         "category": "Emulsion",
         "typesDescription": "Brightens skin & enhances natural radiance. Improves texture & evens out skin tone. Leaves skin softer, smoother & more supple.",
         "features": {
@@ -182,31 +188,34 @@
                 }
             ]
         },
-        "use": "Apply every night after cleansing and toning. Gently massage into your skin. Let the cream fully absorb into the skin.",
+        "use": {
+            "useDescription": "Apply every night after cleansing and toning. Gently massage into your skin. Let the cream fully absorb into the skin.",
+            "useImg": "https://i.ibb.co.com/JRDFrRBQ/How-to-use-BWE.jpg"
+        } ,
         "ingrediants": {
             "activeIngrediants": "Aqua, Butylene Glycol, Propylene Glycol, Dimethicone, Cyclopentasiloxane, Niacinamide, Glycerin, C12-15 Alkyl Benzoate, Sulfur Sodium Polyacrylate, Cyclohexasiloxane, PEG/PPG-17/6 Copolymer, Dipropylene Glycol, Hydroxyacetophenone, Carbomer, Aminomethyl Propanol, Centella Asiatica Extract, Caprylyl glycol, Trideceth-6, PEG/PPG-18/18 Dimethicone, Tetrasodium EDTA, Scutellaria Baicalensis Root Extract, Polygonum Cuspidatum Root Extract, Glycyrrhiza Glabra Root Extract, Camphor, Camellia Sinensis Leaf Extract, Fragrance, Rosmarinus Officinalis Leaf Extract, Chamomilla Recutita Flower Extract, Morus Alba Root Extract, Dipotassium Glycyrrhizate, Citrus Aurantium Dulcis Peel Oil.",
             "inActiveIngrediants": "lorem",
-            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
+            "ingrediantImg": "https://i.ibb.co.com/m5SkH7dy/Ingradiant-BWE.jpg",
             "moreIngrediants": [
                 {
+                    "title": "Morus Alba Root Extract",
+                    "description": "Morus Alba Root Extract (4%) contains phenylflavonoids that effectively inhibit tyrosinase, demonstrating superior skin-brightening efficacy compared to Ascorbic Acid, Kojic Acid, and Hydroquinone. It also possesses anti-inflammatory and moisturizing properties, supporting overall skin health.",
+                    "moreIngrediantsImg": "https://i.ibb.co.com/S7cQ279f/Morus-alba-root-extract.jpg"
+                },
+                {
                     "title": "Niacinamide",
-                    "description": "Niacinamide is a form of Vitamin B3. Melanin is the main reason of affecting the skin whitening. Niacinamide is helpful to whiten skin. It works on existing melanin and stop it to transfer to the superficial cells. It also promotes protein synthesis at epidermal layer, improve skin texture. (2%)",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
+                    "description": "Niacinamide (2%) is a derivative of Vitamin B3 that promotes skin brightening by inhibiting the transfer of melanin to the outer skin layers. It also supports epidermal protein synthesis, enhancing overall skin texture and clarity.",
+                    "moreIngrediantsImg": "https://i.ibb.co.com/Y4K6Pm16/Niacinamaide-BWE.jpg"
                 },
                 {
                     "title": "Herbal Complex",
-                    "description": "It is a multiple herbal extract that is composed of several plant extracts from Korea. It is a proprietary ingredient for irritated skin. It has anti-inflammatory and antioxidant function. It is composed of seven extracts which are: Glycyrrhiza Glabra Root Extract, Camellia Sinensis Leaf Extract. Rosmarinus Officinalis Leaf Extract, Centella Asiatica Extract, Chamomilla Recutita Flower Extract, Scutellaria Baicalensis Root Extract, Polygonum Cuspidatum Root Extract. (5%) *This active ingredient has been tested extensively in clinical evaluations involving 30 subjects. In vehicle-controlled clinical studies, this active ingredient reduced sensory irritation by approximately 100% in most individuals. It is ECOCERT certified.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
+                    "description": "Herbal Complex (5%) is a proprietary blend of seven Korean plant extracts that provides anti-inflammatory and antioxidant effects, specifically for irritated skin. Clinically evaluated, it has demonstrated significant reduction in sensory irritation and is ECOCERT certified.",
+                    "moreIngrediantsImg": "https://i.ibb.co.com/848Q06Mz/Herbal-Complex.jpg"
                 },
                 {
-                    "title": "Morus Alba Root Extract",
-                    "description": "It contains Phenylflavonoid that has a component which inhibits the activation of tyrosinase. It has the greatest anti-tyrosinase efficacy as compared with Ascorbic Acid, Kojic Acid and Hydroquinone as controls. It is proven to be about 30 times more efficient than Ascorbic Acid, 10 times than Kojic Acid and 3 times than Hydroquinone. Besides that, Morus Alba Root Extract has also been recognized for its anti-inflammatory and moisturizing effect. (4%).",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
-                },
-                {
-                    "title": "Sulphur",
-                    "description": "Sulphur is known to be a trace mineral in the human body, is great at busting bacteria, which makes it ideal for acne-prone skin. It is also known as a keratolytic, which means it causes mild shedding of the top layers of the skin which helps clear away dead skin cells that can contribute to clogged pores and breakouts.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
+                    "title": "Citrus Aurantium Dulcis Oil",
+                    "description": "Citrus Aurantium Dulcis Oil (Orange Oil) is a natural essential oil derived from the peel of oranges. It provides a refreshing and uplifting fragrance while contributing a subtle, invigorating aroma to the formulation, enhancing the overall sensory experience of the product.",
+                    "moreIngrediantsImg": "https://i.ibb.co.com/FbxZ2T0s/Orange-Oil.jpg"
                 }
             ]
         },
@@ -258,7 +267,10 @@
                 }
             ]
         },
-        "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
+        "use": {
+            "useDescription": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
+            "useImg": ""
+        } ,
         "ingrediants": {
             "activeIngrediants": "Zinc Oxide, Glycerin",
             "inActiveIngrediants": "Calendula Extract",
@@ -300,234 +312,6 @@
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
                 "buyNowLink": "https://arogga.com/baby-soothing-cream",
                 "stock": 1
-            }
-        ]
-    },
-    {
-        "_id": 5,
-        "name": "Sunscreen SPF 50",
-        "image": "https://placehold.co/150?text=Product",
-        "category": "sunscreens",
-        "typesDescription": "A broad-spectrum sunscreen with SPF 50 that protects against UVA and UVB rays. Lightweight and non-greasy, it is perfect for daily use.",
-        "features": {
-            "fearutesDescription": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
-            "featuresMore": [
-                {
-                    "icon": "https://i.ibb.co.com/VLw2p8Z/PARABEN-FREE.webp",
-                    "title": "PARABEN FREE"
-                },
-                {
-                    "icon": "https://i.ibb.co.com/ct1pbsH/PERFUME-FREE.webp",
-                    "title": "PERFUME FREE" 
-                },
-                {
-                    "icon": "https://i.ibb.co.com/ZJXJkgW/HYPOALLERGENIC.webp",
-                    "title": "HYPOALLERGENIC" 
-                },
-                {
-                    "icon": "https://i.ibb.co.com/f9nJLLt/DERMATOLOGYST-TESTED.webp",
-                    "title": "DERMATOLOGYST TESTED"
-                },
-                {
-                    "icon": "https://i.ibb.co.com/7kYz21N/Clog-Pores.webp",
-                    "title": "ClOG PORES" 
-                }
-            ]
-        },
-        "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
-        "ingrediants": {
-            "activeIngrediants": "Zinc Oxide, Titanium Dioxide",
-            "inActiveIngrediants": "Vitamin C",
-            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
-            "moreIngrediants": [
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
-                },
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
-                },
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
-                },
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
-                }
-            ]
-        },
-        "pharmacy": [
-            {
-                "_id": 1,
-                "pharmacyName": "Lazz pharma",
-                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
-                "buyNowLink": "https://lazzpharma.com/advanced-sunscreen-spf50",
-                "stock": 1
-            },
-            {
-                "_id": 2,
-                "pharmacyName": "Arogga",
-                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
-                "buyNowLink": "https://arogga.com/advanced-sunscreen-spf50",
-                "stock": 0
-            }
-        ]
-    },
-    {
-        "_id": 6,
-        "name": "Moisture Cream",
-        "image": "https://placehold.co/150?text=Product",
-        "category": "moisturizer",
-        "typesDescription": "A nourishing night cream that deeply hydrates and rejuvenates the skin while you sleep. Ideal for dry and combination skin, promoting a refreshed morning glow.",
-        "features": {
-            "fearutesDescription": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
-            "featuresMore": [
-                {
-                    "icon": "https://i.ibb.co.com/VLw2p8Z/PARABEN-FREE.webp",
-                    "title": "PARABEN FREE"
-                },
-                {
-                    "icon": "https://i.ibb.co.com/ct1pbsH/PERFUME-FREE.webp",
-                    "title": "PERFUME FREE" 
-                },
-                {
-                    "icon": "https://i.ibb.co.com/ZJXJkgW/HYPOALLERGENIC.webp",
-                    "title": "HYPOALLERGENIC" 
-                },
-                {
-                    "icon": "https://i.ibb.co.com/f9nJLLt/DERMATOLOGYST-TESTED.webp",
-                    "title": "DERMATOLOGYST TESTED"
-                },
-                {
-                    "icon": "https://i.ibb.co.com/7kYz21N/Clog-Pores.webp",
-                    "title": "ClOG PORES" 
-                }
-            ]
-        },
-        "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
-        "ingrediants": {
-            "activeIngrediants": "Retinol, Hyaluronic Acid",
-            "inActiveIngrediants": "Vitamin E",
-            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
-            "moreIngrediants": [
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
-                },
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
-                },
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
-                },
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
-                }
-            ]
-        },
-        "pharmacy": [
-            {
-                "_id": 1,
-                "pharmacyName": "Lazz pharma",
-                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
-                "buyNowLink": "https://lazzpharma.com/moisture-boost-night-cream",
-                "stock": 1
-            },
-            {
-                "_id": 2,
-                "pharmacyName": "Arogga",
-                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
-                "buyNowLink": "https://arogga.com/moisture-boost-night-cream",
-                "stock": 0
-            }
-        ]
-    },
-    {
-        "_id": 7,
-        "name": "Body Emultion",
-        "image": "https://placehold.co/150?text=Product",
-        "category": "body",
-        "typesDescription": "A calming body lotion enriched with aloe vera to soothe and hydrate irritated skin. Perfect for post-sun exposure or dry, sensitive skin.",
-        "features": {
-            "fearutesDescription": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
-            "featuresMore": [
-                {
-                    "icon": "https://i.ibb.co.com/VLw2p8Z/PARABEN-FREE.webp",
-                    "title": "PARABEN FREE"
-                },
-                {
-                    "icon": "https://i.ibb.co.com/ct1pbsH/PERFUME-FREE.webp",
-                    "title": "PERFUME FREE" 
-                },
-                {
-                    "icon": "https://i.ibb.co.com/ZJXJkgW/HYPOALLERGENIC.webp",
-                    "title": "HYPOALLERGENIC" 
-                },
-                {
-                    "icon": "https://i.ibb.co.com/f9nJLLt/DERMATOLOGYST-TESTED.webp",
-                    "title": "DERMATOLOGYST TESTED"
-                },
-                {
-                    "icon": "https://i.ibb.co.com/7kYz21N/Clog-Pores.webp",
-                    "title": "ClOG PORES" 
-                }
-            ]
-        },
-        "use": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
-        "ingrediants": {
-            "activeIngrediants": "Aloe Vera, Glycerin",
-            "inActiveIngrediants": "Chamomile Extract",
-            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
-            "moreIngrediants": [
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
-                },
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
-                },
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
-                },
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
-                }
-            ]
-        },
-        "pharmacy": [
-            {
-                "_id": 1,
-                "pharmacyName": "Lazz pharma",
-                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
-                "buyNowLink": "https://lazzpharma.com/soothing-aloe-body-lotion",
-                "stock": 1
-            },
-            {
-                "_id": 2,
-                "pharmacyName": "Arogga",
-                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
-                "buyNowLink": "https://arogga.com/soothing-aloe-body-lotion",
-                "stock": 0
             }
         ]
     }

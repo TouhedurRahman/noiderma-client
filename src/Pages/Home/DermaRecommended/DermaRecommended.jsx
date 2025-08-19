@@ -25,7 +25,7 @@ const DermaRecommended = () => {
 
                 <div className='flex justify-center lg:absolute right-0 lg:justify-end items-center lg:me-24 z-20 mb-8 lg:mb-0'>
                     <img
-                        src="https://placehold.co/600x350?text=Dermatologist+Recommended"
+                        src="https://i.ibb.co.com/LhzMVXQk/DERMATOLOGIST-RECOMMENDED.jpg"
                         alt="Recommended"
                         className='w-[300px] h-[175px] md:w-[450px] md:h-[250px] lg:w-[600px] lg:h-[350px] rounded-[25px]'
                     />

@@ -28,7 +28,7 @@ const Products = () => {
     return (
         <div>
             {/* Banner Section */}
-            <div className="w-full h-[400px] bg-cover bg-center relative flex items-center justify-center" style={{ backgroundImage: "url('https://placehold.co/1600x400?text=Our+Products')" }}>
+            <div className="w-full h-[400px] bg-cover bg-center relative flex items-center justify-center" style={{ backgroundImage: "url('https://i.ibb.co.com/ZpkKdbnT/Our-Products-Banner.jpg')" }}>
                 <h1 className="text-4xl md:text-6xl font-bold text-white">Our Products</h1>
             </div>
 

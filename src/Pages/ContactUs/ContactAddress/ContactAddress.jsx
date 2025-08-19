@@ -1,11 +1,8 @@
-import React from 'react';
-import { FaBuilding, FaIndustry } from 'react-icons/fa';
-
 const ContactAddress = () => {
     return (
         <div className="mt-20 py-8 bg-white">
             <div className='w-[90%] mx-auto'>
-                <h2 className="text-3xl font-bold text-gray-600 mb-4">Manufacturing Plant</h2>
+                <h2 className="text-3xl font-bold text-gray-600 mb-4">Manufactured by</h2>
                 <p className="text-gray-800 mb-2 font-medium">SKY RESOURCES SDN. BHD.</p>
                 <address className="text-gray-600">
                     No.1720, Lorong Perusahaan Utama 1, Kawasan Perindustrian,

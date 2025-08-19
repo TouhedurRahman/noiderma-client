@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ContactHome = () => {
@@ -6,7 +5,7 @@ const ContactHome = () => {
         <div
             className="hero mt-20"
             style={{
-                backgroundImage: "url(https://i.ibb.co/3BpNPnK/contact-home.jpg)",
+                backgroundImage: "url(https://i.ibb.co.com/mChRpkqb/Rejuvenation-Banner.jpg)",
             }}>
             <div className="hero-overlay bg-opacity-80"></div>
             <div className="hero-content text-white text-center py-20">

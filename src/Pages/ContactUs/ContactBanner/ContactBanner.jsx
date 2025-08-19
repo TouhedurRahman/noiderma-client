@@ -39,7 +39,8 @@ const ContactBanner = () => {
             </div>
             <div className='w-full md:w-[60%]'>
                 <img
-                    src="https://placehold.co/150?text=ContactUs"
+                    // src="https://i.ibb.co.com/9mNjMMQt/contact-us-customer-support-Noiderma.webp"
+                    src="https://i.ibb.co.com/Xf5c7qxg/Contact-us-Noiderma.jpg"
                     alt=""
                     className='w-full h-96'
                 />

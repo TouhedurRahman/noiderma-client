@@ -42,11 +42,11 @@ const SignFaq = () => {
             }}
         >
             <div className='w-full md:w-1/2 flex flex-col justify-center items-center space-y-10'>
-                <img src="https://placehold.co/200?text=Signs"
+                <img src="https://i.ibb.co.com/whLj4RZd/Sensitive-Skin-Sings.png"
                     alt=""
-                    className='rounded-full'
+                    className='rounded-full h-48'
                 />
-                <p className='w-[70%] mx-auto text-center'>
+                <p className='w-[80%] mx-auto text-center'>
                     Approximately 70% of individuals globally report experiencing some degree of skin sensitivity. In consultation with leading dermatologists, we have identified five principal indicators of sensitivity, and our products are clinically validated to provide protection against these indicators while reinforcing the skin’s natural resilience.
                 </p>
             </div>

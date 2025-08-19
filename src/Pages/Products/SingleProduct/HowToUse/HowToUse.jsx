@@ -13,7 +13,7 @@ const HowToUse = ({ product }) => {
                             HOW TO USE
                         </p>
                         <p className='text-sm text-justify'>
-                            {product.use}
+                            {product.use.useDescription}
                         </p>
                         <Link
                             className="W-24 btn py-2 px-6 md:py-3 md:px-10 bg-gradient-to-r from-black via-gray-500 to-black text-white rounded-full"
@@ -24,7 +24,7 @@ const HowToUse = ({ product }) => {
                     </div>
                     <div className='w-full md:w-1/2 px-10 flex justify-center items-center'>
                         <img
-                            src="https://placehold.co/150?text=Use"
+                            src={product.use.useImg}
                             alt="Loading..."
                             className='w-full h-96 rounded-[25px]'
                         />

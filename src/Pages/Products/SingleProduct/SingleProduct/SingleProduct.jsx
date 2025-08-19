@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import useProducts from '../../../../Hooks/useProducts';
-import { Link, useParams } from 'react-router-dom';
-import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { Rating } from '@smastrom/react-rating';
-import ShareOnSocialMedia from '../../../../Components/ShareOnSocialMedia/ShareOnSocialMedia';
+import { useState } from 'react';
+import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { PiMapPinLineBold } from 'react-icons/pi';
-import HowToUse from '../HowToUse/HowToUse';
-import Feature from '../Feature/Feature';
-import Ingrediants from '../Ingrediants/Ingrediants';
-import RatingReview from '../RatingReview/RatingReview';
-import ProductScrollNav from '../ProductScrollNav/ProductScrollNav';
+import { Link, useParams } from 'react-router-dom';
 import BuyNowSingleProductModal from '../../../../Components/BuyNowSingleProductModal/BuyNowSingleProductModal';
 import RatingsReviewModal from '../../../../Components/RatingsReviewModal/RatingsReviewModal';
+import ShareOnSocialMedia from '../../../../Components/ShareOnSocialMedia/ShareOnSocialMedia';
+import useProducts from '../../../../Hooks/useProducts';
 import useReviews from '../../../../Hooks/useReviews';
+import Feature from '../Feature/Feature';
+import HowToUse from '../HowToUse/HowToUse';
+import Ingrediants from '../Ingrediants/Ingrediants';
+import ProductScrollNav from '../ProductScrollNav/ProductScrollNav';
+import RatingReview from '../RatingReview/RatingReview';
 
 const SingleProduct = () => {
     const [products, loading] = useProducts();

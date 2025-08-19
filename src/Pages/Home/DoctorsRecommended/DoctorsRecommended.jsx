@@ -11,7 +11,7 @@ const DoctorsRecommended = () => {
                     <div className="hero">
                         <div className="hero-content flex-col lg:flex-row">
                             <img
-                                src="https://placehold.co/901x507?text=Doctor's+Recommended"
+                                src="https://i.ibb.co.com/HfQrW3kD/RECOMMENDED-BY-DOCTORS-LOVED-BY-SKIN.png"
                                 className="-mt-96 w-[901px] h-[507px] hidden lg:block rounded-[25px]"
                                 alt='Loading...'
                             />

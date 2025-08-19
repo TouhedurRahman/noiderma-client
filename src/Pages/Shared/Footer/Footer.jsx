@@ -1,4 +1,3 @@
-import React from 'react';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaFacebookSquare, FaTwitterSquare } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -18,7 +17,7 @@ const Footer = () => {
                             className='w-[150px] lg:w-[180px] h-[40px]'
                         />
                         <p className='lg:pr-36 text-justify mt-4'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minus non praesentium rerum soluta facilis tenetur labore perspiciatis, earum nostrum!
+                            NOIDERMA is a professional-grade dermatological skincare line that rejuvenates the skin from within. It enhances hydration, balances excess oil, prevents acne and brown spots, and helps to maintain a naturally bright and even skin tone.
                         </p>
                     </div>
                     <div className='flex justify-between items-center w-full lg:w-[40%]'>
