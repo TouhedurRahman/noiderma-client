@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Ingrediants = ({ product }) => {
     return (
@@ -16,12 +15,12 @@ const Ingrediants = ({ product }) => {
                             product.ingrediants.activeIngrediants
                             &&
                             <>
-                                <p
+                                {/* <p
                                     className="font-bold text-xl"
                                     style={{ letterSpacing: '0.2em' }}
                                 >
                                     ACTIVE INGREDIANTS
-                                </p>
+                                </p> */}
                                 <p className='text-sm text-justify'>
                                     {product.ingrediants.activeIngrediants}
                                 </p>

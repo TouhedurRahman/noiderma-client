@@ -38,7 +38,7 @@
         } ,
         "ingrediants": {
             "activeIngrediants": "Aqua, Hydrolyzed Yeast Protein, Glycerin, Propylene Glycol, C12-15 Pareth-12, Diazolidinyl Urea, Pyridoxine HCL, Niacinamide, Melaleuca Alternifolia Leaf Oil, Hydroxyethylcellulose, Disodium EDTA, Buteth-3, Panthenol, Sodium Benzotriazolyl Butylphenol Sulfonate, Sodium Hyaluronate, CI 42090, Allantoin, Tributyl Citrate, Iodopropynyl Butylcarbamate, Biotin, Sodium Sulfate, CI19140.",
-            "inActiveIngrediants": "Panthenol",
+            "inActiveIngrediants": "",
             "ingrediantImg": "https://i.ibb.co.com/39RjXLMK/Ingradiants-PA.jpg",
             "moreIngrediants": [
                 {
@@ -119,7 +119,7 @@
         } ,
         "ingrediants": {
             "activeIngrediants": "Aqua, Butylene Glycol, Squalane, Glycerin, Simmondsia Chinensis Seed Oil, Polyacrylate-13, Propylene Glycol, Xanthan Gum, Polyisobutene, Narcissus Poeticus Callus Extract, Diazolidinyl Urea, Disodium EDTA, Pelargonium Graveolens Flower Oil, Polysorbate 20, Citrus Reticulata (Tangerine) Peel Extract, Portulaca Oleracea Extract, Iodopropynyl Butylcarbamate.",
-            "inActiveIngrediants": "lorem",
+            "inActiveIngrediants": "",
             "ingrediantImg": "https://i.ibb.co.com/d4PvTzQV/Ingradiants-RGS.jpg",
             "moreIngrediants": [
                 {
@@ -200,7 +200,7 @@
         } ,
         "ingrediants": {
             "activeIngrediants": "Aqua, Butylene Glycol, Propylene Glycol, Dimethicone, Cyclopentasiloxane, Niacinamide, Glycerin, C12-15 Alkyl Benzoate, Sulfur Sodium Polyacrylate, Cyclohexasiloxane, PEG/PPG-17/6 Copolymer, Dipropylene Glycol, Hydroxyacetophenone, Carbomer, Aminomethyl Propanol, Centella Asiatica Extract, Caprylyl glycol, Trideceth-6, PEG/PPG-18/18 Dimethicone, Tetrasodium EDTA, Scutellaria Baicalensis Root Extract, Polygonum Cuspidatum Root Extract, Glycyrrhiza Glabra Root Extract, Camphor, Camellia Sinensis Leaf Extract, Fragrance, Rosmarinus Officinalis Leaf Extract, Chamomilla Recutita Flower Extract, Morus Alba Root Extract, Dipotassium Glycyrrhizate, Citrus Aurantium Dulcis Peel Oil.",
-            "inActiveIngrediants": "lorem",
+            "inActiveIngrediants": "",
             "ingrediantImg": "https://i.ibb.co.com/m5SkH7dy/Ingradiant-BWE.jpg",
             "moreIngrediants": [
                 {
