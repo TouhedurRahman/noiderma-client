@@ -1,0 +1,81 @@
+[
+    {
+        "_id": 4,
+        "name": "Soothing Cream",
+        "image": "https://placehold.co/150?text=Product",
+        "category": "baby-skincare",
+        "typesDescription": "A gentle, hypoallergenic cream designed to soothe and protect delicate baby skin. Ideal for diaper rash and skin irritation, providing instant relief.",
+        "features": {
+            "fearutesDescription": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
+            "featuresMore": [
+                {
+                    "icon": "https://i.ibb.co.com/VLw2p8Z/PARABEN-FREE.webp",
+                    "title": "PARABEN FREE"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ct1pbsH/PERFUME-FREE.webp",
+                    "title": "PERFUME FREE" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/ZJXJkgW/HYPOALLERGENIC.webp",
+                    "title": "HYPOALLERGENIC" 
+                },
+                {
+                    "icon": "https://i.ibb.co.com/f9nJLLt/DERMATOLOGYST-TESTED.webp",
+                    "title": "DERMATOLOGYST TESTED"
+                },
+                {
+                    "icon": "https://i.ibb.co.com/7kYz21N/Clog-Pores.webp",
+                    "title": "ClOG PORES" 
+                }
+            ]
+        },
+        "use": {
+            "useDescription": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
+            "useImg": ""
+        } ,
+        "ingrediants": {
+            "activeIngrediants": "Zinc Oxide, Glycerin",
+            "inActiveIngrediants": "Calendula Extract",
+            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
+            "moreIngrediants": [
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
+                },
+                {
+                    "title": "Triple Acid blend",
+                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
+                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
+                }
+            ]
+        },
+        "pharmacy": [
+            {
+                "_id": 1,
+                "pharmacyName": "Lazz pharma",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
+                "buyNowLink": "https://lazzpharma.com/baby-soothing-cream",
+                "stock": 1
+            },
+            {
+                "_id": 2,
+                "pharmacyName": "Arogga",
+                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
+                "buyNowLink": "https://arogga.com/baby-soothing-cream",
+                "stock": 1
+            }
+        ]
+    }
+]

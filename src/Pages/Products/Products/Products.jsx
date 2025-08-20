@@ -28,7 +28,7 @@ const Products = () => {
     return (
         <div>
             {/* Banner Section */}
-            <div className="w-full h-[400px] bg-cover bg-center relative flex items-center justify-center" style={{ backgroundImage: "url('https://i.ibb.co.com/ZpkKdbnT/Our-Products-Banner.jpg')" }}>
+            <div className="w-full h-[400px] bg-cover bg-center relative flex items-center justify-center opacity-100" style={{ backgroundImage: "url('https://i.ibb.co.com/pBdT3rGc/our-products-bg-6.jpg')" }}>
                 <h1 className="text-4xl md:text-6xl font-bold text-white">Our Products</h1>
             </div>
 
@@ -50,18 +50,10 @@ const Products = () => {
                                 key={product._id}
                                 className="bg-white shadow-lg overflow-hidden rounded-b-lg"
                             >
-                                <img src={product.image} alt={product.name} className="w-full h-60 object-cover" />
+                                <img src={product.cardImage} alt={product.name} className="w-full h-[400px] w-auto mx-auto object-cover" />
                                 <div className="p-5">
-                                    <h2 className="text-2xl font-bold text-gray-800">{product.name}</h2>
+                                    <h2 className="text-2xl font-bold text-gray-800">{product.name.toUpperCase()}</h2>
                                     <p className="mt-2 text-gray-600">{formatCategoryName(product.category)}</p>
-
-                                    {/* <Rating
-                                        value={parseFloat(product.overallRating || 0)}
-                                        readOnly
-                                        style={{ maxWidth: 100 }}
-                                        className="flex items-center my-3"
-                                    /> */}
-
                                     <div className='flex justify-start my-3'>
                                         <OnlyRating
                                             product={product}
@@ -71,23 +63,6 @@ const Products = () => {
                                     <p className="text-sm text-gray-600 mt-2 text-justify">
                                         {product.typesDescription}
                                     </p>
-
-                                    <div className="mt-4 flex space-x-2">
-                                        {/* <Link
-                                            to={`/products/${product._id}`}
-                                            className="btn bg-gradient-to-r from-black via-gray-700 to-black text-white px-4 py-2 rounded-full"
-                                        >
-                                            View Details
-                                        </Link>
-                                        <a
-                                            href="#"
-                                            className="btn bg-black text-white px-4 py-2 rounded-full"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Buy Now
-                                        </a> */}
-                                    </div>
                                 </div>
                                 <Link
                                     onClick={() => handleBuy(product)}
@@ -102,7 +77,7 @@ const Products = () => {
             </div>
 
             {/* Parallax Section */}
-            <div className="h-[400px] bg-fixed bg-cover bg-center relative flex items-center justify-center" style={{ backgroundImage: "url('https://placehold.co/1600x400?text=Contact+Us')" }}>
+            <div className="h-[400px] bg-fixed bg-cover bg-center relative flex items-center justify-center" style={{ backgroundImage: "url('https://i.ibb.co.com/mChRpkqb/Rejuvenation-Banner.jpg')" }}>
                 <div className="bg-black bg-opacity-50 w-full h-full flex items-center justify-center">
                     <div className="w-[80%] flex flex-col justify-center items-center space-y-8 text-white">
                         <h1 className="text-5xl font-bold">Skin Rejuvenation with Aromatherapy</h1>

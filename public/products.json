@@ -2,8 +2,10 @@
     {
         "_id": 1,
         "name": "Purifying Ampoule",
-        "image": "https://i.ibb.co.com/LXjT6Tbg/Noiderma-Purifying-Ampoule.png",
+        "image": "https://i.ibb.co.com/DgPtfRgf/PA.png",
+        "cardImage": "https://i.ibb.co.com/DgPtfRgf/PA.png",
         "category": "Serum",
+        "price": "1980",
         "typesDescription": "Oil & Anti-Acne Serum. Controls Oil & Reduces Acne – Regulates excess sebum to prevent acne. Fights Bacteria Naturally – Tea Tree Oil targets acne-causing bacteria. Promotes Clear Skin – Supports a healthier, radiant complexion.",
         "features": {
             "fearutesDescription": "Made with 97.74% natural-origin ingredients. Regulates excess oil and hydrates skin simultaneously. After use, apply foundation/day cream or night cream. Clinically tested for oily skin only. 10 subjects/56 days of sebaceous secretion are controlled.",
@@ -81,8 +83,10 @@
     {
         "_id": 2,
         "name": "Radiant Glow Serum",
-        "image": "https://i.ibb.co.com/Z6bVdxN8/moiderma-Radiant-Glow-Serum.png",
+        "image": "https://i.ibb.co.com/fdX8tCC8/RGS.png",
+        "cardImage": "https://i.ibb.co.com/fdX8tCC8/RGS.png",
         "category": "Serum",
+        "price": "2280",
         "typesDescription": "This Serum is specially formulated to reduce brown spots and brighten the skin tone by promoting a more uniform complexion. It smoothens skin texture and enhances skin clarity, giving a radiant look from within. The skin becomes noticeably softer and more supple.",
         "features": {
             "fearutesDescription": "Helps to Prevent and Reduce Brown Spots. 85%  users saw improved tone & reduced pigmentation. Restore the lipidic structure of the skin. Improves Skin Clarity and Brightness",
@@ -160,8 +164,10 @@
     {
         "_id": 3,
         "name": "Brilliant White Emulsion",
-        "image": "https://i.ibb.co.com/6JPFPrcV/Noiderma-Brilliant-White-Emulsion.png",
+        "image": "https://i.ibb.co.com/ym3z0YkX/BWE.png",
+        "cardImage": "https://i.ibb.co.com/RpD3Z8Xk/BWE.png",
         "category": "Emulsion",
+        "price": "2380",
         "typesDescription": "Brightens skin & enhances natural radiance. Improves texture & evens out skin tone. Leaves skin softer, smoother & more supple.",
         "features": {
             "fearutesDescription": "3x more effective in inhibiting tyrosinase than Hydroquinone. Deeply moisturizes the skin and enhances skin texture. Brightens and evens out skin tone. Potent anti-inflammatory and anti-oxidant protection. Reduce skin irritation approximately 100%",
@@ -232,85 +238,6 @@
                 "pharmacyName": "Arogga",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
                 "buyNowLink": "https://arogga.com/body-repair-lotion",
-                "stock": 1
-            }
-        ]
-    },
-    {
-        "_id": 4,
-        "name": "Soothing Cream",
-        "image": "https://placehold.co/150?text=Product",
-        "category": "baby-skincare",
-        "typesDescription": "A gentle, hypoallergenic cream designed to soothe and protect delicate baby skin. Ideal for diaper rash and skin irritation, providing instant relief.",
-        "features": {
-            "fearutesDescription": "Water-resistant, Non-comedogenic, Fragrance-free, Ideal for all skin types, Suitable for use under makeup, Dermatologist-tested.",
-            "featuresMore": [
-                {
-                    "icon": "https://i.ibb.co.com/VLw2p8Z/PARABEN-FREE.webp",
-                    "title": "PARABEN FREE"
-                },
-                {
-                    "icon": "https://i.ibb.co.com/ct1pbsH/PERFUME-FREE.webp",
-                    "title": "PERFUME FREE" 
-                },
-                {
-                    "icon": "https://i.ibb.co.com/ZJXJkgW/HYPOALLERGENIC.webp",
-                    "title": "HYPOALLERGENIC" 
-                },
-                {
-                    "icon": "https://i.ibb.co.com/f9nJLLt/DERMATOLOGYST-TESTED.webp",
-                    "title": "DERMATOLOGYST TESTED"
-                },
-                {
-                    "icon": "https://i.ibb.co.com/7kYz21N/Clog-Pores.webp",
-                    "title": "ClOG PORES" 
-                }
-            ]
-        },
-        "use": {
-            "useDescription": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness. Perfect for use on hands, elbows, and heels, the ointment is non-greasy and fast-absorbing. Apply a small amount to the affected area as needed, especially after bathing or washing. Safe for use on the face and body, it is recommended for all skin types, particularly sensitive skin.",
-            "useImg": ""
-        } ,
-        "ingrediants": {
-            "activeIngrediants": "Zinc Oxide, Glycerin",
-            "inActiveIngrediants": "Calendula Extract",
-            "ingrediantImg": "https://placehold.co/150?text=Ingrediants",
-            "moreIngrediants": [
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-1"
-                },
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-2"
-                },
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-3"
-                },
-                {
-                    "title": "Triple Acid blend",
-                    "description": "Healing Ointment is ideal for restoring moisture to severely dry or cracked skin. Its protective barrier helps prevent moisture loss, making it effective for skin prone to irritation and dryness.",
-                    "moreIngrediantsImg": "https://placehold.co/150?text=Ingrediants-4"
-                }
-            ]
-        },
-        "pharmacy": [
-            {
-                "_id": 1,
-                "pharmacyName": "Lazz pharma",
-                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
-                "buyNowLink": "https://lazzpharma.com/baby-soothing-cream",
-                "stock": 1
-            },
-            {
-                "_id": 2,
-                "pharmacyName": "Arogga",
-                "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
-                "buyNowLink": "https://arogga.com/baby-soothing-cream",
                 "stock": 1
             }
         ]

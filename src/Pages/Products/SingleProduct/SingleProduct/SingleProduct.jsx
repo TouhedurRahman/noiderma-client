@@ -90,7 +90,7 @@ const SingleProduct = () => {
                                     <img
                                         src={product.image}
                                         alt="Loading..."
-                                        className='w-full h-96 rounded-lg'
+                                        className='w-full h-[500px] w-auto  rounded-lg'
                                     />
                                 </div>
                                 <div className='w-full md:w-1/2'>

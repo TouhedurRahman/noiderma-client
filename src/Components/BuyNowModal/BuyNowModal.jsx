@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaTimes, FaShoppingCart } from 'react-icons/fa';
+import { useState } from 'react';
+import { FaShoppingCart, FaTimes } from 'react-icons/fa';
 
 const BuyNowModal = ({ show, onClose, products }) => {
     const [selectedProduct, setSelectedProduct] = useState(products[0]);
@@ -39,7 +39,7 @@ const BuyNowModal = ({ show, onClose, products }) => {
                         <img
                             src={selectedProduct.image}
                             alt={selectedProduct.name}
-                            className="mb-4 w-full sm:w-72 h-52 sm:h-84 object-cover rounded-lg shadow-md"
+                            className="mb-4 w-[180px] h-[200px] object-cover"
                         />
                         <p className="text-lg sm:text-xl font-semibold text-gray-800 text-center">
                             {selectedProduct.name}

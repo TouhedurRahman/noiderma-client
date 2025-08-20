@@ -93,19 +93,19 @@ const CategorizedProductHome = () => {
                                                     <Link
                                                         to={`/products/${product._id}`}
                                                     >
-                                                        <div className='h-64'>
+                                                        <div className="w-[150px] h-auto flex mx-auto bg-white">
                                                             <img
-                                                                src={product.image}
+                                                                src={product.cardImage}
                                                                 alt={product.name}
-                                                                className='h-full w-full rounded-t-lg'
+                                                                className=""
                                                             />
                                                         </div>
                                                         <div className='content flex flex-col justify-center items-center'>
-                                                            <p className='font-bold mb-10'>
-                                                                {product.name}
+                                                            <p className='font-bold mb-10 text-center h-8'>
+                                                                {product.name.toUpperCase()}
                                                             </p>
                                                             <p className='text-sm font-bold'>
-                                                                ৳ 200/-
+                                                                ৳ {product.price}/-
                                                             </p>
                                                             <OnlyRating
                                                                 product={product}
