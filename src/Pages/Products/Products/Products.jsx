@@ -9,6 +9,7 @@ const Products = () => {
     const [products, loading] = useProducts();
     const [selectedProduct, setSelectedProduct] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [expanded, setExpanded] = useState({});
 
     const formatCategoryName = (category) => {
         const formatted = category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
@@ -23,6 +24,10 @@ const Products = () => {
     const handleCloseModal = () => {
         setIsModalOpen(false);
         setSelectedProduct(null);
+    };
+
+    const toggleExpand = (id) => {
+        setExpanded((prev) => ({ ...prev, [id]: !prev[id] }));
     };
 
     return (
@@ -44,34 +49,49 @@ const Products = () => {
                     <p>Loading...</p>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                        {products.map((product) => (
-                            <Link
-                                to={`/products/${product._id}`}
-                                key={product._id}
-                                className="bg-white shadow-lg overflow-hidden rounded-b-lg"
-                            >
-                                <img src={product.cardImage} alt={product.name} className="w-full h-[400px] w-auto mx-auto object-cover" />
-                                <div className="p-5">
-                                    <h2 className="text-2xl font-bold text-gray-800">{product.name.toUpperCase()}</h2>
-                                    <p className="mt-2 text-gray-600">{formatCategoryName(product.category)}</p>
-                                    <div className='flex justify-start my-3'>
-                                        <OnlyRating
-                                            product={product}
-                                        />
-                                    </div>
+                        {products.map((product) => {
+                            const words = product.typesDescription.split(" ");
+                            const shortText = words.slice(0, 16).join(" ");
+                            const isExpanded = expanded[product._id];
 
-                                    <p className="text-sm text-gray-600 mt-2 text-justify">
-                                        {product.typesDescription}
-                                    </p>
-                                </div>
+                            return (
                                 <Link
-                                    onClick={() => handleBuy(product)}
-                                    className="w-full btn bg-gradient-to-r from-black via-gray-700 to-black text-white px-4 py-2 rounded-t-none rounded-b-lg"
+                                    to={`/products/${product._id}`}
+                                    key={product._id}
+                                    className="overflow-hidden rounded-b-lg"
                                 >
-                                    Buy Now
+                                    <img src={product.cardImage} alt={product.name} className="w-full h-[400px] w-auto mx-auto object-cover" />
+                                    <div className="p-5">
+                                        <h2 className="text-2xl font-bold text-gray-800">{product.name.toUpperCase()}</h2>
+                                        <p className="mt-2 text-gray-600">{formatCategoryName(product.category)}</p>
+                                        <div className='flex justify-start my-3'>
+                                            <OnlyRating product={product} />
+                                        </div>
+
+                                        <p className="text-sm text-gray-600 mt-2 text-justify">
+                                            {isExpanded ? product.typesDescription : `${shortText}${words.length > 16 ? "..." : ""}`}{" "}
+                                            {words.length > 16 && (
+                                                <span
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        toggleExpand(product._id);
+                                                    }}
+                                                    className="text-blue-500 cursor-pointer font-bold hover:underline"
+                                                >
+                                                    {isExpanded ? "less" : "more"}
+                                                </span>
+                                            )}
+                                        </p>
+                                    </div>
+                                    <Link
+                                        onClick={() => handleBuy(product)}
+                                        className="w-full btn bg-gradient-to-r from-black via-gray-700 to-black text-white px-4 py-2 rounded-t-none rounded-b-lg"
+                                    >
+                                        Buy Now
+                                    </Link>
                                 </Link>
-                            </Link>
-                        ))}
+                            );
+                        })}
                     </div>
                 )}
             </div>
