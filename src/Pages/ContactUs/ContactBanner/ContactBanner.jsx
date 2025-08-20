@@ -1,5 +1,5 @@
 import { FaRegCalendarAlt, FaRegClock } from 'react-icons/fa';
-import { LuPhoneCall } from 'react-icons/lu';
+import { MdOutlineMail } from 'react-icons/md';
 
 const ContactBanner = () => {
     return (
@@ -13,13 +13,13 @@ const ContactBanner = () => {
                         DO YOU HAVE QUESTIONS FOR NOIDERMA? ASK US NOW.
                     </p>
                     <p className='text-sm'>
-                        Chat with our Galderma Special Services (GSS) team now or contact us using one of the options below to ask a question or report an Adverse Event (side effect) or Product Quality Complaint.
+                        Chat with our NOIDERMA team now or contact us using one of the options below to ask a question or report an Adverse Event (side effect) or Product Quality Complaint.
                     </p>
                     <div className='pt-5'>
                         <div className='flex justify-start items-center space-x-3'>
                             <FaRegCalendarAlt />
                             <p>
-                                Saturday - Thursday
+                                Monday - Friday
                             </p>
                         </div>
                         <div className='flex justify-start items-center space-x-3'>
@@ -29,9 +29,9 @@ const ContactBanner = () => {
                             </p>
                         </div>
                         <div className='flex justify-start items-center space-x-3'>
-                            <LuPhoneCall />
+                            <MdOutlineMail />
                             <p>
-                                +880 1329-747657
+                                info@noiderma.com
                             </p>
                         </div>
                     </div>
