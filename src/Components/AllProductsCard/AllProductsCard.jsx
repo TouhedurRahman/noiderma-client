@@ -36,7 +36,7 @@ const AllProducts = () => {
                     >
                         {/* Product Image */}
                         <Link to={`/products/${product._id}`}>
-                            <div className="relative w-full h-56 flex items-center justify-center bg-gray-50">
+                            <div className="relative w-full h-auto flex items-center justify-center bg-gray-50">
                                 <img
                                     src={
                                         hovered === product._id
@@ -44,30 +44,37 @@ const AllProducts = () => {
                                             : product.image
                                     }
                                     alt={product.name}
-                                    className="object-contain max-h-full transition-opacity duration-500"
+                                    className="object-cover w-full h-full transition-opacity duration-500"
                                 />
                             </div>
 
                             {/* Product Info */}
-                            <div className="p-4 flex flex-col items-center text-center">
+                            <div className="p-4">
                                 {/* Name */}
-                                <h3 className="font-semibold text-base mb-2 line-clamp-1">
+                                <h3 className="font-semibold text-base mb-3 text-center">
                                     {product.name}
                                 </h3>
 
-                                {/* Rating */}
-                                <OnlyRating product={product} />
+                                {/* Rating Row */}
+                                <div className="flex justify-center items-center mb-3">
+                                    <OnlyRating product={product} />
+                                    <p className="text-sm font-medium">
+                                        {product.rating}
+                                    </p>
+                                </div>
 
-                                {/* Net Weight */}
-                                <p className="text-sm text-gray-600 mt-2">
-                                    Net Weight:{" "}
-                                    <span className="font-medium">{product.netWeight}</span>
-                                </p>
+                                {/* Net Weight + Price Row */}
+                                <div className="flex justify-between items-center">
+                                    <span className="bg-black text-white text-xs px-3 py-1 rounded inline-block">
+                                        {product.netWeight}
+                                    </span>
+                                    <p className="text-sm font-semibold">৳ {product.price}/-</p>
+                                </div>
                             </div>
                         </Link>
-                        <div
-                            className='bg-black text-white text-center py-2 cursor-pointer'
-                        >
+
+                        {/* Buy Now Button */}
+                        <div className="bg-black text-white text-center py-2 cursor-pointer">
                             <div
                                 className="w-full h-full"
                                 style={{ letterSpacing: "0.1em" }}
