@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { FaBars, FaTimes, FaChevronDown, FaSearch } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import { FaBars, FaChevronDown, FaSearch, FaTimes } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import useProducts from '../../../Hooks/useProducts';
 
@@ -71,18 +71,19 @@ const Navbar = () => {
     const menuItems = [
         { name: 'PRODUCTS', subOptions: [] },
         { name: 'CONTACT US', subOptions: [] },
-        { name: 'FIND A STORE', subOptions: [] }
+        // { name: 'FIND A STORE', subOptions: [] }
     ];
 
     return (
         <nav
-            className={`w-full fixed top-0 left-0 right-0 font-bold transition-colors duration-300 z-50 ${isScrolled || isHovered ? 'bg-gradient-to-tr from-[#f5f5f5] to-[#e0e0e0] text-black shadow-lg' : 'bg-transparent text-white'}`}
+            className={`w-full fixed top-0 left-0 right-0 font-bold transition-colors duration-300 z-50 ${isScrolled || isHovered ? 'bg-gradient-to-tr from-[#f5f5f5] to-[#e0e0e0] text-black shadow-lg' : 'bg-transparent text-black'}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
             <div className='w-[93%] lg:w-[85%] mx-auto flex justify-between items-center py-4'>
                 <Link to="/" className='text-2xl font-bold flex justify-center items-center'>
-                    <img src={isScrolled || isHovered ? "https://i.ibb.co/Zm5bGzp/noiderma-black-logo.png" : "https://i.ibb.co/8Nmk5NC/noiderma-white-logo.png"} alt="Logo" className='w-[150px] lg:w-[180px] h-[40px]' />
+                    {/* <img src={isScrolled || isHovered ? "https://i.ibb.co/Zm5bGzp/noiderma-black-logo.png" : "https://i.ibb.co/8Nmk5NC/noiderma-white-logo.png"} alt="Logo" className='w-[150px] lg:w-[180px] h-[40px]' /> */}
+                    <img src={isScrolled || isHovered ? "https://i.ibb.co/Zm5bGzp/noiderma-black-logo.png" : "https://i.ibb.co/Zm5bGzp/noiderma-black-logo.png"} alt="Logo" className='w-[150px] lg:w-[180px] h-[40px]' />
                 </Link>
 
                 <ul className='hidden md:flex space-x-4 ml-auto'>

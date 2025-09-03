@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ProductFeatureHome = () => {
     return (
-        <div className='mt-20'>
+        <div className='my-20'>
             <div className='relative flex flex-col lg:flex-row items-center justify-end'>
                 {/* Image Section */}
                 <div className='lg:absolute left-0 flex justify-center lg:justify-start items-center lg:ms-24 z-20'>

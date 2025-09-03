@@ -2,6 +2,7 @@
     {
         "_id": 1,
         "name": "Purifying Ampoule",
+        "netWeight": "30 ML",
         "image": "https://i.ibb.co.com/DgPtfRgf/PA.png",
         "cardImage": "https://i.ibb.co.com/DgPtfRgf/PA.png",
         "category": "Serum",
@@ -83,6 +84,7 @@
     {
         "_id": 2,
         "name": "Radiant Glow Serum",
+        "netWeight": "30 ML",
         "image": "https://i.ibb.co.com/fdX8tCC8/RGS.png",
         "cardImage": "https://i.ibb.co.com/fdX8tCC8/RGS.png",
         "category": "Serum",
@@ -164,6 +166,7 @@
     {
         "_id": 3,
         "name": "Brilliant White Emulsion",
+        "netWeight": "30 ML",
         "image": "https://i.ibb.co.com/ym3z0YkX/BWE.png",
         "cardImage": "https://i.ibb.co.com/RpD3Z8Xk/BWE.png",
         "category": "Emulsion",

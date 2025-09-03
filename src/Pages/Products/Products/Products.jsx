@@ -33,8 +33,26 @@ const Products = () => {
     return (
         <div>
             {/* Banner Section */}
-            <div className="w-full h-[400px] bg-cover bg-center relative flex items-center justify-center opacity-100" style={{ backgroundImage: "url('https://i.ibb.co.com/pBdT3rGc/our-products-bg-6.jpg')" }}>
+            {/* <div className="w-full h-[400px] bg-cover bg-center relative flex items-center justify-center opacity-100" style={{ backgroundImage: "url('https://i.ibb.co.com/pBdT3rGc/our-products-bg-6.jpg')" }}>
                 <h1 className="text-4xl md:text-6xl font-bold text-white">Our Products</h1>
+            </div> */}
+            <div
+                className="relative w-full h-[60vh] md:h-[80vh] lg:h-screen bg-cover bg-center"
+                style={{ backgroundImage: 'url("https://i.ibb.co.com/cKQZ603v/our-products-banner.jpg")' }}
+            >
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-start text-black">
+                    <div className="text-left ml-4 md:ml-32">
+                        <h1 className="text-3xl md:text-5xl font-bold mb-2">Natural Ingradiants to<br />Glowing Skin</h1>
+                        {/* <p className="text-base md:text-lg">Stand For All Types of Skin</p> */}
+                        {/* <a
+                        href="/contact"
+                        className="mt-4 inline-block bg-[#014B88] text-white px-6 py-3 rounded-full text-lg font-semibold transition-transform transform hover:scale-105"
+                    >
+                        Get in Touch
+                    </a> */}
+                    </div>
+                </div>
             </div>
 
             {/* Products Section */}
@@ -97,7 +115,7 @@ const Products = () => {
             </div>
 
             {/* Parallax Section */}
-            <div className="h-[400px] bg-fixed bg-cover bg-center relative flex items-center justify-center" style={{ backgroundImage: "url('https://i.ibb.co.com/mChRpkqb/Rejuvenation-Banner.jpg')" }}>
+            {/* <div className="h-[400px] bg-fixed bg-cover bg-center relative flex items-center justify-center" style={{ backgroundImage: "url('https://i.ibb.co.com/mChRpkqb/Rejuvenation-Banner.jpg')" }}>
                 <div className="bg-black bg-opacity-50 w-full h-full flex items-center justify-center">
                     <div className="w-[80%] flex flex-col justify-center items-center space-y-8 text-white">
                         <h1 className="text-5xl font-bold">Skin Rejuvenation with Aromatherapy</h1>
@@ -114,7 +132,7 @@ const Products = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div>
                 {
                     loading

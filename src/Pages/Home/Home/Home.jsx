@@ -1,7 +1,6 @@
+import AllProductsCard from "../../../Components/AllProductsCard/AllProductsCard";
 import Banner from "../Banner/Banner";
 import CategorizedFeature from "../CategorizedFeature/CategorizedFeature";
-import CategorizedProductHome from "../CategorizedProductHome/CategorizedProductHome";
-import ContactHome from "../ContactHome/ContactHome";
 import DermaRecommended from "../DermaRecommended/DermaRecommended";
 import DoctorsRecommended from "../DoctorsRecommended/DoctorsRecommended";
 import ProductFeatureHome from "../ProductFeatureHome/ProductFeatureHome";
@@ -13,7 +12,8 @@ const Home = () => {
         <div>
             <Banner />
             {/* < DiscoverHome /> */}
-            <CategorizedProductHome />
+            {/* <CategorizedProductHome /> */}
+            <AllProductsCard />
             <WhyNoiderma />
             <CategorizedFeature />
             <DermaRecommended />
@@ -21,7 +21,7 @@ const Home = () => {
             <SignFaq />
             <ProductFeatureHome />
             {/* <ProductsHome /> */}
-            <ContactHome />
+            {/* <ContactHome /> */}
         </div>
     );
 };
