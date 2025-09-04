@@ -6,7 +6,7 @@ import OnlyRating from "../OnlyRating/OnlyRating";
 
 const AllProducts = () => {
     const [products, loading] = useProducts();
-    const [hovered, setHovered] = useState(null);
+    // const [hovered, setHovered] = useState(null);
     const [selectedProduct, setSelectedProduct] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -31,21 +31,28 @@ const AllProducts = () => {
                     <div
                         key={product._id}
                         className="group relative shadow-md rounded-lg overflow-hidden bg-white"
-                        onMouseEnter={() => setHovered(product._id)}
-                        onMouseLeave={() => setHovered(null)}
                     >
                         {/* Product Image */}
                         <Link to={`/products/${product._id}`}>
-                            <div className="relative w-full h-auto flex items-center justify-center bg-gray-50">
+                            <div className="relative w-full flex items-center justify-center bg-gray-50">
+                                {/* First image */}
                                 <img
-                                    src={
-                                        hovered === product._id
-                                            ? product.cardImage || product.cardImage
-                                            : product.image
-                                    }
+                                    src={product.image}
                                     alt={product.name}
-                                    className="object-cover w-full h-full transition-opacity duration-500"
+                                    className="w-full h-auto object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0"
                                 />
+                                {/* Second image */}
+                                <img
+                                    src={product.cardImage || product.image}
+                                    alt={product.name}
+                                    className="absolute inset-0 w-full h-auto object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+                                />
+                            </div>
+
+                            {/* HR lines */}
+                            <div className="flex justify-between items-center">
+                                <hr className="w-[50%] border-2 border-gray-300 group-hover:border-gray-100 me-1" />
+                                <hr className="w-[50%] border-2 border-gray-100 group-hover:border-gray-300 me-1" />
                             </div>
 
                             {/* Product Info */}
@@ -56,11 +63,9 @@ const AllProducts = () => {
                                 </h3>
 
                                 {/* Rating Row */}
-                                <div className="flex justify-center items-center mb-3">
+                                <div className="flex justify-center items-center gap-2 mb-3">
                                     <OnlyRating product={product} />
-                                    <p className="text-sm font-medium">
-                                        {product.rating}
-                                    </p>
+                                    <p className="text-sm font-medium">{product.rating}</p>
                                 </div>
 
                                 {/* Net Weight + Price Row */}

@@ -76,9 +76,29 @@ const Products = () => {
                                 <Link
                                     to={`/products/${product._id}`}
                                     key={product._id}
-                                    className="overflow-hidden rounded-b-lg"
+                                    className="group relative shadow-md rounded-lg overflow-hidden bg-white"
                                 >
-                                    <img src={product.cardImage} alt={product.name} className="w-full h-[400px] w-auto mx-auto object-cover" />
+                                    <div className="relative w-full flex items-center justify-center bg-gray-50">
+                                        {/* First image */}
+                                        <img
+                                            src={product.image}
+                                            alt={product.name}
+                                            className="w-full h-auto object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0"
+                                        />
+                                        {/* Second image */}
+                                        <img
+                                            src={product.cardImage || product.image}
+                                            alt={product.name}
+                                            className="absolute inset-0 w-full h-auto object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+                                        />
+                                    </div>
+
+                                    {/* HR lines */}
+                                    <div className="flex justify-between items-center">
+                                        <hr className="w-[50%] border-2 border-gray-300 group-hover:border-gray-100 me-1" />
+                                        <hr className="w-[50%] border-2 border-gray-100 group-hover:border-gray-300 me-1" />
+                                    </div>
+
                                     <div className="p-5">
                                         <h2 className="text-2xl font-bold text-gray-800">{product.name.toUpperCase()}</h2>
                                         <p className="mt-2 text-gray-600">{formatCategoryName(product.category)}</p>
