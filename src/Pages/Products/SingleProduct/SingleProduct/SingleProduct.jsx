@@ -84,13 +84,12 @@ const SingleProduct = () => {
                                 Product
                             </p>
                             <div className='w-[93%] md:w-[85%] mx-auto mt-5 flex flex-col md:flex-row md:justify-between items-start space-y-6'>
-                                <div
-                                    className='w-full md:w-1/2 px-10 flex justify-center items-center'
-                                >
+                                <div className="w-full md:w-1/2 px-10 flex justify-center items-center">
                                     <img
                                         src={product.image}
-                                        alt="Loading..."
-                                        className='w-full h-[500px] w-auto  rounded-lg'
+                                        alt={product.name}
+                                        className="rounded-lg object-contain"
+                                        style={{ maxWidth: "380px", maxHeight: "600px", width: "100%", height: "auto" }}
                                     />
                                 </div>
                                 <div className='w-full md:w-1/2'>
