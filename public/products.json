@@ -4,7 +4,7 @@
         "name": "Purifying Ampoule",
         "netWeight": "30 ML",
         "image": "https://i.ibb.co.com/DgPtfRgf/PA.png",
-        "cardImage": "https://i.ibb.co.com/7dv1LygG/Purifying-Ampoule.jpg",
+        "cardImage": "https://i.ibb.co.com/XZBtp4wZ/Purifying-Ampoule-Serum.jpg",
         "category": "Serum",
         "price": "1980",
         "typesDescription": "Oil & Anti-Acne Serum. Controls Oil & Reduces Acne – Regulates excess sebum to prevent acne. Fights Bacteria Naturally – Tea Tree Oil targets acne-causing bacteria. Promotes Clear Skin – Supports a healthier, radiant complexion.",
@@ -70,7 +70,7 @@
                 "pharmacyName": "Lazz pharma",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
                 "buyNowLink": "https://lazzpharma.com/healing-ointment",
-                "stock": 1
+                "stock": 0
             },
             {
                 "_id": 2,
@@ -86,7 +86,7 @@
         "name": "Radiant Glow Serum",
         "netWeight": "30 ML",
         "image": "https://i.ibb.co.com/fdX8tCC8/RGS.png",
-        "cardImage": "https://i.ibb.co.com/5WSvXLfz/Radiant-Glow-Serum.jpg",
+        "cardImage": "https://i.ibb.co.com/m5Fk70cp/Radiant-Glow-Serum.jpg",
         "category": "Serum",
         "price": "2280",
         "typesDescription": "This Serum is specially formulated to reduce brown spots and brighten the skin tone by promoting a more uniform complexion. It smoothens skin texture and enhances skin clarity, giving a radiant look from within. The skin becomes noticeably softer and more supple.",
@@ -152,14 +152,14 @@
                 "pharmacyName": "Lazz pharma",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiM1LE00TDqJXaqr_zGugYv_Kj18wZcMZBGA&s",
                 "buyNowLink": "https://lazzpharma.com/hydrating-face-cream",
-                "stock": 1
+                "stock": 0
             },
             {
                 "_id": 2,
                 "pharmacyName": "Arogga",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
                 "buyNowLink": "https://arogga.com/hydrating-face-cream",
-                "stock": 1
+                "stock": 0
             }
         ]
     },
@@ -168,7 +168,7 @@
         "name": "Brilliant White Emulsion",
         "netWeight": "30 ML",
         "image": "https://i.ibb.co.com/ym3z0YkX/BWE.png",
-        "cardImage": "https://i.ibb.co.com/HyfpD8t/Brilliant-White-Emulsion.jpg",
+        "cardImage": "https://i.ibb.co.com/1JTNZ7JX/Brilliant-White-Emulsion.jpg",
         "category": "Emulsion",
         "price": "2380",
         "typesDescription": "Brightens skin & enhances natural radiance. Improves texture & evens out skin tone. Leaves skin softer, smoother & more supple.",
@@ -241,7 +241,7 @@
                 "pharmacyName": "Arogga",
                 "pharmacyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHdvTj1e5DRFz4gRhLN5udTBWkaHcpev7Sg&s",
                 "buyNowLink": "https://arogga.com/body-repair-lotion",
-                "stock": 1
+                "stock": 0
             }
         ]
     }
