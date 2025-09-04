@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import axios from 'axios';
+import 'font-awesome/css/font-awesome.min.css';
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
 import { FaTimes } from 'react-icons/fa';
 import ReactRating from 'react-rating';
-import { useForm } from 'react-hook-form';
-import 'font-awesome/css/font-awesome.min.css';
-import useHosting from '../../Hooks/useHosting';
-import axios from 'axios';
-import OnlyRating from '../OnlyRating/OnlyRating';
 import Swal from 'sweetalert2';
+import useHosting from '../../Hooks/useHosting';
+import OnlyRating from '../OnlyRating/OnlyRating';
 
 const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -106,7 +106,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
         };
 
         try {
-            const response = await axios.post('http://localhost:5000/reviews', reviewData);
+            const response = await axios.post('https://api.noiderma.com/reviews', reviewData);
 
             if (response.status === 200 || response.status === 201) {
                 reset();

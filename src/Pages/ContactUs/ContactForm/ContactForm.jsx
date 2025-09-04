@@ -1,8 +1,8 @@
-import { useForm } from 'react-hook-form';
-import useProducts from '../../../Hooks/useProducts';
 import axios from 'axios';
-import Swal from 'sweetalert2';
+import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import useProducts from '../../../Hooks/useProducts';
 
 const ContactForm = ({ role, title, subtitle, description }) => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -35,7 +35,7 @@ const ContactForm = ({ role, title, subtitle, description }) => {
             confirmButtonText: "Yes, Submit!"
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.post('http://localhost:5000/queries', newQuery)
+                axios.post('https://api.noiderma.com/queries', newQuery)
                     .then(data => {
                         if (data.data.insertedId) {
                             reset();
