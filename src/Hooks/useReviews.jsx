@@ -4,7 +4,7 @@ const useReviews = () => {
     const { data: reviews = [], isLoading: reviewsloading, refetch } = useQuery({
         queryKey: ['reviews'],
         queryFn: async () => {
-            const url = 'https://api.noiderma.com/reviews';
+            const url = 'https://brandapi.noiderma.com/reviews';
             const result = await fetch(url);
             return result.json();
         }

@@ -35,7 +35,7 @@ const ContactForm = ({ role, title, subtitle, description }) => {
             confirmButtonText: "Yes, Submit!"
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.post('https://api.noiderma.com/queries', newQuery)
+                axios.post('https://brandapi.noiderma.com/queries', newQuery)
                     .then(data => {
                         if (data.data.insertedId) {
                             reset();

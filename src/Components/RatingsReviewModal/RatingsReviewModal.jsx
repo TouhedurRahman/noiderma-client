@@ -106,7 +106,7 @@ const RatingsReviewModal = ({ show, onClose, selectedProduct }) => {
         };
 
         try {
-            const response = await axios.post('https://api.noiderma.com/reviews', reviewData);
+            const response = await axios.post('https://brandapi.noiderma.com/reviews', reviewData);
 
             if (response.status === 200 || response.status === 201) {
                 reset();
