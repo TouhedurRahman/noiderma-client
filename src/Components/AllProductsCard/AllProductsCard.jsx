@@ -26,7 +26,7 @@ const AllProducts = () => {
         <div className="pt-20 lg:w-[85%] mx-auto">
             <h2 className="text-xl font-bold text-center mb-6">Our Products</h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mx-10 md:mx-0">
                 {products.map((product) => (
                     <div
                         key={product._id}
